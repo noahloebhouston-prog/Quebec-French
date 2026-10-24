@@ -57,8 +57,77 @@ function loadState() {
   return defaultState();
 }
 let S = loadState();
-function save() {
+function saveLocal() {
   try { localStorage.setItem(STORE_KEY, JSON.stringify(S)); } catch (e) { /* storage unavailable */ }
+}
+function save() {
+  S.updatedAt = Date.now();
+  saveLocal();
+  cloudSchedule();
+}
+
+/* ---------- Cloud sync (claude.ai Artifact db; off anywhere else) ---------- */
+
+const cloud = { ref: null, status: 'off', writing: false, again: false, timer: null };
+function cloudBadge() {
+  const el = document.getElementById('sync');
+  if (!el) return;
+  const t = { on: '☁ Saved to your account', saving: '☁ Saving…', error: '⚠ Not synced: saved on this device', off: '' }[cloud.status];
+  el.textContent = t; el.hidden = !t;
+  el.className = 'sync' + (cloud.status === 'error' ? ' bad' : '');
+}
+function hasProgress(st) { return !!(st.placement || Object.keys(st.activities || {}).length); }
+async function cloudPull() {
+  const snap = await cloud.ref.get();
+  const d = snap.exists ? snap.data() : null;
+  const r = d && typeof d.state === 'string' ? JSON.parse(d.state) : null;
+  return r && r.version === 1 ? r : null;
+}
+async function cloudPush() {
+  if (!cloud.ref) return;
+  if (cloud.writing) { cloud.again = true; return; }
+  cloud.writing = true; cloud.status = 'saving'; cloudBadge();
+  try {
+    do {
+      cloud.again = false;
+      await cloud.ref.set({ state: JSON.stringify(S), updatedAt: S.updatedAt || Date.now() });
+    } while (cloud.again);
+    cloud.status = 'on';
+  } catch (e) {
+    cloud.status = 'error';
+  }
+  cloud.writing = false; cloudBadge();
+}
+function cloudSchedule() {
+  if (!cloud.ref) return;
+  clearTimeout(cloud.timer);
+  cloud.status = 'saving'; cloudBadge();
+  cloud.timer = setTimeout(cloudPush, 1500);
+}
+async function cloudSync(rerender) {
+  try {
+    const r = await cloudPull();
+    if (r && (r.updatedAt || 0) > (S.updatedAt || 0)) {
+      S = Object.assign(defaultState(), r); saveLocal();
+      if (rerender) rerender();
+    } else if (hasProgress(S) && (!r || (S.updatedAt || 0) > (r.updatedAt || 0))) {
+      await cloudPush();
+    }
+    if (cloud.status !== 'error') cloud.status = 'on';
+  } catch (e) { cloud.status = 'error'; }
+  cloudBadge();
+}
+async function cloudInit(rerender) {
+  const db = await cap('db');
+  const user = db && await cap('user');
+  const uid = user && await user.id().catch(() => null);
+  if (!uid) return;
+  cloud.ref = db.doc('data/users/' + uid + '/progress');
+  await cloudSync(rerender);
+  document.addEventListener('visibilitychange', () => {
+    if (document.visibilityState === 'hidden') { if (cloud.timer) { clearTimeout(cloud.timer); cloudPush(); } }
+    else if (!cloud.writing) cloudSync(() => { if (!/^#\/?(a|gate|placement)\//.test(location.hash + '/')) rerender(); });
+  });
 }
 
 /* ---------- Data ---------- */
@@ -1407,7 +1476,7 @@ function viewSettings() {
       playButton('Tester la voix', () => speak('Allô! Comment ça va? Chu content de pratiquer avec toi!'))),
     h('div', { class: 'card' },
       h('h2', {}, 'Ta progression'),
-      h('p', { class: 'small muted' }, 'Progress is saved in this browser only. Export it to back it up or move it to another device.'),
+      h('p', { class: 'small muted' }, cloud.ref ? 'Progress is saved to your claude.ai account, so it follows you to any device where you open this link signed in. Export makes an extra backup file.' : 'Progress is saved in this browser only. Export it to back it up or move it to another device.'),
       h('div', { class: 'row' },
         h('button', {
           class: 'btn', onclick: () => {
@@ -1454,6 +1523,7 @@ function route() {
 loadData().then(() => {
   window.addEventListener('hashchange', route);
   route();
+  cloudInit(route);
 }).catch(e => {
   app().innerHTML = '';
   add(app(), h('div', { class: 'notice' }, "Couldn't load the course files: " + e.message));
