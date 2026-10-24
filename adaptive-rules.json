@@ -1,0 +1,98 @@
+{
+  "schemaVersion": "1.0",
+  "description": "How the plan adjusts to the learner. The widget evaluates these rules after every activity, gate test and placement test. All thresholds are percentages of points. Nothing here uses calendar time except spaced-repetition review intervals.",
+
+  "placement": {
+    "description": "Turns placement-test results into a starting point.",
+    "receptiveLevel": "First band (1, 2, 3…) whose combined lire + ecouter + ecrire-quiz score is below bandPassPercent. If every band passes, the last band + 1.",
+    "productionLevel": "Average of the writing and speaking placement scores (each 0–5 = level reached), rounded down.",
+    "startLevel": "min(receptiveLevel, productionLevel + 1), never below 1.",
+    "skippedLevels": {
+      "status": "testedOut",
+      "bridgePack": "For every level below startLevel, assign a short required 'bridge pack': the level's notes, flashcards of vocab with register 'quebecois', and its speaking activities. Duolingo-style learners know the standard words but not Québec forms or speaking, so this fills that gap without repeating what they know."
+    },
+    "focusSkills": "Any skill (lire, ecouter, ecrire, parler) whose placement percentage is 20+ points below the learner's best skill becomes a focus skill. Focus skills get one extra practice activity per lesson (see 'extraPractice') and appear first in each lesson.",
+    "knownVocab": "Vocab ids in placement priorKnowledge.knownVocabIds, plus any vocab answered correctly in placement, start in spaced-repetition box 3 instead of box 1."
+  },
+
+  "mastery": {
+    "description": "Running scores the widget keeps per skill and per tag (item tags such as grammar:etre or qc:spoken).",
+    "method": "exponential moving average of activity or item scores",
+    "alpha": 0.3,
+    "minItemsBeforeActing": 5
+  },
+
+  "rules": [
+    {
+      "id": "retry-low-activity",
+      "when": "A required activity scores below 60%.",
+      "then": "Mark it 'retry'. The lesson isn't complete until it's redone (items reshuffled, notes for the lesson linked at the top). The best attempt counts."
+    },
+    {
+      "id": "fast-track",
+      "when": "Every quiz in a lesson scores 90%+ on the first attempt.",
+      "then": "Make the lesson's remaining 'repeat'-mode speaking activities and its flashcards optional, and show 'Fast track' on the lesson. Writing and roleplay speaking stay required."
+    },
+    {
+      "id": "weak-tag-review",
+      "when": "A tag's mastery drops below 60% after at least 5 items with that tag.",
+      "then": "Insert a 'Révision' activity before the next lesson: 8 items drawn from all completed lessons that carry that tag, plus a link to the notes that teach it. Clear the flag when the tag's mastery is back to 75%."
+    },
+    {
+      "id": "weak-rubric-criterion",
+      "when": "The same rubric criterion (e.g. spelling, grammar, pron) scores below 50% of its maxPoints in 2 of the last 3 writing or speaking tasks.",
+      "then": "Show the criterion as a focus on the dashboard and add a targeted drill: spelling → a 5-item dictation from recent vocab; grammar → a weak-tag review on the grammar tags of the last task; pron → a 'repeat'-mode activity using the last task's model answer."
+    },
+    {
+      "id": "extra-practice",
+      "when": "A skill is a focus skill (from placement or from its mastery being 15+ points below the learner's average).",
+      "then": "Add one extra activity of that skill per lesson: reuse an unseen gate-test pool item set at the same level, or a repeat of the lesson's speaking roleplay with partner lines at rate 1.0."
+    },
+    {
+      "id": "gate-fail",
+      "when": "A gate test fails (overall below overallPercent or any section below sectionMinPercent).",
+      "then": "Show the section scores. For each section below 70%, assign a review pack: its reviewLessons' quizzes (fresh draws) and one writing or speaking task for production sections. The retake unlocks when the review pack is done. Retakes draw new items from the pools."
+    },
+    {
+      "id": "gate-excellent",
+      "when": "A gate test passes with 95%+ overall and 90%+ in every section.",
+      "then": "Offer 'test out' of the next level: the learner may take the next level's gate test right away. If they pass, that level becomes testedOut with a bridge pack (as in placement)."
+    },
+    {
+      "id": "test-out-anytime",
+      "when": "The learner chooses 'Test out' on any locked level up to 2 levels ahead.",
+      "then": "Run that level's gate test. Pass → all levels up to it become testedOut with bridge packs. Fail → no penalty; the per-section results update mastery and focus skills."
+    },
+    {
+      "id": "drift-check",
+      "when": "The average of the last 3 completed lessons is below 65%.",
+      "then": "Suggest (don't force) a checkpoint: retake the previous level's gate test. If it fails, re-open that level's weak lessons as a review pack."
+    }
+  ],
+
+  "spacedRepetition": {
+    "method": "Leitner boxes",
+    "boxes": [
+      { "box": 1, "reviewAfterDays": 1 },
+      { "box": 2, "reviewAfterDays": 3 },
+      { "box": 3, "reviewAfterDays": 7 },
+      { "box": 4, "reviewAfterDays": 16 },
+      { "box": 5, "reviewAfterDays": 35 }
+    ],
+    "onCorrect": "move up one box",
+    "onWrong": "move back to box 1",
+    "dailyCap": 30,
+    "note": "This is the only time-based part of the plan. Reviews just wait in the deck; nothing is lost if the learner skips days."
+  },
+
+  "dashboard": {
+    "show": [
+      "current level and lesson",
+      "per-skill mastery bars (lire, écouter, écrire, parler)",
+      "focus skills and weak tags, in plain English (e.g. 'à / au / en with places')",
+      "rubric criteria flagged as focus",
+      "flashcards due",
+      "levels tested out, with bridge-pack progress"
+    ]
+  }
+}

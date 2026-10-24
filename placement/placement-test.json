@@ -1,0 +1,320 @@
+{
+  "schemaVersion": "1.0",
+  "id": "placement",
+  "title": "Test de classement",
+  "titleEn": "Placement test",
+  "instructions": "This test finds where you should start. It goes up one level at a time and stops once questions get too hard, so you won't see everything. Don't guess wildly: pick « Je ne sais pas » when you don't know, which tells the plan more than a lucky guess. It ends with one short writing task and one short speaking task. Expect 15 to 30 minutes.",
+  "dontKnowOption": "Je ne sais pas",
+  "priorKnowledge": {
+    "source": "Duolingo French, section 2 unit 11 (learner-reported, 2026-10-24)",
+    "notes": "About 300 words seen in Duolingo's word list: greetings, family, être/avoir/aller forms, s'appeler, venir de, j'habite, nationalities, food and café, clothes and colours, home, travel and transit, shopping and paying, frequency adverbs (souvent, parfois, toujours), parce que, vouloir, connaître, and a few passé composé forms (sommes perdus, j'ai). All standard European French. None of the Québec forms (allô as hi, bienvenue as you're welcome, fin de semaine, pas pire, chu, je reste à, dépanneur) appear.",
+    "expectedPlacement": "Reading and vocabulary at Level 2–3; listening and speaking likely lower, around Level 1–2, because Duolingo trains these less. Québec-specific forms are new at every level.",
+    "knownVocabIds": [
+      "v01-bonjour", "v01-bonsoir", "v01-au-revoir", "v01-bonne-journee", "v01-bonne-soiree", "v01-merci", "v01-de-rien", "v01-svp", "v01-excusez-moi",
+      "v01-comment-tu-tappelles", "v01-tu-viens-dou", "v01-je-viens-de", "v01-jhabite-a", "v01-maintenant", "v01-ca-va-bien", "v01-fatigue", "v01-content", "v01-francais"
+    ]
+  },
+  "placementRule": {
+    "bandPassPercent": 80,
+    "stopBelowPercent": 50,
+    "description": "Bands run in order. Passing a band (80%+) moves you to the next. The test stops at the first band below 50%, or after the last band. Your start level is the first band you did not pass. Each skill gets its own result too (see adaptive-rules.json, 'placement')."
+  },
+  "bands": [
+    {
+      "level": 1, "cefr": "A1.1", "title": "Niveau 1 : premiers contacts",
+      "activities": [
+        {
+          "id": "P1-lire", "type": "quiz", "skill": "lire", "title": "Lecture",
+          "instructions": "Read and answer.",
+          "stimulus": {
+            "kind": "dialogue", "transcript": "always",
+            "lines": [
+              { "speaker": "Luc", "fr": "Allô! Moi, c'est Luc. Pis toi?" },
+              { "speaker": "Ana", "fr": "Bonjour! Je m'appelle Ana. Je viens de Lisbonne, mais je reste à Laval." },
+              { "speaker": "Luc", "fr": "Enchanté! Ça va bien?" },
+              { "speaker": "Ana", "fr": "Pas pire, merci! Chu un peu fatiguée, par exemple." }
+            ]
+          },
+          "items": [
+            { "id": "p1r1", "kind": "multiple_choice", "prompt": "Where does Ana live?", "options": ["Laval", "Lisbon", "Montréal", "We don't know"], "answer": 0, "tags": ["qc:rester"] },
+            { "id": "p1r2", "kind": "multiple_choice", "prompt": "« Pas pire » means:", "options": ["Pretty good / not bad", "Very bad", "Not yet", "No problem"], "answer": 0, "tags": ["qc:expressions"] },
+            { "id": "p1r3", "kind": "multiple_choice", "prompt": "« Chu » is spoken for:", "options": ["je suis", "j'ai", "c'est", "tu es"], "answer": 0, "tags": ["qc:spoken"] },
+            { "id": "p1r4", "kind": "multiple_choice", "prompt": "« Pis toi? » means:", "options": ["And you?", "Then what?", "Is that you?", "Are you okay?"], "answer": 0, "tags": ["qc:spoken"] }
+          ]
+        },
+        {
+          "id": "P1-ecouter", "type": "quiz", "skill": "ecouter", "title": "Écoute",
+          "instructions": "Listen (twice at most) and answer.",
+          "stimulus": {
+            "kind": "audio", "transcript": "after-submit", "maxPlays": 2, "tts": { "lang": "fr-CA", "rate": 0.9 },
+            "lines": [
+              { "speaker": "A", "voice": "female", "fr": "Merci beaucoup!" },
+              { "speaker": "B", "voice": "male", "fr": "Bienvenue! Bonne fin de semaine!" },
+              { "speaker": "A", "voice": "female", "fr": "Toi aussi! À tantôt!" }
+            ]
+          },
+          "items": [
+            { "id": "p1e1", "kind": "multiple_choice", "prompt": "« Bienvenue » here means:", "options": ["You're welcome", "Welcome", "Goodbye", "Good luck"], "answer": 0, "tags": ["qc:expressions"] },
+            { "id": "p1e2", "kind": "multiple_choice", "prompt": "B wishes A a good…", "options": ["weekend", "evening", "trip", "day"], "answer": 0, "tags": ["qc:vocab"] },
+            { "id": "p1e3", "kind": "multiple_choice", "prompt": "« À tantôt » means:", "options": ["See you later today", "See you tomorrow", "See you next year", "Too late"], "answer": 0, "tags": ["qc:expressions"] },
+            { "id": "p1e4", "kind": "dictation", "prompt": "Type the number (digits).", "audioText": "quarante-sept", "acceptedAnswers": ["47"], "tags": ["numbers"] },
+            { "id": "p1e5", "kind": "dictation", "prompt": "Type the number (digits).", "audioText": "soixante-trois", "acceptedAnswers": ["63"], "tags": ["numbers"] }
+          ]
+        },
+        {
+          "id": "P1-ecrire", "type": "quiz", "skill": "ecrire", "title": "Grammaire",
+          "instructions": "Fill in the blank.",
+          "items": [
+            { "id": "p1g1", "kind": "fill_blank", "prompt": "Vous ___ d'où? (être)", "acceptedAnswers": [["êtes"]], "tags": ["grammar:etre"] },
+            { "id": "p1g2", "kind": "fill_blank", "prompt": "J'___ trente ans.", "acceptedAnswers": [["ai"]], "tags": ["grammar:avoir"] },
+            { "id": "p1g3", "kind": "fill_blank", "prompt": "Je reste ___ Ontario.", "acceptedAnswers": [["en"]], "tags": ["grammar:prepositions-places"] },
+            { "id": "p1g4", "kind": "fill_blank", "prompt": "Il vient de Moncton, ___ Nouveau-Brunswick.", "acceptedAnswers": [["au"]], "tags": ["grammar:prepositions-places"] },
+            { "id": "p1g5", "kind": "fill_blank", "prompt": "Elle est ___. (canadien)", "acceptedAnswers": [["canadienne"]], "tags": ["grammar:agreement"] }
+          ]
+        }
+      ]
+    },
+    {
+      "level": 2, "cefr": "A1.2", "title": "Niveau 2 : ma vie, ma famille",
+      "activities": [
+        {
+          "id": "P2-lire", "type": "quiz", "skill": "lire", "title": "Lecture",
+          "instructions": "Read and answer.",
+          "stimulus": {
+            "kind": "text", "transcript": "always",
+            "text": "Salut! Moi, c'est Kevin. Je travaille dans une banque à Longueuil. Ma blonde s'appelle Émilie, elle est professeure. On a deux enfants. Le samedi, on aime marcher au parc avec nos enfants. Le hockey? Ça me tente pas pantoute! Je préfère le soccer."
+          },
+          "items": [
+            { "id": "p2r1", "kind": "multiple_choice", "prompt": "Who is Émilie?", "options": ["Kevin's girlfriend / partner", "Kevin's sister", "Kevin's daughter", "Kevin's boss"], "answer": 0, "tags": ["qc:vocab"] },
+            { "id": "p2r2", "kind": "multiple_choice", "prompt": "What do they do on Saturdays?", "options": ["Walk in the park with their kids", "Play hockey", "Work at the bank", "Go to school"], "answer": 0, "tags": ["grammar:er-verbs"] },
+            { "id": "p2r3", "kind": "multiple_choice", "prompt": "« Ça me tente pas pantoute » means:", "options": ["I don't feel like it at all", "I really want to", "I don't know it", "It's not my turn"], "answer": 0, "tags": ["qc:expressions"] },
+            { "id": "p2r4", "kind": "true_false", "prompt": "Kevin prefers soccer to hockey.", "answer": true, "tags": ["reading:detail"] }
+          ]
+        },
+        {
+          "id": "P2-ecouter", "type": "quiz", "skill": "ecouter", "title": "Écoute",
+          "instructions": "Listen (twice at most) and answer.",
+          "stimulus": {
+            "kind": "audio", "transcript": "after-submit", "maxPlays": 2, "tts": { "lang": "fr-CA", "rate": 0.95 },
+            "lines": [
+              { "speaker": "A", "voice": "male", "fr": "Pis, ton chum, y travaille où?" },
+              { "speaker": "B", "voice": "female", "fr": "Y travaille pas. Y étudie à l'université. Mais le vendredi, y travaille dans un café." },
+              { "speaker": "A", "voice": "male", "fr": "Ah, cool. Pis toi, t'aimes ta job?" },
+              { "speaker": "B", "voice": "female", "fr": "Ouin, j'aime ça!" }
+            ]
+          },
+          "items": [
+            { "id": "p2e1", "kind": "multiple_choice", "prompt": "What does B's boyfriend do?", "options": ["He studies, and works in a café on Fridays", "He works at a bank", "He doesn't study", "He's a teacher"], "answer": 0, "tags": ["listening:detail"] },
+            { "id": "p2e2", "kind": "multiple_choice", "prompt": "In « Y travaille pas », « y » stands for:", "options": ["il", "elle", "il y a", "lui"], "answer": 0, "tags": ["qc:spoken"] },
+            { "id": "p2e3", "kind": "true_false", "prompt": "B likes her job.", "answer": true, "tags": ["listening:detail"] }
+          ]
+        },
+        {
+          "id": "P2-ecrire", "type": "quiz", "skill": "ecrire", "title": "Grammaire",
+          "instructions": "Fill in the blank.",
+          "items": [
+            { "id": "p2g1", "kind": "fill_blank", "prompt": "Nous ___ le français. (parler)", "acceptedAnswers": [["parlons"]], "tags": ["grammar:er-verbs"] },
+            { "id": "p2g2", "kind": "fill_blank", "prompt": "Ils ___ à Québec. (travailler)", "acceptedAnswers": [["travaillent"]], "tags": ["grammar:er-verbs"] },
+            { "id": "p2g3", "kind": "short_answer", "prompt": "Make it negative (standard written French): « Je mange de la viande. »", "acceptedAnswers": ["je ne mange pas de viande"], "tags": ["grammar:negation"] },
+            { "id": "p2g4", "kind": "fill_blank", "prompt": "C'est ___ sœur. (my)", "acceptedAnswers": [["ma"]], "tags": ["grammar:possessives"] },
+            { "id": "p2g5", "kind": "fill_blank", "prompt": "Ce sont ___ parents. (our)", "acceptedAnswers": [["nos"]], "tags": ["grammar:possessives"] }
+          ]
+        }
+      ]
+    },
+    {
+      "level": 3, "cefr": "A1.3", "title": "Niveau 3 : en ville",
+      "activities": [
+        {
+          "id": "P3-lire", "type": "quiz", "skill": "lire", "title": "Lecture",
+          "instructions": "Read and answer.",
+          "stimulus": {
+            "kind": "dialogue", "transcript": "always",
+            "lines": [
+              { "speaker": "Client", "fr": "Bonjour! Y'a-tu du lait?" },
+              { "speaker": "Commis", "fr": "Oui, dans le frigo au fond, à gauche." },
+              { "speaker": "Client", "fr": "Merci. Pis je voudrais aussi un billet de loto. C'est combien en tout?" },
+              { "speaker": "Commis", "fr": "Ça fait 8,50 $. Vous voulez un sac?" },
+              { "speaker": "Client", "fr": "Non, c'est correct, merci." }
+            ]
+          },
+          "items": [
+            { "id": "p3r1", "kind": "multiple_choice", "prompt": "Where is this conversation probably happening?", "options": ["At a dépanneur (corner store)", "At a bank", "At a restaurant", "At the airport"], "answer": 0, "tags": ["qc:vocab"] },
+            { "id": "p3r2", "kind": "multiple_choice", "prompt": "« Y'a-tu du lait? » means:", "options": ["Is there any milk?", "Do you want milk?", "Where's the milk?", "You have milk?"], "answer": 0, "tags": ["qc:tu-question"] },
+            { "id": "p3r3", "kind": "multiple_choice", "prompt": "Where is the milk?", "options": ["In the fridge at the back, on the left", "Near the door, on the right", "There isn't any", "Behind the counter"], "answer": 0, "tags": ["vocab:directions"] },
+            { "id": "p3r4", "kind": "multiple_choice", "prompt": "« Non, c'est correct » means:", "options": ["No, that's fine", "No, that's correct", "No, that's wrong", "No, it's closed"], "answer": 0, "tags": ["qc:expressions"] }
+          ]
+        },
+        {
+          "id": "P3-ecouter", "type": "quiz", "skill": "ecouter", "title": "Écoute",
+          "instructions": "Listen (twice at most) and answer.",
+          "stimulus": {
+            "kind": "audio", "transcript": "after-submit", "maxPlays": 2, "tts": { "lang": "fr-CA", "rate": 1.0 },
+            "lines": [
+              { "speaker": "A", "voice": "female", "fr": "Excusez-moi, la station de métro Berri-UQAM, c'est loin?" },
+              { "speaker": "B", "voice": "male", "fr": "Non, non! Vous allez tout droit sur la rue Sainte-Catherine, pis vous tournez à droite sur Saint-Denis. C'est à cinq minutes à pied." }
+            ]
+          },
+          "items": [
+            { "id": "p3e1", "kind": "multiple_choice", "prompt": "What is A looking for?", "options": ["A metro station", "A bus stop", "A store", "A street"], "answer": 0, "tags": ["listening:detail"] },
+            { "id": "p3e2", "kind": "multiple_choice", "prompt": "What should A do on Saint-Denis?", "options": ["Turn right", "Turn left", "Go straight", "Stop"], "answer": 0, "tags": ["vocab:directions"] },
+            { "id": "p3e3", "kind": "multiple_choice", "prompt": "How far is it?", "options": ["Five minutes on foot", "Fifteen minutes by bus", "Very far", "Five kilometres"], "answer": 0, "tags": ["listening:detail"] }
+          ]
+        },
+        {
+          "id": "P3-ecrire", "type": "quiz", "skill": "ecrire", "title": "Grammaire",
+          "instructions": "Fill in the blank.",
+          "items": [
+            { "id": "p3g1", "kind": "fill_blank", "prompt": "Je ___ au dépanneur. (aller)", "acceptedAnswers": [["vais"]], "tags": ["grammar:aller"] },
+            { "id": "p3g2", "kind": "fill_blank", "prompt": "Nous ___ au parc. (aller)", "acceptedAnswers": [["allons"]], "tags": ["grammar:aller"] },
+            { "id": "p3g3", "kind": "fill_blank", "prompt": "Est-ce que tu ___ un café? (vouloir)", "acceptedAnswers": [["veux"]], "tags": ["grammar:vouloir-pouvoir"] },
+            { "id": "p3g4", "kind": "fill_blank", "prompt": "Vous ___ payer par carte. (pouvoir)", "acceptedAnswers": [["pouvez"]], "tags": ["grammar:vouloir-pouvoir"] },
+            { "id": "p3g5", "kind": "short_answer", "prompt": "Write 85 in words.", "acceptedAnswers": ["quatre-vingt-cinq", "quatre vingt cinq"], "tags": ["numbers"] }
+          ]
+        }
+      ]
+    },
+    {
+      "level": 4, "cefr": "A2.1", "title": "Niveau 4 : au quotidien",
+      "activities": [
+        {
+          "id": "P4-lire", "type": "quiz", "skill": "lire", "title": "Lecture",
+          "instructions": "Read and answer.",
+          "stimulus": {
+            "kind": "text", "transcript": "always",
+            "text": "Texto de Marc : « Salut! Il fait ben frette à matin, pis il va neiger cet après-midi. Je pense que je vais rester chez nous. Demain, on va-tu au cinéma? Je me lève tard, fait que pas avant midi! »"
+          },
+          "items": [
+            { "id": "p4r1", "kind": "multiple_choice", "prompt": "What's the weather like this morning?", "options": ["Very cold", "Hot", "Rainy", "Windy"], "answer": 0, "tags": ["qc:vocab"] },
+            { "id": "p4r2", "kind": "multiple_choice", "prompt": "What will Marc probably do today?", "options": ["Stay home", "Go to the movies", "Go skiing", "Go to work"], "answer": 0, "tags": ["grammar:futur-proche"] },
+            { "id": "p4r3", "kind": "multiple_choice", "prompt": "« On va-tu au cinéma? » means:", "options": ["Are we going to the movies?", "You're going to the movies.", "Go to the movies!", "Did we go to the movies?"], "answer": 0, "tags": ["qc:tu-question"] },
+            { "id": "p4r4", "kind": "multiple_choice", "prompt": "« fait que » (often pronounced « faque ») means:", "options": ["so", "because", "but", "if"], "answer": 0, "tags": ["qc:spoken"] }
+          ]
+        },
+        {
+          "id": "P4-ecouter", "type": "quiz", "skill": "ecouter", "title": "Écoute",
+          "instructions": "Listen (twice at most) and answer.",
+          "stimulus": {
+            "kind": "audio", "transcript": "after-submit", "maxPlays": 2, "tts": { "lang": "fr-CA", "rate": 1.0 },
+            "lines": [
+              { "speaker": "A", "voice": "female", "fr": "Qu'est-ce que tu fais en fin de semaine?" },
+              { "speaker": "B", "voice": "male", "fr": "Samedi, je vais jouer au hockey avec mes chums. Dimanche, il mouille, fait que je vais me reposer." }
+            ]
+          },
+          "items": [
+            { "id": "p4e1", "kind": "multiple_choice", "prompt": "What is B doing on Saturday?", "options": ["Playing hockey with friends", "Resting", "Working", "Going to the movies"], "answer": 0, "tags": ["grammar:futur-proche"] },
+            { "id": "p4e2", "kind": "multiple_choice", "prompt": "What will the weather be on Sunday?", "options": ["Rain", "Snow", "Sun", "Cold"], "answer": 0, "tags": ["qc:vocab"] },
+            { "id": "p4e3", "kind": "multiple_choice", "prompt": "Here « mes chums » means:", "options": ["my friends (guys)", "my boyfriends", "my brothers", "my coworkers"], "answer": 0, "tags": ["qc:vocab"] }
+          ]
+        },
+        {
+          "id": "P4-ecrire", "type": "quiz", "skill": "ecrire", "title": "Grammaire",
+          "instructions": "Fill in the blank.",
+          "items": [
+            { "id": "p4g1", "kind": "fill_blank", "prompt": "Je ___ lève à sept heures.", "acceptedAnswers": [["me"]], "tags": ["grammar:reflexive"] },
+            { "id": "p4g2", "kind": "fill_blank", "prompt": "Elle ___ couche tard.", "acceptedAnswers": [["se"]], "tags": ["grammar:reflexive"] },
+            { "id": "p4g3", "kind": "short_answer", "prompt": "Rewrite in the near future (futur proche): « Nous mangeons au restaurant. »", "acceptedAnswers": ["nous allons manger au restaurant", "on va manger au restaurant"], "tags": ["grammar:futur-proche"] },
+            { "id": "p4g4", "kind": "multiple_choice", "prompt": "Which is a correct question?", "options": ["Est-ce que tu viens ce soir?", "Est-ce tu viens ce soir?", "Est-ce que viens-tu ce soir?", "Que est-ce tu viens ce soir?"], "answer": 0, "tags": ["grammar:questions"] }
+          ]
+        }
+      ]
+    },
+    {
+      "level": 5, "cefr": "A2.2", "title": "Niveau 5 : ce qui s'est passé",
+      "activities": [
+        {
+          "id": "P5-lire", "type": "quiz", "skill": "lire", "title": "Lecture",
+          "instructions": "Read and answer.",
+          "stimulus": {
+            "kind": "text", "transcript": "always",
+            "text": "Samedi passé, je suis allée à la cabane à sucre avec ma famille. On a mangé des crêpes avec du sirop d'érable, pis on a fait de la tire sur la neige. Mon neveu a trop mangé, pis y'a été malade dans le char en revenant! Mais on a eu ben du fun."
+          },
+          "items": [
+            { "id": "p5r1", "kind": "multiple_choice", "prompt": "When did this happen?", "options": ["Last Saturday", "Next Saturday", "Every Saturday", "Yesterday"], "answer": 0, "tags": ["grammar:passe-compose"] },
+            { "id": "p5r2", "kind": "multiple_choice", "prompt": "What happened to the nephew?", "options": ["He ate too much and was sick in the car", "He got lost", "He fell in the snow", "He didn't eat"], "answer": 0, "tags": ["reading:detail"] },
+            { "id": "p5r3", "kind": "multiple_choice", "prompt": "« le char » means:", "options": ["the car", "the cart", "the chair", "the cabin"], "answer": 0, "tags": ["qc:vocab"] },
+            { "id": "p5r4", "kind": "multiple_choice", "prompt": "Why is it « je suis allée » with -e?", "options": ["The writer is a woman and aller takes être", "Because of la cabane", "It's a typo", "Because it's plural"], "answer": 0, "tags": ["grammar:passe-compose"] }
+          ]
+        },
+        {
+          "id": "P5-ecrire", "type": "quiz", "skill": "ecrire", "title": "Grammaire",
+          "instructions": "Put the verb in the passé composé.",
+          "items": [
+            { "id": "p5g1", "kind": "fill_blank", "prompt": "Hier, j'___ ___ un film. (regarder)", "acceptedAnswers": [["ai"], ["regardé"]], "tags": ["grammar:passe-compose"] },
+            { "id": "p5g2", "kind": "fill_blank", "prompt": "Nous ___ ___ à Québec. (aller)", "acceptedAnswers": [["sommes"], ["allés", "allées"]], "tags": ["grammar:passe-compose"] },
+            { "id": "p5g3", "kind": "fill_blank", "prompt": "Elle ___ ___ un gâteau. (faire)", "acceptedAnswers": [["a"], ["fait"]], "tags": ["grammar:passe-compose"] },
+            { "id": "p5g4", "kind": "fill_blank", "prompt": "Ils ___ ___ tard. (arriver)", "acceptedAnswers": [["sont"], ["arrivés"]], "tags": ["grammar:passe-compose"] }
+          ]
+        }
+      ]
+    },
+    {
+      "level": 0, "cefr": "A1.1", "title": "Production : écrire et parler",
+      "alwaysRun": true,
+      "activities": [
+        {
+          "id": "P-ecrire-libre", "type": "writing", "skill": "ecrire", "title": "Écriture libre",
+          "instructions": "Write as much as you comfortably can. Don't look anything up. This sets your writing level.",
+          "prompt": "Présente-toi : ton nom, d'où tu viens, où tu restes, ton travail, ta famille, ce que tu aimes faire, et ce que tu as fait la fin de semaine passée.",
+          "promptEn": "Introduce yourself: name, where you're from, where you live, your work, your family, what you like doing, and what you did last weekend.",
+          "minWords": 20, "maxWords": 150,
+          "targetStructures": ["L1: être/avoir/s'appeler, places", "L2: -er verbs, negation, possessives, aimer", "L3: aller, vouloir/pouvoir", "L4: reflexives, futur proche", "L5: passé composé"],
+          "rubricRef": "placement-writing"
+        },
+        {
+          "id": "P-parler-libre", "type": "speaking", "skill": "parler", "title": "Expression orale",
+          "instructions": "Answer each question out loud. Say as much as you can; short is fine.",
+          "mode": "roleplay", "maxSeconds": 30,
+          "turns": [
+            { "speaker": "partner", "fr": "Allô! C'est quoi ton nom, pis t'es d'où?" },
+            { "speaker": "learner", "task": "Name and where you're from.", "expectedPhrases": ["je m'appelle | moi, c'est", "je viens de | je suis de"] },
+            { "speaker": "partner", "fr": "Qu'est-ce que tu fais dans la vie?" },
+            { "speaker": "learner", "task": "Say what you do (work or study).", "expectedPhrases": ["je travaille | je suis | j'étudie"] },
+            { "speaker": "partner", "fr": "Qu'est-ce que t'aimes faire la fin de semaine?" },
+            { "speaker": "learner", "task": "Say what you like doing on weekends.", "expectedPhrases": ["j'aime | j'adore"] },
+            { "speaker": "partner", "fr": "Pis, qu'est-ce que t'as fait hier?" },
+            { "speaker": "learner", "task": "Say something you did yesterday.", "expectedPhrases": ["j'ai | je suis allé"] }
+          ],
+          "selfCheck": ["I answered all four questions in French", "I understood the questions the first time", "I used at least one full sentence per answer", "I said something in the past (j'ai…, je suis allé…)"],
+          "rubricRef": "placement-speaking"
+        }
+      ]
+    }
+  ],
+  "rubrics": {
+    "placement-writing": {
+      "passPercent": 0,
+      "criteria": [
+        {
+          "id": "level", "name": "Highest level used correctly", "maxPoints": 5,
+          "description": "The highest band whose target structures appear and are mostly correct. The grader returns the band number as the score.",
+          "bands": [
+            { "points": 5, "descriptor": "Passé composé used correctly (Level 5+)" },
+            { "points": 4, "descriptor": "Reflexives or futur proche used correctly (Level 4)" },
+            { "points": 3, "descriptor": "aller / vouloir / pouvoir used correctly (Level 3)" },
+            { "points": 2, "descriptor": "-er verbs, negation, possessives, aimer used correctly (Level 2)" },
+            { "points": 1, "descriptor": "être / avoir / s'appeler and places only (Level 1)" },
+            { "points": 0, "descriptor": "Little or no usable French" }
+          ]
+        }
+      ]
+    },
+    "placement-speaking": {
+      "passPercent": 0,
+      "criteria": [
+        {
+          "id": "level", "name": "Highest level used correctly", "maxPoints": 5,
+          "description": "Same scale as the writing placement, judged from the transcript.",
+          "bands": [
+            { "points": 5, "descriptor": "Talks about yesterday with a correct passé composé" },
+            { "points": 4, "descriptor": "Full sentences on all questions, some futur proche or reflexives" },
+            { "points": 3, "descriptor": "Full sentences for most questions, present tense" },
+            { "points": 2, "descriptor": "Short sentences or phrases; answers 2–3 questions" },
+            { "points": 1, "descriptor": "Single words or memorised phrases only" },
+            { "points": 0, "descriptor": "Can't answer in French" }
+          ]
+        }
+      ]
+    }
+  }
+}

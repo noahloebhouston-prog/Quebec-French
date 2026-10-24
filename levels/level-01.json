@@ -1,0 +1,1098 @@
+{
+  "schemaVersion": "1.0",
+  "id": "L01",
+  "number": 1,
+  "title": "Allô! Premiers contacts",
+  "titleEn": "Hello! First contacts",
+  "cefr": "A1.1",
+  "description": "Your first conversations in Québec French: greeting people, introducing yourself, saying where you're from, numbers and ages, and asking how someone is doing. You'll learn the forms you actually hear in Québec (chu, t'es, pas pire, bienvenue, à tantôt) alongside standard French.",
+  "objectives": [
+    "Greet people and say goodbye, choosing tu or vous appropriately",
+    "Give and ask for a name, and spell names with the French alphabet",
+    "Say where you are from and where you live, using à / au / en correctly with Canadian cities and provinces",
+    "Count from 0 to 69, give your age and a phone number",
+    "Ask and answer how someone is doing, and recognise common Québec spoken contractions",
+    "Hold a short first-meeting conversation and ask someone to repeat or slow down"
+  ],
+
+  "rubrics": {
+    "writing-a1": {
+      "passPercent": 70,
+      "criteria": [
+        {
+          "id": "task", "name": "Task completion", "maxPoints": 4,
+          "description": "Does the text do everything the prompt asks, within the word range?",
+          "bands": [
+            { "points": 4, "descriptor": "Every required element is present and clear; length is within range." },
+            { "points": 3, "descriptor": "All but one element present, or slightly outside the length range." },
+            { "points": 2, "descriptor": "About half the required elements are present." },
+            { "points": 1, "descriptor": "Only one element addressed, or mostly off-task." },
+            { "points": 0, "descriptor": "No relevant French text." }
+          ]
+        },
+        {
+          "id": "vocab", "name": "Vocabulary and register", "maxPoints": 3,
+          "description": "Uses vocabulary from the lesson; tone fits the situation (tu/vous, informal/formal). Québec and standard forms are both correct.",
+          "bands": [
+            { "points": 3, "descriptor": "Lesson vocabulary used accurately; register fits the reader." },
+            { "points": 2, "descriptor": "Mostly appropriate; one wrong word choice or register slip (e.g. vous to a close friend)." },
+            { "points": 1, "descriptor": "Limited vocabulary, several wrong words or English words." },
+            { "points": 0, "descriptor": "Vocabulary prevents understanding." }
+          ]
+        },
+        {
+          "id": "grammar", "name": "Grammar", "maxPoints": 3,
+          "description": "Correct verb forms for the structures taught so far (être, avoir, s'appeler, venir de, rester/habiter), agreement, prepositions with places.",
+          "bands": [
+            { "points": 3, "descriptor": "No errors in the target structures, at most one minor slip elsewhere." },
+            { "points": 2, "descriptor": "One or two errors in target structures; meaning stays clear." },
+            { "points": 1, "descriptor": "Frequent errors; meaning sometimes unclear." },
+            { "points": 0, "descriptor": "Errors make the text hard to understand." }
+          ]
+        },
+        {
+          "id": "spelling", "name": "Spelling and accents", "maxPoints": 2,
+          "description": "Words spelled correctly, accents present (é, è, ç…). Informal Québec spellings such as chu, t'es, pis are accepted in informal tasks.",
+          "bands": [
+            { "points": 2, "descriptor": "At most one spelling or accent error." },
+            { "points": 1, "descriptor": "Two to four errors." },
+            { "points": 0, "descriptor": "Five or more errors." }
+          ]
+        }
+      ]
+    },
+    "speaking-a1": {
+      "passPercent": 70,
+      "criteria": [
+        {
+          "id": "task", "name": "Task completion", "maxPoints": 4,
+          "description": "Says everything the task asks for.",
+          "bands": [
+            { "points": 4, "descriptor": "Every part of the task done." },
+            { "points": 3, "descriptor": "One part missing or unclear." },
+            { "points": 2, "descriptor": "About half done." },
+            { "points": 1, "descriptor": "Only one part done." },
+            { "points": 0, "descriptor": "Nothing relevant said in French." }
+          ]
+        },
+        {
+          "id": "accuracy", "name": "Accuracy", "maxPoints": 3,
+          "description": "Correct words and verb forms for this level.",
+          "bands": [
+            { "points": 3, "descriptor": "Accurate, at most one slip." },
+            { "points": 2, "descriptor": "A few errors; meaning clear." },
+            { "points": 1, "descriptor": "Many errors; listener has to guess." },
+            { "points": 0, "descriptor": "Not understandable." }
+          ]
+        },
+        {
+          "id": "pron", "name": "Pronunciation", "maxPoints": 3,
+          "description": "A French listener would understand without effort. Judge from the transcript: if speech recognition got the words right, pronunciation is intelligible.",
+          "bands": [
+            { "points": 3, "descriptor": "Transcript matches what was intended almost entirely." },
+            { "points": 2, "descriptor": "A few words misrecognised." },
+            { "points": 1, "descriptor": "Many words misrecognised." },
+            { "points": 0, "descriptor": "Mostly unrecognisable." }
+          ]
+        },
+        {
+          "id": "fluency", "name": "Fluency", "maxPoints": 2,
+          "description": "Speaks in phrases rather than word by word; long pauses are OK at A1.",
+          "bands": [
+            { "points": 2, "descriptor": "Phrases flow; few restarts." },
+            { "points": 1, "descriptor": "Word by word with long pauses, but finishes." },
+            { "points": 0, "descriptor": "Cannot finish the task." }
+          ]
+        }
+      ]
+    },
+    "speaking-repeat": {
+      "passPercent": 70,
+      "criteria": [
+        {
+          "id": "complete", "name": "Completeness", "maxPoints": 3,
+          "description": "Repeats every line.",
+          "bands": [
+            { "points": 3, "descriptor": "Every line repeated in full." },
+            { "points": 2, "descriptor": "Most lines repeated." },
+            { "points": 1, "descriptor": "About half." },
+            { "points": 0, "descriptor": "Little or nothing." }
+          ]
+        },
+        {
+          "id": "pron", "name": "Pronunciation", "maxPoints": 3,
+          "description": "Transcript matches the model lines.",
+          "bands": [
+            { "points": 3, "descriptor": "Almost every word recognised." },
+            { "points": 2, "descriptor": "Most words recognised." },
+            { "points": 1, "descriptor": "About half recognised." },
+            { "points": 0, "descriptor": "Little recognised." }
+          ]
+        }
+      ]
+    }
+  },
+
+  "vocabulary": [
+    { "id": "v01-bonjour", "fr": "Bonjour", "en": "Hello / Good morning / Good day", "register": "both", "pos": "phrase", "lesson": "1.1", "notes": "Safe in every situation, all day until evening." },
+    { "id": "v01-allo", "fr": "Allô", "en": "Hi", "register": "quebecois", "standardEquivalent": "Salut / Bonjour", "pos": "phrase", "lesson": "1.1", "notes": "In France allô is only for answering the phone. In Québec it is an everyday friendly greeting in person too." },
+    { "id": "v01-salut", "fr": "Salut", "en": "Hi / Bye (informal)", "register": "both", "pos": "phrase", "lesson": "1.1" },
+    { "id": "v01-bonsoir", "fr": "Bonsoir", "en": "Good evening", "register": "both", "pos": "phrase", "lesson": "1.1" },
+    { "id": "v01-bye", "fr": "Bye! / Bye-bye!", "en": "Bye!", "register": "quebecois", "standardEquivalent": "Au revoir / Salut", "pos": "phrase", "lesson": "1.1", "notes": "Very common in everyday Québec speech." },
+    { "id": "v01-au-revoir", "fr": "Au revoir", "en": "Goodbye", "register": "both", "pos": "phrase", "lesson": "1.1" },
+    { "id": "v01-a-tantot", "fr": "À tantôt!", "en": "See you later (today)!", "register": "quebecois", "standardEquivalent": "À tout à l'heure!", "pos": "phrase", "lesson": "1.1" },
+    { "id": "v01-a-la-prochaine", "fr": "À la prochaine!", "en": "Until next time!", "register": "both", "pos": "phrase", "lesson": "1.1" },
+    { "id": "v01-bonne-journee", "fr": "Bonne journée!", "en": "Have a good day!", "register": "both", "pos": "phrase", "lesson": "1.1" },
+    { "id": "v01-bonne-soiree", "fr": "Bonne soirée!", "en": "Have a good evening!", "register": "both", "pos": "phrase", "lesson": "1.1" },
+    { "id": "v01-bonne-fin-de-semaine", "fr": "Bonne fin de semaine!", "en": "Have a good weekend!", "register": "quebecois", "standardEquivalent": "Bon week-end!", "pos": "phrase", "lesson": "1.1" },
+    { "id": "v01-merci", "fr": "Merci (beaucoup)", "en": "Thank you (very much)", "register": "both", "pos": "phrase", "lesson": "1.1" },
+    { "id": "v01-bienvenue", "fr": "Bienvenue!", "en": "You're welcome! (reply to merci) / Welcome!", "register": "quebecois", "standardEquivalent": "De rien / Je vous en prie", "pos": "phrase", "lesson": "1.1", "notes": "As a reply to merci this is a Québec usage. De rien is understood everywhere." },
+    { "id": "v01-de-rien", "fr": "De rien", "en": "You're welcome / No problem", "register": "both", "pos": "phrase", "lesson": "1.1" },
+    { "id": "v01-svp", "fr": "S'il vous plaît / S'il te plaît", "en": "Please (vous / tu form)", "register": "both", "pos": "phrase", "lesson": "1.1" },
+    { "id": "v01-excusez-moi", "fr": "Excusez-moi / Excuse-moi", "en": "Excuse me (vous / tu form)", "register": "both", "pos": "phrase", "lesson": "1.1" },
+    { "id": "v01-ca-va-etre-tout", "fr": "Ça va être tout?", "en": "Will that be all?", "register": "quebecois", "standardEquivalent": "Ce sera tout?", "pos": "phrase", "lesson": "1.1", "notes": "What a cashier asks in Québec." },
+    { "id": "v01-vous-aussi", "fr": "Vous aussi / Toi aussi", "en": "You too", "register": "both", "pos": "phrase", "lesson": "1.1" },
+
+    { "id": "v01-je-mappelle", "fr": "Je m'appelle…", "en": "My name is…", "register": "both", "pos": "phrase", "lesson": "1.2" },
+    { "id": "v01-moi-cest", "fr": "Moi, c'est…", "en": "I'm… (casual)", "register": "both", "pos": "phrase", "lesson": "1.2" },
+    { "id": "v01-cest-quoi-ton-nom", "fr": "C'est quoi ton nom?", "en": "What's your name?", "register": "quebecois", "standardEquivalent": "Comment tu t'appelles? / Comment vous appelez-vous?", "pos": "phrase", "lesson": "1.2", "notes": "Extremely common in Québec conversation." },
+    { "id": "v01-comment-tu-tappelles", "fr": "Comment tu t'appelles?", "en": "What's your name? (tu)", "register": "both", "pos": "phrase", "lesson": "1.2" },
+    { "id": "v01-comment-vous-appelez-vous", "fr": "Comment vous appelez-vous?", "en": "What's your name? (vous, formal)", "register": "standard", "pos": "phrase", "lesson": "1.2" },
+    { "id": "v01-enchante", "fr": "Enchanté / Enchantée", "en": "Nice to meet you", "register": "both", "pos": "phrase", "lesson": "1.2", "notes": "Add -e in writing if you are a woman; it sounds the same." },
+    { "id": "v01-nom-de-famille", "fr": "le nom de famille", "en": "family name, surname", "register": "both", "pos": "noun", "gender": "m", "lesson": "1.2" },
+    { "id": "v01-prenom", "fr": "le prénom", "en": "first name", "register": "both", "pos": "noun", "gender": "m", "lesson": "1.2" },
+    { "id": "v01-ca-secrit-comment", "fr": "Ça s'écrit comment?", "en": "How is that spelled?", "register": "both", "pos": "phrase", "lesson": "1.2" },
+    { "id": "v01-pis-toi", "fr": "Pis toi?", "en": "And you?", "register": "quebecois", "standardEquivalent": "Et toi?", "pos": "phrase", "lesson": "1.2", "notes": "Pis (from puis) is the everyday Québec word for 'and' / 'and then'." },
+
+    { "id": "v01-tes-dou", "fr": "T'es d'où?", "en": "Where are you from? (casual)", "register": "quebecois", "standardEquivalent": "Tu es d'où? / D'où viens-tu?", "pos": "phrase", "lesson": "1.3" },
+    { "id": "v01-tu-viens-dou", "fr": "Tu viens d'où? / Vous venez d'où?", "en": "Where do you come from?", "register": "both", "pos": "phrase", "lesson": "1.3" },
+    { "id": "v01-je-viens-de", "fr": "Je viens de…", "en": "I come from…", "register": "both", "pos": "phrase", "lesson": "1.3" },
+    { "id": "v01-je-suis-de", "fr": "Je suis de…", "en": "I'm from…", "register": "both", "pos": "phrase", "lesson": "1.3" },
+    { "id": "v01-je-reste-a", "fr": "Je reste à…", "en": "I live in…", "register": "quebecois", "standardEquivalent": "J'habite à…", "pos": "phrase", "lesson": "1.3", "notes": "In France rester means 'to stay'. In Québec it is the normal way to say where you live." },
+    { "id": "v01-jhabite-a", "fr": "J'habite à…", "en": "I live in…", "register": "both", "pos": "phrase", "lesson": "1.3" },
+    { "id": "v01-maintenant", "fr": "maintenant", "en": "now", "register": "both", "pos": "adverb", "lesson": "1.3" },
+    { "id": "v01-canadien", "fr": "canadien / canadienne", "en": "Canadian", "register": "both", "pos": "adj", "lesson": "1.3" },
+    { "id": "v01-quebecois", "fr": "québécois / québécoise", "en": "Quebecer, from Québec", "register": "both", "pos": "adj", "lesson": "1.3" },
+    { "id": "v01-acadien", "fr": "acadien / acadienne", "en": "Acadian", "register": "both", "pos": "adj", "lesson": "1.3" },
+    { "id": "v01-americain", "fr": "américain / américaine", "en": "American", "register": "both", "pos": "adj", "lesson": "1.3" },
+    { "id": "v01-francais", "fr": "français / française", "en": "French", "register": "both", "pos": "adj", "lesson": "1.3" },
+    { "id": "v01-au-quebec", "fr": "au Québec / à Québec", "en": "in the province of Québec / in Québec City", "register": "both", "pos": "phrase", "lesson": "1.3" },
+    { "id": "v01-en-ontario", "fr": "en Ontario, en Alberta, en Colombie-Britannique", "en": "in Ontario, in Alberta, in British Columbia", "register": "both", "pos": "phrase", "lesson": "1.3" },
+    { "id": "v01-au-manitoba", "fr": "au Manitoba, au Nouveau-Brunswick", "en": "in Manitoba, in New Brunswick", "register": "both", "pos": "phrase", "lesson": "1.3" },
+
+    { "id": "v01-avoir-ans", "fr": "J'ai … ans", "en": "I'm … years old", "register": "both", "pos": "phrase", "lesson": "1.4", "notes": "French uses avoir (to have) for age, never être." },
+    { "id": "v01-tas-quel-age", "fr": "T'as quel âge?", "en": "How old are you? (casual)", "register": "quebecois", "standardEquivalent": "Quel âge as-tu?", "pos": "phrase", "lesson": "1.4" },
+    { "id": "v01-quel-age-avez-vous", "fr": "Quel âge avez-vous?", "en": "How old are you? (formal)", "register": "standard", "pos": "phrase", "lesson": "1.4" },
+    { "id": "v01-numero", "fr": "C'est quoi ton numéro (de téléphone)?", "en": "What's your (phone) number?", "register": "both", "pos": "phrase", "lesson": "1.4" },
+    { "id": "v01-cest-le", "fr": "C'est le 514…", "en": "It's 514…", "register": "both", "pos": "phrase", "lesson": "1.4", "notes": "Phone numbers are introduced with le." },
+    { "id": "v01-nombres-0-10", "fr": "zéro, un, deux, trois, quatre, cinq, six, sept, huit, neuf, dix", "en": "0–10", "register": "both", "pos": "number", "lesson": "1.4" },
+    { "id": "v01-nombres-11-16", "fr": "onze, douze, treize, quatorze, quinze, seize", "en": "11–16", "register": "both", "pos": "number", "lesson": "1.4" },
+    { "id": "v01-nombres-17-19", "fr": "dix-sept, dix-huit, dix-neuf", "en": "17–19", "register": "both", "pos": "number", "lesson": "1.4" },
+    { "id": "v01-dizaines", "fr": "vingt, trente, quarante, cinquante, soixante", "en": "20, 30, 40, 50, 60", "register": "both", "pos": "number", "lesson": "1.4" },
+    { "id": "v01-et-un", "fr": "vingt et un, trente et un … soixante et un", "en": "21, 31 … 61", "register": "both", "pos": "number", "lesson": "1.4", "notes": "Since the 1990 spelling reform vingt-et-un (with hyphens) is also correct." },
+    { "id": "v01-dollars", "fr": "45 $ (quarante-cinq dollars)", "en": "$45", "register": "both", "pos": "phrase", "lesson": "1.4", "notes": "In Québec the $ sign goes after the number, with a space." },
+
+    { "id": "v01-comment-ca-va", "fr": "Comment ça va? / Ça va?", "en": "How's it going?", "register": "both", "pos": "phrase", "lesson": "1.5" },
+    { "id": "v01-comment-allez-vous", "fr": "Comment allez-vous?", "en": "How are you? (formal)", "register": "standard", "pos": "phrase", "lesson": "1.5" },
+    { "id": "v01-ca-roule", "fr": "Ça roule?", "en": "How's it going? / Things good?", "register": "quebecois", "standardEquivalent": "Ça va?", "pos": "phrase", "lesson": "1.5", "notes": "Answer: Ça roule! (Things are good!)" },
+    { "id": "v01-ca-va-bien", "fr": "Ça va bien / Je vais bien", "en": "I'm doing well", "register": "both", "pos": "phrase", "lesson": "1.5" },
+    { "id": "v01-pas-pire", "fr": "Pas pire", "en": "Not bad (actually: pretty good)", "register": "quebecois", "standardEquivalent": "Pas mal", "pos": "phrase", "lesson": "1.5" },
+    { "id": "v01-correct", "fr": "Correct / Chu correct(e)", "en": "Okay / I'm okay", "register": "quebecois", "standardEquivalent": "Ça va / Je vais bien", "pos": "adj", "lesson": "1.5" },
+    { "id": "v01-pas-fort", "fr": "Pas fort", "en": "Not great", "register": "quebecois", "standardEquivalent": "Pas très bien", "pos": "phrase", "lesson": "1.5" },
+    { "id": "v01-bof", "fr": "Bof / Comme ci, comme ça", "en": "Meh / So-so", "register": "both", "pos": "phrase", "lesson": "1.5" },
+    { "id": "v01-chu", "fr": "chu", "en": "I am (spoken)", "register": "quebecois", "standardEquivalent": "je suis", "pos": "verb", "lesson": "1.5", "notes": "How je suis is usually pronounced in casual Québec speech. Fine in texts to friends; write je suis in anything formal." },
+    { "id": "v01-tes", "fr": "t'es", "en": "you are (spoken)", "register": "both", "standardEquivalent": "tu es", "pos": "verb", "lesson": "1.5" },
+    { "id": "v01-tas", "fr": "t'as", "en": "you have (spoken)", "register": "both", "standardEquivalent": "tu as", "pos": "verb", "lesson": "1.5" },
+    { "id": "v01-ouin", "fr": "ouin", "en": "yeah", "register": "quebecois", "standardEquivalent": "oui / ouais", "pos": "phrase", "lesson": "1.5" },
+    { "id": "v01-par-exemple", "fr": "…, par exemple", "en": "…, though (at the end of a sentence)", "register": "quebecois", "standardEquivalent": "…, par contre / mais…", "pos": "phrase", "lesson": "1.5", "notes": "Chu fatigué, par exemple = I'm tired, though." },
+    { "id": "v01-fatigue", "fr": "fatigué / fatiguée", "en": "tired", "register": "both", "pos": "adj", "lesson": "1.5" },
+    { "id": "v01-content", "fr": "content / contente", "en": "happy, glad", "register": "both", "pos": "adj", "lesson": "1.5" },
+    { "id": "v01-malade", "fr": "malade", "en": "sick", "register": "both", "pos": "adj", "lesson": "1.5" },
+    { "id": "v01-occupe", "fr": "occupé / occupée", "en": "busy", "register": "both", "pos": "adj", "lesson": "1.5" },
+    { "id": "v01-quoi-de-neuf", "fr": "Quoi de neuf?", "en": "What's new?", "register": "both", "pos": "phrase", "lesson": "1.5" },
+    { "id": "v01-pas-grand-chose", "fr": "Pas grand-chose", "en": "Not much", "register": "both", "pos": "phrase", "lesson": "1.5" },
+    { "id": "v01-ca-fait-longtemps", "fr": "Ça fait longtemps!", "en": "Long time no see!", "register": "both", "pos": "phrase", "lesson": "1.5" },
+    { "id": "v01-tes-tu-correct", "fr": "T'es-tu correct(e)?", "en": "Are you okay?", "register": "quebecois", "standardEquivalent": "Est-ce que ça va? / Tu vas bien?", "pos": "phrase", "lesson": "1.5", "notes": "The extra tu turns a statement into a yes/no question. Recognise it now; you'll practise it in Level 3." },
+
+    { "id": "v01-pardon", "fr": "Pardon? / Comment?", "en": "Sorry? / Pardon?", "register": "both", "pos": "phrase", "lesson": "1.6" },
+    { "id": "v01-peux-tu-repeter", "fr": "Peux-tu répéter, s'il te plaît? / Pouvez-vous répéter?", "en": "Can you repeat, please?", "register": "both", "pos": "phrase", "lesson": "1.6" },
+    { "id": "v01-plus-lentement", "fr": "Plus lentement, s'il vous plaît", "en": "More slowly, please", "register": "both", "pos": "phrase", "lesson": "1.6" },
+    { "id": "v01-je-comprends-pas", "fr": "Je comprends pas", "en": "I don't understand", "register": "both", "standardEquivalent": "Je ne comprends pas", "pos": "phrase", "lesson": "1.6", "notes": "In speech the ne is almost always dropped." },
+    { "id": "v01-je-parle-un-peu", "fr": "Je parle un peu français", "en": "I speak a little French", "register": "both", "pos": "phrase", "lesson": "1.6" },
+    { "id": "v01-en-train-dapprendre", "fr": "Je suis en train d'apprendre le français", "en": "I'm learning French (right now)", "register": "both", "pos": "phrase", "lesson": "1.6" },
+    { "id": "v01-comment-on-dit", "fr": "Comment on dit … en français?", "en": "How do you say … in French?", "register": "both", "pos": "phrase", "lesson": "1.6" },
+    { "id": "v01-ca-veut-dire-quoi", "fr": "Ça veut dire quoi, …?", "en": "What does … mean?", "register": "both", "pos": "phrase", "lesson": "1.6" },
+    { "id": "v01-des-fois", "fr": "des fois", "en": "sometimes", "register": "both", "standardEquivalent": "parfois", "pos": "adverb", "lesson": "1.6" },
+    { "id": "v01-ca-sen-vient", "fr": "Ça s'en vient!", "en": "It's coming along! / It's on its way!", "register": "quebecois", "pos": "phrase", "lesson": "1.6" },
+    { "id": "v01-5-a-7", "fr": "un 5 à 7", "en": "an after-work social gathering (happy hour)", "register": "quebecois", "pos": "noun", "gender": "m", "lesson": "1.6" },
+    { "id": "v01-tse", "fr": "tsé", "en": "you know (filler)", "register": "quebecois", "standardEquivalent": "tu sais", "pos": "phrase", "lesson": "1.6" },
+    { "id": "v01-ben", "fr": "ben", "en": "well (filler)", "register": "both", "standardEquivalent": "bien", "pos": "phrase", "lesson": "1.6" }
+  ],
+
+  "lessons": [
+    {
+      "id": "1.1",
+      "number": 1,
+      "title": "Allô! Bonjour!",
+      "titleEn": "Hi! Hello!",
+      "objectives": ["Greet people at different times of day", "Say goodbye and wish someone a good day, evening or weekend", "Choose tu or vous", "Say thank you and you're welcome the Québec way"],
+      "activities": [
+        {
+          "id": "1.1-a1", "type": "notes", "skill": "vocabulaire", "title": "Greetings in Québec",
+          "instructions": "Read through the notes. Tap any French phrase to hear it.",
+          "tts": { "lang": "fr-CA", "rate": 0.9 },
+          "body": "## Saying hello\n\n| French | When | English |\n|---|---|---|\n| **Bonjour** | Any time until evening, anyone | Hello |\n| **Allô** | Friends, coworkers, shop staff, in person or on the phone | Hi |\n| **Salut** | Friends | Hi |\n| **Bonsoir** | Evening | Good evening |\n\nIn France *allô* is only for the phone. In Québec you'll hear it everywhere as a friendly *hi*. In Montréal shops you'll often be greeted with **« Bonjour-Hi! »**. Answer in French and the conversation stays in French.\n\n## Saying goodbye\n\n- **Au revoir**: polite, anyone\n- **Salut! / Bye! / Bye-bye!**: friends. *Bye* is very normal in Québec French.\n- **À tantôt!**: see you later today (France: *à tout à l'heure*)\n- **À la prochaine!**: until next time\n- **Bonne journée! / Bonne soirée! / Bonne fin de semaine!**: have a good day / evening / weekend. In Québec it's *fin de semaine*, not *week-end*.\n\nThe reply to any of these is **Merci, toi aussi!** or **Merci, vous aussi!**\n\n## Thank you and you're welcome\n\n- **Merci (beaucoup)!**\n- Reply: **Bienvenue!** This is the Québec way (literally 'welcome'). **De rien** works everywhere.\n\n## Tu or vous?\n\nQuébec uses **tu** more than France does. Use **tu** with friends, family, people your age, coworkers, and usually in casual shops. Use **vous** with older people you don't know, in formal service (bank, doctor, government) and with anyone who uses *vous* with you. If you're not sure, start with *vous*; people will tell you *« Tu peux me tutoyer! »* (you can call me tu)."
+        },
+        {
+          "id": "1.1-a2", "type": "flashcards", "skill": "vocabulaire", "title": "Greetings flashcards",
+          "instructions": "Flip each card, say the French out loud, then mark whether you knew it.",
+          "vocabIds": ["v01-bonjour", "v01-allo", "v01-salut", "v01-bonsoir", "v01-bye", "v01-au-revoir", "v01-a-tantot", "v01-a-la-prochaine", "v01-bonne-journee", "v01-bonne-soiree", "v01-bonne-fin-de-semaine", "v01-merci", "v01-bienvenue", "v01-de-rien", "v01-svp", "v01-excusez-moi", "v01-ca-va-etre-tout", "v01-vous-aussi"]
+        },
+        {
+          "id": "1.1-a3", "type": "quiz", "skill": "lire", "title": "Lecture : deux voisins",
+          "instructions": "Read the conversation between two neighbours, then answer the questions.",
+          "stimulus": {
+            "kind": "dialogue", "title": "Dans la rue", "transcript": "always",
+            "lines": [
+              { "speaker": "Marie-Ève", "fr": "Allô Julien!", "en": "Hi Julien!" },
+              { "speaker": "Julien", "fr": "Salut Marie-Ève! Ça va?", "en": "Hi Marie-Ève! How's it going?" },
+              { "speaker": "Marie-Ève", "fr": "Pas pire, merci. Bon, je dois y aller. Bonne journée!", "en": "Not bad, thanks. Well, I have to go. Have a good day!" },
+              { "speaker": "Julien", "fr": "Merci, toi aussi! À tantôt!", "en": "Thanks, you too! See you later!" }
+            ]
+          },
+          "items": [
+            { "id": "q1", "kind": "multiple_choice", "prompt": "Which word does Marie-Ève use to say hi?", "options": ["Allô", "Bonsoir", "Au revoir", "Enchantée"], "answer": 0, "explanation": "Allô is a friendly 'hi' in Québec." },
+            { "id": "q2", "kind": "multiple_choice", "prompt": "What does « Pas pire » mean here?", "options": ["Not bad", "Very bad", "Not yet", "No thanks"], "answer": 0, "explanation": "Pas pire literally means 'not worse' and is the Québec way to say 'not bad / pretty good'." },
+            { "id": "q3", "kind": "true_false", "prompt": "Julien expects to see Marie-Ève again later today.", "answer": true, "explanation": "À tantôt means 'see you later (today)'." },
+            { "id": "q4", "kind": "multiple_choice", "prompt": "Do they use tu or vous with each other?", "options": ["tu, because they're friendly neighbours", "vous, because they're polite", "They mix both"], "answer": 0, "explanation": "« Toi aussi » is the tu form. The vous form would be « vous aussi »." }
+          ]
+        },
+        {
+          "id": "1.1-a4", "type": "quiz", "skill": "ecouter", "title": "Écoute : au dépanneur",
+          "instructions": "Listen to a short exchange at a corner store (dépanneur). You can replay it. The transcript appears after you submit.",
+          "stimulus": {
+            "kind": "audio", "title": "Au dépanneur", "transcript": "after-submit",
+            "tts": { "lang": "fr-CA", "rate": 0.85 },
+            "lines": [
+              { "speaker": "Caissière", "voice": "female", "fr": "Bonjour!", "en": "Hello!" },
+              { "speaker": "Client", "voice": "male", "fr": "Bonjour, madame.", "en": "Hello, ma'am." },
+              { "speaker": "Caissière", "voice": "female", "fr": "Ça va être tout?", "en": "Will that be all?" },
+              { "speaker": "Client", "voice": "male", "fr": "Oui, merci.", "en": "Yes, thanks." },
+              { "speaker": "Caissière", "voice": "female", "fr": "Bienvenue! Bonne fin de semaine!", "en": "You're welcome! Have a good weekend!" },
+              { "speaker": "Client", "voice": "male", "fr": "Merci, vous aussi. Au revoir!", "en": "Thanks, you too. Goodbye!" }
+            ]
+          },
+          "items": [
+            { "id": "q1", "kind": "multiple_choice", "prompt": "What does the cashier ask?", "options": ["Will that be all?", "How are you?", "What's your name?", "Do you have a bag?"], "answer": 0, "explanation": "« Ça va être tout? » = Will that be all?" },
+            { "id": "q2", "kind": "multiple_choice", "prompt": "The cashier says « Bienvenue! » right after « merci ». Here it means:", "options": ["You're welcome", "Welcome to the store", "Goodbye", "Thank you"], "answer": 0 },
+            { "id": "q3", "kind": "multiple_choice", "prompt": "What does she wish the customer?", "options": ["A good weekend", "A good evening", "A good day", "Good luck"], "answer": 0, "explanation": "Bonne fin de semaine = have a good weekend." },
+            { "id": "q4", "kind": "true_false", "prompt": "The customer uses vous with the cashier.", "answer": true, "explanation": "He says « vous aussi »." }
+          ]
+        },
+        {
+          "id": "1.1-a5", "type": "quiz", "skill": "ecrire", "title": "Pratique : la bonne expression",
+          "instructions": "Type or choose the right expression. Accents are encouraged but not required here.",
+          "items": [
+            { "id": "q1", "kind": "matching", "prompt": "Match each situation with what you'd say.", "pairs": [
+              { "left": "Leaving work on Friday", "right": "Bonne fin de semaine!" },
+              { "left": "Seeing a friend again in an hour", "right": "À tantôt!" },
+              { "left": "Arriving at a dinner at 8 p.m.", "right": "Bonsoir!" },
+              { "left": "Someone says « Merci! »", "right": "Bienvenue!" }
+            ] },
+            { "id": "q2", "kind": "fill_blank", "prompt": "« Merci beaucoup! » « ___! »", "acceptedAnswers": [["bienvenue", "de rien"]], "explanation": "Bienvenue is the Québec reply; de rien works everywhere." },
+            { "id": "q3", "kind": "fill_blank", "prompt": "Bonne ___ de semaine!", "acceptedAnswers": [["fin"]] },
+            { "id": "q4", "kind": "short_answer", "prompt": "How do you say « You too » to an older stranger (vous form)?", "acceptedAnswers": ["vous aussi", "merci, vous aussi", "merci vous aussi"] },
+            { "id": "q5", "kind": "multiple_choice", "prompt": "You meet your new manager at a bank for the first time. Which is best?", "options": ["Bonjour, madame.", "Allô!", "Salut!", "Bye!"], "answer": 0 }
+          ]
+        },
+        {
+          "id": "1.1-a6", "type": "writing", "skill": "ecrire", "title": "Écriture : un texto",
+          "instructions": "Write a short text message to a friend. Use the tu form.",
+          "prompt": "Écris un texto à un ami ou une amie : salue-le/la, dis merci pour le café (« merci pour le café »), souhaite-lui une bonne soirée ou une bonne fin de semaine, et dis au revoir.",
+          "promptEn": "Write a text to a friend: greet them, thank them for the coffee (« merci pour le café »), wish them a good evening or weekend, and say bye.",
+          "minWords": 12, "maxWords": 40,
+          "targetStructures": ["greeting (Allô / Salut)", "merci pour…", "Bonne soirée / Bonne fin de semaine", "closing (Bye / À la prochaine / À tantôt)", "tu-form register"],
+          "expectedPhrases": ["allô | salut | bonjour", "merci", "bonne soirée | bonne fin de semaine", "bye | salut | à la prochaine | à tantôt | au revoir"],
+          "modelAnswer": "Allô Sophie! Merci pour le café ce matin! Bonne fin de semaine! À la prochaine, bye!",
+          "rubricRef": "writing-a1"
+        },
+        {
+          "id": "1.1-a7", "type": "speaking", "skill": "parler", "title": "Parler : répète après moi",
+          "instructions": "Listen to each phrase, then say it out loud. Try to copy the rhythm.",
+          "mode": "repeat", "maxSeconds": 10, "tts": { "lang": "fr-CA", "rate": 0.85 },
+          "expectedPhrases": ["Allô!", "Bonjour, madame.", "Bonne fin de semaine!", "Merci, vous aussi!", "Bienvenue!", "À tantôt!"],
+          "selfCheck": ["I said every phrase", "My « bonjour » had a soft j (like the s in 'measure')", "I rounded my lips for the u sound in « bienvenue »", "I didn't pronounce the final t in « tantôt »"],
+          "rubricRef": "speaking-repeat"
+        },
+        {
+          "id": "1.1-a8", "type": "speaking", "skill": "parler", "title": "Parler : à la caisse",
+          "instructions": "Role-play: you are the customer at a café counter. Listen to the cashier and answer each line.",
+          "mode": "roleplay", "maxSeconds": 15,
+          "turns": [
+            { "speaker": "partner", "fr": "Bonjour!" },
+            { "speaker": "learner", "task": "Greet the cashier politely.", "expectedPhrases": ["bonjour"] },
+            { "speaker": "partner", "fr": "Ça va être tout?" },
+            { "speaker": "learner", "task": "Say yes, thank you.", "expectedPhrases": ["oui", "merci"] },
+            { "speaker": "partner", "fr": "Bienvenue! Bonne soirée!" },
+            { "speaker": "learner", "task": "Say thanks, you too (vous form), and goodbye.", "expectedPhrases": ["vous aussi", "au revoir | bye | bonne soirée"] }
+          ],
+          "modelAnswer": "Bonjour! / Oui, merci. / Merci, vous aussi! Au revoir!",
+          "selfCheck": ["I greeted the cashier", "I said yes and thank you", "I used « vous aussi » (not « toi aussi »)", "I said goodbye"],
+          "rubricRef": "speaking-a1"
+        }
+      ]
+    },
+
+    {
+      "id": "1.2",
+      "number": 2,
+      "title": "Je m'appelle…",
+      "titleEn": "My name is…",
+      "objectives": ["Say your name and ask someone's", "Use the subject pronouns", "Conjugate s'appeler in the present", "Spell names using the French alphabet"],
+      "activities": [
+        {
+          "id": "1.2-a1", "type": "notes", "skill": "vocabulaire", "title": "Names, pronouns and the alphabet",
+          "instructions": "Read the notes and listen to the alphabet.",
+          "tts": { "lang": "fr-CA", "rate": 0.85 },
+          "body": "## Asking a name\n\n- **C'est quoi ton nom?** The most common way in Québec conversation.\n- **Comment tu t'appelles?** Casual, everywhere.\n- **Comment vous appelez-vous?** Formal.\n\n## Giving your name\n\n- **Je m'appelle Jordan.**\n- **Moi, c'est Jordan.** (casual: 'I'm Jordan')\n- **Enchanté!** / **Enchantée!** (a woman writes -e; it sounds the same)\n- **Pis toi?** = And you? *Pis* is everyday Québec French for *et* / *puis*.\n\n## Subject pronouns\n\n| | singular | plural |\n|---|---|---|\n| 1st | **je** (I) | **nous** (we), in speech **on** |\n| 2nd | **tu** (you, informal) | **vous** (you, plural or formal) |\n| 3rd | **il / elle** (he / she) | **ils / elles** (they) |\n\nIn spoken Québec French **on** almost always replaces **nous**: *On est de Calgary* = We're from Calgary.\n\n## s'appeler (to be called)\n\n| | |\n|---|---|\n| je **m'appelle** | nous nous **appelons** |\n| tu **t'appelles** | vous vous **appelez** |\n| il / elle / on **s'appelle** | ils / elles **s'appellent** |\n\n## L'alphabet\n\nA (a), B (bé), C (cé), D (dé), E (e), F (effe), G (gé), H (ache), I (i), J (ji), K (ka), L (elle), M (emme), N (enne), O (o), P (pé), Q (ku), R (erre), S (esse), T (té), U (u), V (vé), W (double vé), X (ixe), Y (i grec), Z (zède)\n\nWatch out for **G (gé)** and **J (ji)**, which are the reverse of English, and **E** vs **I**.\n\nAccents: **é** (e accent aigu), **è** (e accent grave), **ê** (e accent circonflexe), **ç** (c cédille), **ë** (e tréma).\n\nTo ask: **Ça s'écrit comment?** (How is that spelled?)"
+        },
+        {
+          "id": "1.2-a2", "type": "flashcards", "skill": "vocabulaire", "title": "Names flashcards",
+          "instructions": "Flip each card, say the French out loud, then mark whether you knew it.",
+          "vocabIds": ["v01-je-mappelle", "v01-moi-cest", "v01-cest-quoi-ton-nom", "v01-comment-tu-tappelles", "v01-comment-vous-appelez-vous", "v01-enchante", "v01-nom-de-famille", "v01-prenom", "v01-ca-secrit-comment", "v01-pis-toi"]
+        },
+        {
+          "id": "1.2-a3", "type": "quiz", "skill": "lire", "title": "Lecture : un profil d'échange linguistique",
+          "instructions": "Read this profile from a language-exchange app, then answer.",
+          "stimulus": {
+            "kind": "text", "title": "Profil : Mathieu", "transcript": "always",
+            "text": "Bonjour! Je m'appelle Mathieu Gagnon. Mon nom de famille, ça s'écrit G-A-G-N-O-N. Mes amis m'appellent Math. Je suis de Sherbrooke. Je parle français et un peu anglais. Enchanté!",
+            "translationEn": "Hello! My name is Mathieu Gagnon. My family name is spelled G-A-G-N-O-N. My friends call me Math. I'm from Sherbrooke. I speak French and a little English. Nice to meet you!"
+          },
+          "items": [
+            { "id": "q1", "kind": "short_answer", "prompt": "What is his first name (prénom)?", "acceptedAnswers": ["Mathieu"] },
+            { "id": "q2", "kind": "multiple_choice", "prompt": "What is his family name (nom de famille)?", "options": ["Gagnon", "Math", "Sherbrooke", "Mathieu"], "answer": 0 },
+            { "id": "q3", "kind": "short_answer", "prompt": "What do his friends call him?", "acceptedAnswers": ["Math"] },
+            { "id": "q4", "kind": "true_false", "prompt": "Mathieu speaks English very well.", "answer": false, "explanation": "« un peu anglais » = a little English." }
+          ]
+        },
+        {
+          "id": "1.2-a4", "type": "quiz", "skill": "ecouter", "title": "Écoute : au party",
+          "instructions": "Two people meet at a party. Listen, then answer. The last question is a spelling dictation.",
+          "stimulus": {
+            "kind": "audio", "title": "Au party", "transcript": "after-submit",
+            "tts": { "lang": "fr-CA", "rate": 0.85 },
+            "lines": [
+              { "speaker": "Olivier", "voice": "male", "fr": "Salut! C'est quoi ton nom?", "en": "Hi! What's your name?" },
+              { "speaker": "Léa", "voice": "female", "fr": "Moi, c'est Léa. Pis toi?", "en": "I'm Léa. And you?" },
+              { "speaker": "Olivier", "voice": "male", "fr": "Je m'appelle Olivier. Olivier Tremblay. Enchanté!", "en": "My name is Olivier. Olivier Tremblay. Nice to meet you!" },
+              { "speaker": "Léa", "voice": "female", "fr": "Enchantée! Tremblay, ça s'écrit comment?", "en": "Nice to meet you! Tremblay, how is that spelled?" },
+              { "speaker": "Olivier", "voice": "male", "fr": "T, R, E, M, B, L, A, Y.", "en": "T, R, E, M, B, L, A, Y." }
+            ]
+          },
+          "items": [
+            { "id": "q1", "kind": "multiple_choice", "prompt": "What does « C'est quoi ton nom? » mean?", "options": ["What's your name?", "Where are you from?", "How are you?", "What's new?"], "answer": 0 },
+            { "id": "q2", "kind": "short_answer", "prompt": "What is the woman's name?", "acceptedAnswers": ["Léa"] },
+            { "id": "q3", "kind": "true_false", "prompt": "Olivier uses the vous form with Léa.", "answer": false, "explanation": "« ton nom » is the tu form." },
+            { "id": "q4", "kind": "dictation", "prompt": "Type the family name Olivier spells.", "audioText": "T, R, E, M, B, L, A, Y.", "acceptedAnswers": ["Tremblay"], "explanation": "Tremblay is the most common family name in Québec." }
+          ]
+        },
+        {
+          "id": "1.2-a5", "type": "quiz", "skill": "ecrire", "title": "Pratique : s'appeler",
+          "instructions": "Fill in the correct form of s'appeler.",
+          "items": [
+            { "id": "q1", "kind": "fill_blank", "prompt": "Je ___ Zoé.", "acceptedAnswers": [["m'appelle"]] },
+            { "id": "q2", "kind": "fill_blank", "prompt": "Tu ___ comment?", "acceptedAnswers": [["t'appelles"]] },
+            { "id": "q3", "kind": "fill_blank", "prompt": "Il ___ Félix.", "acceptedAnswers": [["s'appelle"]] },
+            { "id": "q4", "kind": "fill_blank", "prompt": "Comment vous ___-vous?", "acceptedAnswers": [["appelez"]] },
+            { "id": "q5", "kind": "fill_blank", "prompt": "Elles ___ Anne et Lucie.", "acceptedAnswers": [["s'appellent"]] },
+            { "id": "q6", "kind": "multiple_choice", "prompt": "Léa (a woman) writes 'Nice to meet you'. Which is correct?", "options": ["Enchantée", "Enchanté", "Enchantés"], "answer": 0 },
+            { "id": "q7", "kind": "multiple_choice", "prompt": "In spoken Québec French, « On est de Regina » usually means:", "options": ["We're from Regina", "One is from Regina", "They're from Regina", "You're from Regina"], "answer": 0 }
+          ]
+        },
+        {
+          "id": "1.2-a6", "type": "writing", "skill": "ecrire", "title": "Écriture : mon profil",
+          "instructions": "Write your own profile for a language-exchange app, like Mathieu's.",
+          "prompt": "Écris ton profil : salue, donne ton prénom et ton nom de famille, épelle ton nom de famille, et dis « enchanté(e) ». Si tu as un surnom, ajoute-le (« Mes amis m'appellent… »).",
+          "promptEn": "Write your profile: greet, give your first and family name, spell your family name, and say nice to meet you. If you have a nickname, add it (« Mes amis m'appellent… »).",
+          "minWords": 15, "maxWords": 50,
+          "targetStructures": ["Je m'appelle / Moi, c'est", "Mon nom de famille, ça s'écrit…", "Enchanté(e)"],
+          "expectedPhrases": ["bonjour | allô | salut", "je m'appelle | moi, c'est", "ça s'écrit", "enchanté"],
+          "modelAnswer": "Allô! Je m'appelle Jordan Miller. Mon nom de famille, ça s'écrit M-I-L-L-E-R. Mes amis m'appellent Jordan. Enchanté!",
+          "rubricRef": "writing-a1"
+        },
+        {
+          "id": "1.2-a7", "type": "speaking", "skill": "parler", "title": "Parler : présente-toi",
+          "instructions": "Answer out loud: say hi, say your name, spell your first name letter by letter, and say nice to meet you.",
+          "mode": "respond", "maxSeconds": 45,
+          "prompt": "Salut! C'est quoi ton nom? Ça s'écrit comment?",
+          "expectedPhrases": ["salut | allô | bonjour", "je m'appelle | moi, c'est", "enchanté"],
+          "modelAnswer": "Salut! Moi, c'est Jordan. Ça s'écrit J, O, R, D, A, N. Enchanté!",
+          "selfCheck": ["I greeted", "I said my name with « je m'appelle » or « moi, c'est »", "I spelled my name with French letter names", "I said « enchanté(e) »"],
+          "rubricRef": "speaking-a1"
+        }
+      ]
+    },
+
+    {
+      "id": "1.3",
+      "number": 3,
+      "title": "Je viens de…",
+      "titleEn": "I come from…",
+      "objectives": ["Conjugate être in the present", "Say where you're from and where you live", "Use à, au and en with cities and provinces", "Give your nationality with the right ending"],
+      "activities": [
+        {
+          "id": "1.3-a1", "type": "notes", "skill": "vocabulaire", "title": "Être, places and nationalities",
+          "instructions": "Read the notes.",
+          "tts": { "lang": "fr-CA", "rate": 0.9 },
+          "body": "## être (to be)\n\n| | |\n|---|---|\n| je **suis** | nous **sommes** (spoken: on **est**) |\n| tu **es** (spoken: **t'es**) | vous **êtes** |\n| il / elle / on **est** | ils / elles **sont** |\n\n## Where are you from?\n\n- **T'es d'où?** (casual Québec) / **Tu viens d'où?** / **Vous venez d'où?**\n- **Je suis de Calgary.** / **Je viens de Calgary.**\n\n## Where do you live?\n\n- **Je reste à Montréal.** This is the normal Québec way. In France *rester* means 'to stay'.\n- **J'habite à Montréal.** Standard, understood everywhere.\n- **Tu restes où?** = Where do you live?\n\n## à, au, en with places\n\n- Cities: **à** → *à Toronto, à Halifax, à Gatineau*\n- Feminine provinces / countries (most end in -e) and any that start with a vowel: **en** → *en Ontario, en Alberta, en Colombie-Britannique, en Nouvelle-Écosse, en Saskatchewan, en France*\n- Masculine provinces / countries: **au** → *au Québec, au Manitoba, au Nouveau-Brunswick, au Canada*\n- Islands: *à l'Île-du-Prince-Édouard, à Terre-Neuve*\n\n**à Québec** = in Québec City. **au Québec** = in the province. Locals often say *la ville de Québec* to be clear.\n\n## Nationalities\n\nAdd **-e** for a woman (and **-ne** after **-ien**):\n\n- canadien → canadien**ne**\n- québécois → québécois**e**\n- ontarien → ontarien**ne**, albertain → albertain**e**\n- acadien → acadien**ne** (French-speaking Maritimers)\n- américain → américain**e**, français → français**e**\n\nNationalities are not capitalised in French: *Je suis canadien.*"
+        },
+        {
+          "id": "1.3-a2", "type": "flashcards", "skill": "vocabulaire", "title": "Places flashcards",
+          "instructions": "Flip each card, say the French out loud, then mark whether you knew it.",
+          "vocabIds": ["v01-tes-dou", "v01-tu-viens-dou", "v01-je-viens-de", "v01-je-suis-de", "v01-je-reste-a", "v01-jhabite-a", "v01-maintenant", "v01-canadien", "v01-quebecois", "v01-acadien", "v01-americain", "v01-francais", "v01-au-quebec", "v01-en-ontario", "v01-au-manitoba"]
+        },
+        {
+          "id": "1.3-a3", "type": "quiz", "skill": "lire", "title": "Lecture : le groupe de conversation",
+          "instructions": "Three people introduce themselves in a group chat. Read, then answer.",
+          "stimulus": {
+            "kind": "dialogue", "title": "Groupe : Conversation française 🇨🇦", "transcript": "always",
+            "lines": [
+              { "speaker": "Amélie", "fr": "Salut tout le monde! Moi, c'est Amélie. Je viens de Gatineau, mais je reste à Ottawa maintenant. Je suis québécoise.", "en": "Hi everyone! I'm Amélie. I'm from Gatineau, but I live in Ottawa now. I'm Québécoise." },
+              { "speaker": "Raj", "fr": "Allô! Je m'appelle Raj. Je suis de Vancouver, en Colombie-Britannique. Je reste à Montréal.", "en": "Hi! My name is Raj. I'm from Vancouver, in British Columbia. I live in Montréal." },
+              { "speaker": "Kevin", "fr": "Bonjour! Je suis Kevin. Je viens de Moncton, au Nouveau-Brunswick. Je suis acadien.", "en": "Hello! I'm Kevin. I'm from Moncton, in New Brunswick. I'm Acadian." }
+            ]
+          },
+          "items": [
+            { "id": "q1", "kind": "multiple_choice", "prompt": "Where does Amélie live now?", "options": ["Ottawa", "Gatineau", "Montréal", "Moncton"], "answer": 0 },
+            { "id": "q2", "kind": "multiple_choice", "prompt": "Who is from British Columbia?", "options": ["Raj", "Amélie", "Kevin", "Nobody"], "answer": 0 },
+            { "id": "q3", "kind": "true_false", "prompt": "Kevin is Acadian.", "answer": true },
+            { "id": "q4", "kind": "multiple_choice", "prompt": "In Raj's message, « Je reste à Montréal » means:", "options": ["I live in Montréal", "I'm staying in Montréal for a few days", "I'm going to Montréal", "I'm from Montréal"], "answer": 0, "explanation": "In Québec French rester = to live (habiter)." },
+            { "id": "q5", "kind": "multiple_choice", "prompt": "Why does Amélie write « québécoise » with -e?", "options": ["Because she is a woman", "Because Québec is feminine", "It's always spelled that way", "Because it's plural"], "answer": 0 }
+          ]
+        },
+        {
+          "id": "1.3-a4", "type": "quiz", "skill": "ecouter", "title": "Écoute : T'es d'où?",
+          "instructions": "Listen to two people talking about where they're from.",
+          "stimulus": {
+            "kind": "audio", "title": "T'es d'où?", "transcript": "after-submit",
+            "tts": { "lang": "fr-CA", "rate": 0.85 },
+            "lines": [
+              { "speaker": "Félix", "voice": "male", "fr": "T'es d'où, toi?", "en": "Where are you from?" },
+              { "speaker": "Jessica", "voice": "female", "fr": "Je suis de Winnipeg, au Manitoba. Pis toi?", "en": "I'm from Winnipeg, in Manitoba. And you?" },
+              { "speaker": "Félix", "voice": "male", "fr": "Moi, je viens de Québec.", "en": "I'm from Québec." },
+              { "speaker": "Jessica", "voice": "female", "fr": "La ville ou la province?", "en": "The city or the province?" },
+              { "speaker": "Félix", "voice": "male", "fr": "La ville! Je reste dans Limoilou, un quartier de Québec.", "en": "The city! I live in Limoilou, a neighbourhood of Québec City." }
+            ]
+          },
+          "items": [
+            { "id": "q1", "kind": "short_answer", "prompt": "Which city is Jessica from?", "acceptedAnswers": ["Winnipeg"] },
+            { "id": "q2", "kind": "multiple_choice", "prompt": "Félix is from…", "options": ["Québec City", "somewhere in the province of Québec", "Winnipeg", "Montréal"], "answer": 0 },
+            { "id": "q3", "kind": "multiple_choice", "prompt": "Which preposition did Jessica use with Manitoba?", "options": ["au", "en", "à", "de"], "answer": 0, "explanation": "Manitoba is masculine: au Manitoba." },
+            { "id": "q4", "kind": "multiple_choice", "prompt": "What is Limoilou?", "options": ["A neighbourhood in Québec City", "A province", "A restaurant", "A person"], "answer": 0 }
+          ]
+        },
+        {
+          "id": "1.3-a5", "type": "quiz", "skill": "ecrire", "title": "Pratique : être et les prépositions",
+          "instructions": "Fill in the blank.",
+          "items": [
+            { "id": "q1", "kind": "fill_blank", "prompt": "Je ___ de Toronto.", "acceptedAnswers": [["suis"]] },
+            { "id": "q2", "kind": "fill_blank", "prompt": "Vous ___ d'où?", "acceptedAnswers": [["êtes"]], "hint": "être, vous form" },
+            { "id": "q3", "kind": "fill_blank", "prompt": "Ils ___ américains.", "acceptedAnswers": [["sont"]] },
+            { "id": "q4", "kind": "fill_blank", "prompt": "J'habite ___ Ontario.", "acceptedAnswers": [["en"]] },
+            { "id": "q5", "kind": "fill_blank", "prompt": "Je reste ___ Québec. (the province)", "acceptedAnswers": [["au"]] },
+            { "id": "q6", "kind": "fill_blank", "prompt": "Elle reste ___ Halifax.", "acceptedAnswers": [["à"]] },
+            { "id": "q7", "kind": "fill_blank", "prompt": "Il vient de Fredericton, ___ Nouveau-Brunswick.", "acceptedAnswers": [["au"]] },
+            { "id": "q8", "kind": "multiple_choice", "prompt": "Chloé is from Toronto. « Chloé est ___ »", "options": ["ontarienne", "ontarien", "ontariens", "Ontarienne"], "answer": 0, "explanation": "Feminine -ienne, and nationalities aren't capitalised." }
+          ]
+        },
+        {
+          "id": "1.3-a6", "type": "writing", "skill": "ecrire", "title": "Écriture : moi et un ami",
+          "instructions": "Write two short paragraphs.",
+          "prompt": "1) Présente-toi : ton nom, d'où tu viens, où tu restes maintenant, ta nationalité. 2) Présente une autre personne (ami, partenaire, parent) : « Il/Elle s'appelle…, il/elle est de…, il/elle reste à… ».",
+          "promptEn": "1) Introduce yourself: name, where you're from, where you live now, nationality. 2) Introduce someone else (friend, partner, relative): « Il/Elle s'appelle…, il/elle est de…, il/elle reste à… ».",
+          "minWords": 30, "maxWords": 70,
+          "targetStructures": ["être (je suis, il/elle est)", "venir de / être de", "rester à / habiter à", "à / au / en with places", "nationality agreement"],
+          "expectedPhrases": ["je m'appelle | moi, c'est", "je viens de | je suis de", "je reste | j'habite", "s'appelle", "il est | elle est"],
+          "modelAnswer": "Je m'appelle Jordan. Je viens de Calgary, en Alberta, mais je reste à Toronto maintenant. Je suis canadien.\n\nMon amie s'appelle Isabelle. Elle est de Trois-Rivières, au Québec. Elle reste à Montréal. Elle est québécoise.",
+          "rubricRef": "writing-a1"
+        },
+        {
+          "id": "1.3-a7", "type": "speaking", "skill": "parler", "title": "Parler : T'es d'où?",
+          "instructions": "Role-play: Geneviève sits next to you at a hockey game. Answer her.",
+          "mode": "roleplay", "maxSeconds": 20,
+          "turns": [
+            { "speaker": "partner", "fr": "Salut! Moi, c'est Geneviève. Pis toi?" },
+            { "speaker": "learner", "task": "Say hi and give your name.", "expectedPhrases": ["salut | allô", "je m'appelle | moi, c'est"] },
+            { "speaker": "partner", "fr": "Enchantée! T'es d'où?" },
+            { "speaker": "learner", "task": "Say where you're from, with the city and province.", "expectedPhrases": ["je viens de | je suis de", "en | au"] },
+            { "speaker": "partner", "fr": "Ah oui? Pis tu restes où maintenant?" },
+            { "speaker": "learner", "task": "Say where you live now, and ask her where she's from.", "expectedPhrases": ["je reste | j'habite", "t'es d'où | tu viens d'où | pis toi"] }
+          ],
+          "modelAnswer": "Salut! Moi, c'est Jordan. / Enchanté! Je viens de Calgary, en Alberta. / Je reste à Toronto maintenant. Pis toi, t'es d'où?",
+          "selfCheck": ["I gave my name", "I said where I'm from with the correct en/au", "I said where I live with je reste or j'habite", "I asked a question back"],
+          "rubricRef": "speaking-a1"
+        }
+      ]
+    },
+
+    {
+      "id": "1.4",
+      "number": 4,
+      "title": "Les nombres",
+      "titleEn": "Numbers",
+      "objectives": ["Count from 0 to 69", "Conjugate avoir in the present", "Give and ask someone's age", "Say and understand a phone number"],
+      "activities": [
+        {
+          "id": "1.4-a1", "type": "notes", "skill": "vocabulaire", "title": "Numbers, avoir and age",
+          "instructions": "Read the notes and listen to the numbers.",
+          "tts": { "lang": "fr-CA", "rate": 0.85 },
+          "body": "## 0 to 20\n\n0 zéro · 1 un · 2 deux · 3 trois · 4 quatre · 5 cinq · 6 six · 7 sept · 8 huit · 9 neuf · 10 dix\n\n11 onze · 12 douze · 13 treize · 14 quatorze · 15 quinze · 16 seize · 17 dix-sept · 18 dix-huit · 19 dix-neuf · 20 vingt\n\n## 21 to 69\n\nTens: 20 vingt · 30 trente · 40 quarante · 50 cinquante · 60 soixante\n\n- 21, 31, 41, 51, 61 use **et un**: *vingt et un, trente et un…*\n- Everything else uses a hyphen: *vingt-deux, trente-cinq, quarante-huit, soixante-neuf*\n- Since the 1990 spelling reform, hyphens everywhere (*vingt-et-un*) are also correct.\n\nPronunciation: in *vingt* alone the **gt** is silent (*vin*). In *vingt-deux… vingt-neuf* you'll usually hear the t: *vint-deux*.\n\n## avoir (to have)\n\n| | |\n|---|---|\n| j'**ai** | nous **avons** (spoken: on **a**) |\n| tu **as** (spoken: **t'as**) | vous **avez** |\n| il / elle / on **a** | ils / elles **ont** |\n\n## Age uses avoir\n\n- **J'ai trente-quatre ans.** (literally 'I have 34 years') Never *je suis 34*.\n- **T'as quel âge?** (casual Québec) / **Quel âge as-tu?** / **Quel âge avez-vous?** (formal)\n\n## Phone numbers\n\n- **C'est quoi ton numéro (de téléphone)?**\n- **C'est le 514 555-0142.** Numbers take **le**.\n- The easy, always-understood way is digit by digit: *cinq-un-quatre, cinq-cinq-cinq, zéro-un-quatre-deux*. You'll also hear groups like *cinq-cent-quatorze*.\n- Québec area codes: 514 / 438 (Montréal), 450 / 579 (around Montréal), 418 / 581 (Québec City, east), 819 / 873 (west, north, Estrie), 367, 468.\n\n## Prices\n\nIn Québec the **$** comes after the number with a space: **45 $** = *quarante-cinq dollars*."
+        },
+        {
+          "id": "1.4-a2", "type": "flashcards", "skill": "vocabulaire", "title": "Numbers flashcards",
+          "instructions": "Flip each card, say the numbers out loud, then mark whether you knew them.",
+          "vocabIds": ["v01-nombres-0-10", "v01-nombres-11-16", "v01-nombres-17-19", "v01-dizaines", "v01-et-un", "v01-avoir-ans", "v01-tas-quel-age", "v01-quel-age-avez-vous", "v01-numero", "v01-cest-le", "v01-dollars"]
+        },
+        {
+          "id": "1.4-a3", "type": "quiz", "skill": "lire", "title": "Lecture : une annonce",
+          "instructions": "Read this ad from a community centre bulletin board.",
+          "stimulus": {
+            "kind": "text", "title": "Hockey pour adultes!", "transcript": "always",
+            "text": "HOCKEY POUR ADULTES – NIVEAU DÉBUTANT\nÂge : 18 à 65 ans\nPrix : 45 $ par session (10 semaines)\nAréna Maurice-Richard, Montréal\nInfo : Jacques, 514 555-0142",
+            "translationEn": "ADULT HOCKEY – BEGINNER LEVEL. Age: 18 to 65. Price: $45 per session (10 weeks). Maurice-Richard Arena, Montréal. Info: Jacques, 514 555-0142."
+          },
+          "items": [
+            { "id": "q1", "kind": "multiple_choice", "prompt": "Who can sign up?", "options": ["Adults aged 18 to 65", "Children under 18", "Anyone over 65", "Only professional players"], "answer": 0 },
+            { "id": "q2", "kind": "short_answer", "prompt": "How much does one session cost? (number only)", "acceptedAnswers": ["45", "45 $", "45$", "quarante-cinq"] },
+            { "id": "q3", "kind": "true_false", "prompt": "A 70-year-old can join this group.", "answer": false },
+            { "id": "q4", "kind": "multiple_choice", "prompt": "How would you read the area code 514 digit by digit?", "options": ["cinq-un-quatre", "cinq-onze-quatre", "quinze-quatre", "cinq-un-quarante"], "answer": 0 },
+            { "id": "q5", "kind": "matching", "prompt": "Match the number to the word.", "pairs": [
+              { "left": "18", "right": "dix-huit" },
+              { "left": "65", "right": "soixante-cinq" },
+              { "left": "45", "right": "quarante-cinq" },
+              { "left": "10", "right": "dix" }
+            ] }
+          ]
+        },
+        {
+          "id": "1.4-a4", "type": "quiz", "skill": "ecouter", "title": "Écoute : les nombres et les âges",
+          "instructions": "First, type each number you hear in digits. Then listen to the conversation and answer.",
+          "stimulus": {
+            "kind": "audio", "title": "T'as quel âge?", "transcript": "after-submit",
+            "tts": { "lang": "fr-CA", "rate": 0.85 },
+            "lines": [
+              { "speaker": "Nadia", "voice": "female", "fr": "T'as quel âge, Sam?", "en": "How old are you, Sam?" },
+              { "speaker": "Sam", "voice": "male", "fr": "J'ai vingt-huit ans. Pis toi?", "en": "I'm 28. And you?" },
+              { "speaker": "Nadia", "voice": "female", "fr": "Moi, j'ai trente-cinq ans. C'est quoi ton numéro?", "en": "I'm 35. What's your number?" },
+              { "speaker": "Sam", "voice": "male", "fr": "C'est le cinq-un-quatre, cinq-cinq-cinq, zéro-un-six-neuf.", "en": "It's 514 555-0169." }
+            ]
+          },
+          "items": [
+            { "id": "d1", "kind": "dictation", "prompt": "Type the number you hear (digits).", "audioText": "quarante-sept", "acceptedAnswers": ["47"] },
+            { "id": "d2", "kind": "dictation", "prompt": "Type the number you hear (digits).", "audioText": "seize", "acceptedAnswers": ["16"] },
+            { "id": "d3", "kind": "dictation", "prompt": "Type the number you hear (digits).", "audioText": "soixante-trois", "acceptedAnswers": ["63"] },
+            { "id": "d4", "kind": "dictation", "prompt": "Type the number you hear (digits).", "audioText": "vingt et un", "acceptedAnswers": ["21"] },
+            { "id": "d5", "kind": "dictation", "prompt": "Type the number you hear (digits).", "audioText": "treize", "acceptedAnswers": ["13"] },
+            { "id": "q1", "kind": "short_answer", "prompt": "How old is Sam? (digits)", "acceptedAnswers": ["28"] },
+            { "id": "q2", "kind": "short_answer", "prompt": "How old is Nadia? (digits)", "acceptedAnswers": ["35"] },
+            { "id": "q3", "kind": "short_answer", "prompt": "What is Sam's phone number?", "acceptedAnswers": ["514 555-0169", "514-555-0169", "5145550169", "514 555 0169", "(514) 555-0169"] }
+          ]
+        },
+        {
+          "id": "1.4-a5", "type": "quiz", "skill": "ecrire", "title": "Pratique : avoir et les nombres",
+          "instructions": "Fill in the blank or write the number in words.",
+          "items": [
+            { "id": "q1", "kind": "fill_blank", "prompt": "J'___ vingt-neuf ans.", "acceptedAnswers": [["ai"]] },
+            { "id": "q2", "kind": "fill_blank", "prompt": "Vous ___ quel âge?", "acceptedAnswers": [["avez"]] },
+            { "id": "q3", "kind": "fill_blank", "prompt": "Elle ___ quarante ans.", "acceptedAnswers": [["a"]] },
+            { "id": "q4", "kind": "fill_blank", "prompt": "Ils ___ dix-huit ans.", "acceptedAnswers": [["ont"]] },
+            { "id": "q5", "kind": "multiple_choice", "prompt": "How do you say 'I'm 30 years old'?", "options": ["J'ai trente ans.", "Je suis trente ans.", "Je suis trente.", "J'ai trente."], "answer": 0 },
+            { "id": "q6", "kind": "short_answer", "prompt": "Write 15 in words.", "acceptedAnswers": ["quinze"] },
+            { "id": "q7", "kind": "short_answer", "prompt": "Write 22 in words.", "acceptedAnswers": ["vingt-deux", "vingt deux"] },
+            { "id": "q8", "kind": "short_answer", "prompt": "Write 41 in words.", "acceptedAnswers": ["quarante et un", "quarante-et-un"] },
+            { "id": "q9", "kind": "short_answer", "prompt": "Write 69 in words.", "acceptedAnswers": ["soixante-neuf", "soixante neuf"] }
+          ]
+        },
+        {
+          "id": "1.4-a6", "type": "writing", "skill": "ecrire", "title": "Écriture : réponds au texto",
+          "instructions": "Reply to the text below. Write the numbers in words, not digits. You can invent a phone number.",
+          "prompt": "Ton nouvel ami t'écrit : « Allô! T'as quel âge? Pis c'est quoi ton numéro? » Réponds : donne ton âge et ton numéro de téléphone en lettres, puis pose la même question.",
+          "promptEn": "Your new friend texts: « Allô! T'as quel âge? Pis c'est quoi ton numéro? » Reply with your age and phone number written in words, then ask the same question back.",
+          "minWords": 15, "maxWords": 50,
+          "targetStructures": ["J'ai … ans", "C'est le …", "numbers in words", "question back (Pis toi? / T'as quel âge?)"],
+          "expectedPhrases": ["j'ai", "ans", "c'est le", "pis toi | et toi | t'as quel âge | quel âge"],
+          "modelAnswer": "Allô! J'ai trente-quatre ans. Mon numéro, c'est le quatre-un-huit, cinq-cinq-cinq, zéro-deux-trois-sept. Pis toi, t'as quel âge?",
+          "rubricRef": "writing-a1"
+        },
+        {
+          "id": "1.4-a7", "type": "speaking", "skill": "parler", "title": "Parler : compte par dix",
+          "instructions": "Repeat each line after the model.",
+          "mode": "repeat", "maxSeconds": 12, "tts": { "lang": "fr-CA", "rate": 0.85 },
+          "expectedPhrases": ["un, deux, trois, quatre, cinq", "six, sept, huit, neuf, dix", "onze, douze, treize, quatorze, quinze, seize", "dix, vingt, trente, quarante, cinquante, soixante", "vingt et un, trente-deux, quarante-trois", "J'ai trente-quatre ans."],
+          "selfCheck": ["I said every line", "I didn't pronounce the s in « trois »", "I didn't pronounce the gt in « vingt » alone", "I said « J'ai … ans », not « je suis »"],
+          "rubricRef": "speaking-repeat"
+        },
+        {
+          "id": "1.4-a8", "type": "speaking", "skill": "parler", "title": "Parler : ton âge et ton numéro",
+          "instructions": "Answer Nadia's questions out loud. You can invent a phone number.",
+          "mode": "roleplay", "maxSeconds": 20,
+          "turns": [
+            { "speaker": "partner", "fr": "T'as quel âge?" },
+            { "speaker": "learner", "task": "Say your age.", "expectedPhrases": ["j'ai", "ans"] },
+            { "speaker": "partner", "fr": "Pis c'est quoi ton numéro de téléphone?" },
+            { "speaker": "learner", "task": "Give a phone number, digit by digit.", "expectedPhrases": ["c'est le | mon numéro"] }
+          ],
+          "modelAnswer": "J'ai trente-quatre ans. / C'est le cinq-un-quatre, cinq-cinq-cinq, zéro-un-quatre-deux.",
+          "selfCheck": ["I said my age with « j'ai … ans »", "I gave all ten digits", "I started with « c'est le »"],
+          "rubricRef": "speaking-a1"
+        }
+      ]
+    },
+
+    {
+      "id": "1.5",
+      "number": 5,
+      "title": "Comment ça va?",
+      "titleEn": "How's it going?",
+      "objectives": ["Ask how someone is, formally and casually", "Answer with Québec expressions (pas pire, correct, pas fort)", "Recognise spoken contractions: chu, t'es, t'as", "Make adjectives agree (fatigué / fatiguée)"],
+      "activities": [
+        {
+          "id": "1.5-a1", "type": "notes", "skill": "vocabulaire", "title": "How are you, Québec style",
+          "instructions": "Read the notes. This lesson is about how people really talk.",
+          "tts": { "lang": "fr-CA", "rate": 0.9 },
+          "body": "## Asking\n\n| Casual | Formal |\n|---|---|\n| **Ça va?** / **Comment ça va?** | **Comment allez-vous?** |\n| **Ça roule?** (Québec: things good?) | **Vous allez bien?** |\n| **Quoi de neuf?** (what's new?) | |\n| **Ça fait longtemps!** (long time no see!) | |\n\n## Answering, from great to bad\n\n1. **Très bien! / Ça va bien! / Ça roule!**\n2. **Pas pire!** Québec. Literally 'not worse', it means *pretty good*.\n3. **Correct.** / **Chu correct(e).** Québec: *okay, fine*.\n4. **Bof. / Comme ci, comme ça.** So-so.\n5. **Pas fort.** Québec: *not great*.\n\nAlways bounce it back: **Pis toi? / Toi? / Et vous?**\n\n## Spoken contractions\n\nIn casual Québec speech:\n\n| You hear | It means |\n|---|---|\n| **chu** | je suis |\n| **t'es** | tu es |\n| **t'as** | tu as |\n| **ouin** | oui (yeah) |\n\n*Chu fatigué* = Je suis fatigué. Use these in speech and texts to friends. Write the full forms in anything formal.\n\n**…, par exemple** at the end of a sentence means *though*: *Chu content, par exemple!* = I'm happy, though!\n\n**T'es-tu correct?** = Are you okay? The extra *tu* turns a statement into a yes/no question. Just recognise it for now.\n\n## Adjective agreement\n\nAdd **-e** when talking about a woman: *Il est fatigué. Elle est fatigué**e**.* Adjectives already ending in -e don't change: *Il est malade. Elle est malade.*\n\nUseful adjectives: **fatigué(e)** tired, **content(e)** happy, **occupé(e)** busy, **malade** sick, **stressé(e)** stressed."
+        },
+        {
+          "id": "1.5-a2", "type": "flashcards", "skill": "vocabulaire", "title": "Ça va? flashcards",
+          "instructions": "Flip each card, say the French out loud, then mark whether you knew it.",
+          "vocabIds": ["v01-comment-ca-va", "v01-comment-allez-vous", "v01-ca-roule", "v01-ca-va-bien", "v01-pas-pire", "v01-correct", "v01-pas-fort", "v01-bof", "v01-chu", "v01-tes", "v01-tas", "v01-ouin", "v01-par-exemple", "v01-fatigue", "v01-content", "v01-malade", "v01-occupe", "v01-quoi-de-neuf", "v01-pas-grand-chose", "v01-ca-fait-longtemps", "v01-tes-tu-correct"]
+        },
+        {
+          "id": "1.5-a3", "type": "quiz", "skill": "lire", "title": "Lecture : des textos",
+          "instructions": "Read the text messages between Sophie and Max.",
+          "stimulus": {
+            "kind": "dialogue", "title": "Textos", "transcript": "always",
+            "lines": [
+              { "speaker": "Sophie", "fr": "Allô! Ça roule?", "en": "Hi! Things good?" },
+              { "speaker": "Max", "fr": "Allô! Ouin, pas pire. Chu fatigué, par exemple. Toi?", "en": "Hi! Yeah, not bad. I'm tired, though. You?" },
+              { "speaker": "Sophie", "fr": "Moi, ça va bien! Chu contente, c'est vendredi!", "en": "I'm good! I'm happy, it's Friday!" },
+              { "speaker": "Max", "fr": "Ah oui, c'est vrai! Bonne fin de semaine!", "en": "Oh yeah, that's true! Have a good weekend!" }
+            ]
+          },
+          "items": [
+            { "id": "q1", "kind": "multiple_choice", "prompt": "How is Max doing?", "options": ["Pretty good, but tired", "Very bad", "Sick", "Busy and stressed"], "answer": 0 },
+            { "id": "q2", "kind": "multiple_choice", "prompt": "« Chu » is the spoken form of:", "options": ["je suis", "tu es", "j'ai", "c'est"], "answer": 0 },
+            { "id": "q3", "kind": "multiple_choice", "prompt": "« Ouin » means:", "options": ["yeah", "no", "maybe", "what?"], "answer": 0 },
+            { "id": "q4", "kind": "multiple_choice", "prompt": "In « Chu fatigué, par exemple », par exemple means:", "options": ["though", "for example", "for sure", "very"], "answer": 0 },
+            { "id": "q5", "kind": "true_false", "prompt": "Sophie is happy because it's Friday.", "answer": true },
+            { "id": "q6", "kind": "multiple_choice", "prompt": "Why does Sophie write « contente » and not « content »?", "options": ["She's a woman, so the adjective takes -e", "It's a typo", "Because it's Friday", "Because it's plural"], "answer": 0 }
+          ]
+        },
+        {
+          "id": "1.5-a4", "type": "quiz", "skill": "ecouter", "title": "Écoute : formel et informel",
+          "instructions": "Listen to two short conversations: neighbours (formal), then friends (casual).",
+          "stimulus": {
+            "kind": "audio", "title": "Deux conversations", "transcript": "after-submit",
+            "tts": { "lang": "fr-CA", "rate": 0.85 },
+            "lines": [
+              { "speaker": "Mme Lavoie", "voice": "female", "fr": "Bonjour, monsieur Roy. Comment allez-vous?", "en": "Hello, Mr. Roy. How are you?" },
+              { "speaker": "M. Roy", "voice": "male", "fr": "Pas fort, pas fort. Je suis malade.", "en": "Not great, not great. I'm sick." },
+              { "speaker": "Mme Lavoie", "voice": "female", "fr": "Oh non! Reposez-vous bien.", "en": "Oh no! Get some good rest." },
+              { "speaker": "Kim", "voice": "female", "fr": "Hé, Alex! Ça fait longtemps! Quoi de neuf?", "en": "Hey, Alex! Long time no see! What's new?" },
+              { "speaker": "Alex", "voice": "male", "fr": "Pas grand-chose! T'es-tu correcte, toi?", "en": "Not much! Are you okay?" },
+              { "speaker": "Kim", "voice": "female", "fr": "Oui, oui, chu correcte!", "en": "Yes, yes, I'm okay!" }
+            ]
+          },
+          "items": [
+            { "id": "q1", "kind": "multiple_choice", "prompt": "How is Mr. Roy?", "options": ["Sick", "Tired", "Very well", "Busy"], "answer": 0 },
+            { "id": "q2", "kind": "multiple_choice", "prompt": "The first conversation uses:", "options": ["vous (formal)", "tu (casual)", "both"], "answer": 0, "explanation": "« Comment allez-vous? » and « Reposez-vous » are vous forms." },
+            { "id": "q3", "kind": "multiple_choice", "prompt": "« Ça fait longtemps! » means:", "options": ["Long time no see!", "It takes a long time!", "See you soon!", "It's late!"], "answer": 0 },
+            { "id": "q4", "kind": "multiple_choice", "prompt": "« T'es-tu correcte? » means:", "options": ["Are you okay?", "Are you right?", "Are you correcting me?", "Are you tired?"], "answer": 0 },
+            { "id": "q5", "kind": "true_false", "prompt": "Kim says she is okay.", "answer": true }
+          ]
+        },
+        {
+          "id": "1.5-a5", "type": "quiz", "skill": "ecrire", "title": "Pratique : parlé et écrit",
+          "instructions": "Match and fill in the blanks.",
+          "items": [
+            { "id": "q1", "kind": "matching", "prompt": "Match the spoken Québec form to the standard form.", "pairs": [
+              { "left": "chu", "right": "je suis" },
+              { "left": "t'es", "right": "tu es" },
+              { "left": "t'as", "right": "tu as" },
+              { "left": "ouin", "right": "oui" },
+              { "left": "pas pire", "right": "pas mal" }
+            ] },
+            { "id": "q2", "kind": "fill_blank", "prompt": "Elle est ___. (tired)", "acceptedAnswers": [["fatiguée"]] },
+            { "id": "q3", "kind": "fill_blank", "prompt": "Il est ___. (busy)", "acceptedAnswers": [["occupé"]] },
+            { "id": "q4", "kind": "fill_blank", "prompt": "Marie est ___. (happy)", "acceptedAnswers": [["contente"]] },
+            { "id": "q5", "kind": "ordering", "prompt": "Put the conversation in order.", "options": ["Pas pire! Pis toi?", "Allô! Ça va?", "Ça va bien, merci!"], "answer": [1, 0, 2] },
+            { "id": "q6", "kind": "multiple_choice", "prompt": "You're writing an email to a government office. Which is right?", "options": ["Je suis disponible lundi.", "Chu disponible lundi.", "Both are fine."], "answer": 0, "explanation": "Chu is spoken / casual only. disponible = available, lundi = Monday." }
+          ]
+        },
+        {
+          "id": "1.5-a6", "type": "writing", "skill": "ecrire", "title": "Écriture : ça roule?",
+          "instructions": "Reply to a friend's text. You may use casual Québec forms (chu, ouin, pas pire).",
+          "prompt": "Ton ami t'écrit : « Allô! Ça roule? Quoi de neuf? » Réponds : dis comment tu vas, utilise au moins un adjectif (fatigué, content, occupé…), ajoute « par exemple » si tu veux, et pose une question.",
+          "promptEn": "Your friend texts: « Allô! Ça roule? Quoi de neuf? » Reply: say how you are, use at least one adjective (fatigué, content, occupé…), add « par exemple » if you like, and ask a question back.",
+          "minWords": 15, "maxWords": 50,
+          "targetStructures": ["how-are-you answer (pas pire / ça va bien / correct)", "je suis / chu + adjective with agreement", "question back"],
+          "expectedPhrases": ["allô | salut", "pas pire | ça va | ça roule | correct | bof | pas fort", "pis toi | et toi | toi"],
+          "modelAnswer": "Allô! Ouin, ça roule! Pas grand-chose de neuf. Chu occupé au travail, par exemple. Pis toi, ça va?",
+          "rubricRef": "writing-a1"
+        },
+        {
+          "id": "1.5-a7", "type": "speaking", "skill": "parler", "title": "Parler : l'accent québécois",
+          "instructions": "Repeat each line, copying the casual Québec pronunciation.",
+          "mode": "repeat", "maxSeconds": 8, "tts": { "lang": "fr-CA", "rate": 0.9 },
+          "expectedPhrases": ["Ça roule?", "Pas pire, pis toi?", "Chu fatigué, par exemple.", "T'es-tu correct?", "Ouin, chu correct.", "Ça fait longtemps!"],
+          "selfCheck": ["I said every line", "« Chu » was one syllable", "« Pis » sounded like 'pee'", "I didn't stop between words in « ça fait longtemps »"],
+          "rubricRef": "speaking-repeat"
+        },
+        {
+          "id": "1.5-a8", "type": "speaking", "skill": "parler", "title": "Parler : patron ou ami?",
+          "instructions": "Two quick exchanges: first your boss's boss (use vous), then a friend (casual).",
+          "mode": "roleplay", "maxSeconds": 15,
+          "turns": [
+            { "speaker": "partner", "fr": "Bonjour! Comment allez-vous?" },
+            { "speaker": "learner", "task": "Answer politely that you're well, and ask back with vous.", "expectedPhrases": ["bien", "et vous"] },
+            { "speaker": "partner", "fr": "Hé! Ça roule?" },
+            { "speaker": "learner", "task": "Answer casually (pas pire / ça roule), say you're tired though, and ask back.", "expectedPhrases": ["pas pire | ça roule | correct", "fatigué", "pis toi | toi"] }
+          ],
+          "modelAnswer": "Très bien, merci. Et vous? / Pas pire! Chu fatigué, par exemple. Pis toi?",
+          "selfCheck": ["I used « et vous » with the boss", "I used a casual answer with the friend", "I said I'm tired with the right form (fatigué / fatiguée)", "I asked a question back both times"],
+          "rubricRef": "speaking-a1"
+        }
+      ]
+    },
+
+    {
+      "id": "1.6",
+      "number": 6,
+      "title": "Une première conversation",
+      "titleEn": "A first conversation",
+      "objectives": ["Hold a full first-meeting conversation", "Ask someone to repeat or slow down", "Ask what a word means or how to say something", "Recognise common fillers (ben, pis, tsé)"],
+      "activities": [
+        {
+          "id": "1.6-a1", "type": "notes", "skill": "vocabulaire", "title": "Survival phrases and fillers",
+          "instructions": "These phrases keep a conversation going in French even when you're lost.",
+          "tts": { "lang": "fr-CA", "rate": 0.9 },
+          "body": "## When you don't understand\n\n- **Pardon? / Comment?** Sorry?\n- **Peux-tu répéter, s'il te plaît?** / **Pouvez-vous répéter, s'il vous plaît?**\n- **Plus lentement, s'il vous plaît.** More slowly, please.\n- **Je comprends pas.** I don't understand. In speech the *ne* of *ne… pas* is almost always dropped.\n- **Ça veut dire quoi, « char »?** What does 'char' mean?\n- **Comment on dit « weekend » en français?** How do you say 'weekend' in French?\n\nIf someone switches to English, you can say: **J'aimerais pratiquer mon français!** (I'd like to practise my French!). Most Québécois are happy to keep going in French.\n\n## Talking about your French\n\n- **Je parle un peu français.**\n- **Je suis en train d'apprendre le français.** I'm learning French.\n- **Des fois, je comprends pas.** Sometimes I don't understand.\n- **Ça s'en vient!** It's coming along!\n\n## Fillers you'll hear constantly\n\n- **ben** (well…): *Ben, oui!*\n- **pis** (and, and then)\n- **tsé** (you know)\n- **genre** (like)\n- **euh** (um)\n\n## Culture: le 5 à 7\n\nA **5 à 7** (*cinq à sept*) is an after-work gathering, roughly happy hour. It's one of the most common places to meet new people in Québec."
+        },
+        {
+          "id": "1.6-a2", "type": "flashcards", "skill": "vocabulaire", "title": "Survival phrases flashcards",
+          "instructions": "Flip each card, say the French out loud, then mark whether you knew it.",
+          "vocabIds": ["v01-pardon", "v01-peux-tu-repeter", "v01-plus-lentement", "v01-je-comprends-pas", "v01-je-parle-un-peu", "v01-en-train-dapprendre", "v01-comment-on-dit", "v01-ca-veut-dire-quoi", "v01-des-fois", "v01-ca-sen-vient", "v01-5-a-7", "v01-tse", "v01-ben"]
+        },
+        {
+          "id": "1.6-a3", "type": "quiz", "skill": "lire", "title": "Lecture : au 5 à 7",
+          "instructions": "Read the conversation, then answer.",
+          "stimulus": {
+            "kind": "dialogue", "title": "Au 5 à 7", "transcript": "always",
+            "lines": [
+              { "speaker": "Catherine", "fr": "Bonsoir! Je pense qu'on se connaît pas. Moi, c'est Catherine.", "en": "Good evening! I don't think we know each other. I'm Catherine." },
+              { "speaker": "Daniel", "fr": "Bonsoir! Enchanté. Je m'appelle Daniel.", "en": "Good evening! Nice to meet you. My name is Daniel." },
+              { "speaker": "Catherine", "fr": "Enchantée! T'es d'où, Daniel?", "en": "Nice to meet you! Where are you from, Daniel?" },
+              { "speaker": "Daniel", "fr": "Je viens de Calgary, en Alberta. Mais je reste à Montréal maintenant.", "en": "I'm from Calgary, in Alberta. But I live in Montréal now." },
+              { "speaker": "Catherine", "fr": "Ah, cool! Tu parles bien français!", "en": "Oh, cool! You speak French well!" },
+              { "speaker": "Daniel", "fr": "Merci! Je parle un peu. Je suis en train d'apprendre. Pis toi, t'es d'où?", "en": "Thanks! I speak a little. I'm learning. And you, where are you from?" },
+              { "speaker": "Catherine", "fr": "Moi, chu de Rimouski.", "en": "I'm from Rimouski." },
+              { "speaker": "Daniel", "fr": "Pardon? Peux-tu répéter plus lentement, s'il te plaît?", "en": "Sorry? Can you repeat more slowly, please?" },
+              { "speaker": "Catherine", "fr": "Ben oui! Ri-mous-ki. C'est dans le Bas-Saint-Laurent.", "en": "Sure! Ri-mous-ki. It's in the Lower St. Lawrence region." },
+              { "speaker": "Daniel", "fr": "Ah, OK! Merci.", "en": "Oh, OK! Thanks." }
+            ]
+          },
+          "items": [
+            { "id": "q1", "kind": "multiple_choice", "prompt": "What is a « 5 à 7 »?", "options": ["An after-work social gathering", "A hockey game", "A French class", "A bus schedule"], "answer": 0 },
+            { "id": "q2", "kind": "true_false", "prompt": "Catherine and Daniel already knew each other.", "answer": false, "explanation": "« Je pense qu'on se connaît pas » = I don't think we know each other." },
+            { "id": "q3", "kind": "multiple_choice", "prompt": "Where does Daniel live now?", "options": ["Montréal", "Calgary", "Rimouski", "Québec City"], "answer": 0 },
+            { "id": "q4", "kind": "multiple_choice", "prompt": "What does Daniel ask Catherine to do?", "options": ["Repeat more slowly", "Speak English", "Spell her name", "Give her phone number"], "answer": 0 },
+            { "id": "q5", "kind": "multiple_choice", "prompt": "« Chu de Rimouski » in standard French is:", "options": ["Je suis de Rimouski", "J'ai de Rimouski", "Tu es de Rimouski", "Je viens à Rimouski"], "answer": 0 },
+            { "id": "q6", "kind": "multiple_choice", "prompt": "Rimouski is in:", "options": ["the Bas-Saint-Laurent", "Alberta", "Montréal", "Ontario"], "answer": 0 }
+          ]
+        },
+        {
+          "id": "1.6-a4", "type": "quiz", "skill": "ecouter", "title": "Écoute : le premier cours",
+          "instructions": "Listen to the first evening of a conversation group in Sherbrooke.",
+          "stimulus": {
+            "kind": "audio", "title": "Premier cours", "transcript": "after-submit",
+            "tts": { "lang": "fr-CA", "rate": 0.85 },
+            "lines": [
+              { "speaker": "Animateur", "voice": "male", "fr": "Bonsoir tout le monde! Bienvenue! Bon, on commence. Toi, comment tu t'appelles?", "en": "Good evening everyone! Welcome! OK, let's start. You, what's your name?" },
+              { "speaker": "Priya", "voice": "female", "fr": "Je m'appelle Priya.", "en": "My name is Priya." },
+              { "speaker": "Animateur", "voice": "male", "fr": "Bienvenue, Priya! Tu viens d'où?", "en": "Welcome, Priya! Where are you from?" },
+              { "speaker": "Priya", "voice": "female", "fr": "Je viens de Halifax, en Nouvelle-Écosse.", "en": "I'm from Halifax, in Nova Scotia." },
+              { "speaker": "Animateur", "voice": "male", "fr": "Pis tu restes où maintenant?", "en": "And where do you live now?" },
+              { "speaker": "Priya", "voice": "female", "fr": "Ici, à Sherbrooke.", "en": "Here, in Sherbrooke." },
+              { "speaker": "Animateur", "voice": "male", "fr": "Pis, le français, ça va bien?", "en": "And French, is it going well?" },
+              { "speaker": "Priya", "voice": "female", "fr": "Pas pire! Mais des fois, je comprends pas.", "en": "Not bad! But sometimes I don't understand." },
+              { "speaker": "Animateur", "voice": "male", "fr": "C'est normal! Ça s'en vient!", "en": "That's normal! It's coming along!" }
+            ]
+          },
+          "items": [
+            { "id": "q1", "kind": "multiple_choice", "prompt": "Where is Priya from?", "options": ["Halifax, Nova Scotia", "Sherbrooke, Québec", "Halifax, New Brunswick", "Toronto, Ontario"], "answer": 0 },
+            { "id": "q2", "kind": "short_answer", "prompt": "Which city does Priya live in now?", "acceptedAnswers": ["Sherbrooke"] },
+            { "id": "q3", "kind": "multiple_choice", "prompt": "How is her French going?", "options": ["Not bad, but sometimes she doesn't understand", "Perfect", "Very badly", "She doesn't speak French"], "answer": 0 },
+            { "id": "q4", "kind": "multiple_choice", "prompt": "« des fois » means:", "options": ["sometimes", "often", "never", "two times"], "answer": 0 },
+            { "id": "q5", "kind": "multiple_choice", "prompt": "« Ça s'en vient! » means:", "options": ["It's coming along!", "It's going away!", "Come here!", "That's enough!"], "answer": 0 }
+          ]
+        },
+        {
+          "id": "1.6-a5", "type": "quiz", "skill": "ecrire", "title": "Pratique : la bonne réponse",
+          "instructions": "Choose or write the best reply.",
+          "items": [
+            { "id": "q1", "kind": "multiple_choice", "prompt": "Someone speaks too fast. You say:", "options": ["Plus lentement, s'il vous plaît.", "Bonne fin de semaine!", "Pas pire!", "Enchanté!"], "answer": 0 },
+            { "id": "q2", "kind": "multiple_choice", "prompt": "« Moi, c'est Julie. Pis toi? » Best reply:", "options": ["Moi, c'est Sam. Enchanté!", "J'ai vingt ans.", "Je reste à Laval.", "Bienvenue!"], "answer": 0 },
+            { "id": "q3", "kind": "fill_blank", "prompt": "Comment on ___ « weekend » en français?", "acceptedAnswers": [["dit"]] },
+            { "id": "q4", "kind": "fill_blank", "prompt": "Ça ___ dire quoi, « dépanneur »?", "acceptedAnswers": [["veut"]] },
+            { "id": "q5", "kind": "short_answer", "prompt": "Write the standard (formal) version of « Je comprends pas ».", "acceptedAnswers": ["je ne comprends pas"] },
+            { "id": "q6", "kind": "short_answer", "prompt": "How do you say 'weekend' in Québec French?", "acceptedAnswers": ["fin de semaine", "la fin de semaine", "une fin de semaine"] }
+          ]
+        },
+        {
+          "id": "1.6-a6", "type": "writing", "skill": "ecrire", "title": "Écriture : premier jour au groupe",
+          "instructions": "This is a review of the whole level. Use as much as you can from lessons 1.1 to 1.5.",
+          "prompt": "C'est le premier soir du groupe de conversation. Écris ta présentation : salue le groupe, dis ton nom, d'où tu viens, où tu restes, ta nationalité, ton âge (si tu veux), comment tu vas ce soir, et une phrase sur ton français. Termine avec une salutation.",
+          "promptEn": "It's the first evening of the conversation group. Write your introduction: greet the group, give your name, where you're from, where you live, nationality, age (optional), how you are tonight, and one sentence about your French. End with a closing.",
+          "minWords": 50, "maxWords": 100,
+          "targetStructures": ["greeting", "s'appeler", "venir de / être de", "rester à / habiter à + preposition", "nationality agreement", "avoir … ans", "how you are + adjective", "Je parle un peu / Je suis en train d'apprendre", "closing"],
+          "expectedPhrases": ["bonsoir | bonjour | allô | salut", "je m'appelle | moi, c'est", "je viens de | je suis de", "je reste | j'habite", "je suis | chu", "français"],
+          "modelAnswer": "Bonsoir tout le monde! Je m'appelle Jordan. Je viens de Calgary, en Alberta, mais je reste à Toronto maintenant. Je suis canadien. J'ai trente-quatre ans. Ce soir, ça va bien, mais chu un peu fatigué. Je parle un peu français. Je suis en train d'apprendre le français québécois. Des fois, je comprends pas, mais ça s'en vient! Merci, et bonne soirée!",
+          "rubricRef": "writing-a1"
+        },
+        {
+          "id": "1.6-a7", "type": "speaking", "skill": "parler", "title": "Parler : une conversation complète",
+          "instructions": "Role-play a whole first meeting at a 5 à 7. Answer each line naturally.",
+          "mode": "roleplay", "maxSeconds": 20,
+          "turns": [
+            { "speaker": "partner", "fr": "Bonsoir! Je pense qu'on se connaît pas. Moi, c'est Étienne." },
+            { "speaker": "learner", "task": "Greet him, give your name, say nice to meet you.", "expectedPhrases": ["bonsoir | salut | allô", "je m'appelle | moi, c'est", "enchanté"] },
+            { "speaker": "partner", "fr": "Enchanté! Pis, t'es d'où?" },
+            { "speaker": "learner", "task": "Say where you're from and where you live now.", "expectedPhrases": ["je viens de | je suis de", "je reste | j'habite"] },
+            { "speaker": "partner", "fr": "Ah, c'est cool! Moi, chu de Chicoutimi, au Saguenay. Ça va bien, ton français?" },
+            { "speaker": "learner", "task": "Ask him to repeat the name of his city more slowly.", "expectedPhrases": ["répéter | pardon | comment", "lentement"] },
+            { "speaker": "partner", "fr": "Chi-cou-ti-mi! Pis ton français, ça va?" },
+            { "speaker": "learner", "task": "Say your French is not bad, you're learning, and sometimes you don't understand.", "expectedPhrases": ["pas pire | ça va", "apprendre | un peu", "des fois | je comprends pas"] },
+            { "speaker": "partner", "fr": "C'est normal! Bon, bonne soirée!" },
+            { "speaker": "learner", "task": "Thank him, wish him a good evening too, and say bye.", "expectedPhrases": ["merci", "toi aussi | bonne soirée", "bye | salut | à la prochaine | au revoir"] }
+          ],
+          "modelAnswer": "Bonsoir! Moi, c'est Jordan. Enchanté! / Je viens de Calgary, mais je reste à Toronto. / Pardon? Peux-tu répéter plus lentement, s'il te plaît? / Pas pire! Je suis en train d'apprendre. Des fois, je comprends pas. / Merci, toi aussi! À la prochaine!",
+          "selfCheck": ["I introduced myself", "I said where I'm from and where I live", "I asked him to repeat more slowly", "I talked about my French", "I closed the conversation politely"],
+          "rubricRef": "speaking-a1"
+        },
+        {
+          "id": "1.6-a8", "type": "speaking", "skill": "parler", "title": "Parler : ma présentation (1 minute)",
+          "instructions": "Record a one-minute self-introduction, as if at the first evening of a conversation group. You can read your writing from 1.6-a6 the first time, then try without it.",
+          "mode": "describe", "maxSeconds": 75,
+          "prompt": "Présente-toi au groupe.",
+          "expectedPhrases": ["je m'appelle | moi, c'est", "je viens de | je suis de", "je reste | j'habite", "ans", "français"],
+          "selfCheck": ["I spoke for at least 40 seconds", "I covered name, origin, where I live", "I said how I am and something about my French", "I tried it at least once without reading"],
+          "rubricRef": "speaking-a1"
+        }
+      ]
+    }
+  ],
+
+  "gateTest": {
+    "id": "L01-gate",
+    "title": "Test du niveau 1",
+    "instructions": "This test checks whether you're ready for Level 2. Each section covers one skill. To pass you need 80% overall and at least 70% in every section. Audio can be played twice. No notes, please! Questions are drawn from a pool, so a retake will be different.",
+    "passRule": { "overallPercent": 80, "sectionMinPercent": 70 },
+    "sections": [
+      {
+        "skill": "lire",
+        "title": "Lecture",
+        "reviewLessons": ["1.3", "1.5", "1.6"],
+        "activities": [
+          {
+            "id": "G1-lire-1", "type": "quiz", "skill": "lire", "title": "Un message de bienvenue",
+            "instructions": "Read the message, then answer.",
+            "draw": 5,
+            "stimulus": {
+              "kind": "text", "title": "Courriel", "transcript": "always",
+              "text": "Allô tout le monde!\n\nJe m'appelle Annie Bouchard. Ça s'écrit B-O-U-C-H-A-R-D. Je suis de Saguenay, mais je reste à Québec depuis dix ans. J'ai quarante-deux ans. Je suis l'animatrice du groupe de conversation. On se voit vendredi au 5 à 7, au café Le Bistro, à cinq heures.\n\nMon numéro : 418 555-0137.\n\nÀ vendredi! Bonne fin de semaine!\nAnnie",
+              "translationEn": "Hi everyone! My name is Annie Bouchard. It's spelled B-O-U-C-H-A-R-D. I'm from Saguenay, but I've lived in Québec City for ten years. I'm 42. I'm the conversation group's leader. See you Friday at the 5 à 7, at Le Bistro café, at five o'clock. My number: 418 555-0137. See you Friday! Have a good weekend! Annie"
+            },
+            "items": [
+              { "id": "q1", "kind": "multiple_choice", "prompt": "Where is Annie from?", "options": ["Saguenay", "Québec City", "Montréal", "Rimouski"], "answer": 0 },
+              { "id": "q2", "kind": "multiple_choice", "prompt": "Where does she live now?", "options": ["Québec City", "Saguenay", "a town in Ontario", "We don't know"], "answer": 0, "explanation": "« Je reste à Québec » uses à, so it's the city." },
+              { "id": "q3", "kind": "short_answer", "prompt": "How old is Annie? (digits)", "acceptedAnswers": ["42"] },
+              { "id": "q4", "kind": "multiple_choice", "prompt": "What is happening on Friday?", "options": ["An after-work gathering at a café", "A hockey game", "A French exam", "A party at Annie's house"], "answer": 0 },
+              { "id": "q5", "kind": "true_false", "prompt": "Annie's phone number has a Montréal area code.", "answer": false, "explanation": "418 is the Québec City region." },
+              { "id": "q6", "kind": "short_answer", "prompt": "What is Annie's family name?", "acceptedAnswers": ["Bouchard"] }
+            ]
+          },
+          {
+            "id": "G1-lire-2", "type": "quiz", "skill": "lire", "title": "Textos",
+            "instructions": "Read the text messages, then answer.",
+            "draw": 4,
+            "stimulus": {
+              "kind": "dialogue", "title": "Textos", "transcript": "always",
+              "lines": [
+                { "speaker": "Marc", "fr": "Allô Julie! Ça roule?", "en": "Hi Julie! Things good?" },
+                { "speaker": "Julie", "fr": "Bof, pas fort. Chu malade.", "en": "Meh, not great. I'm sick." },
+                { "speaker": "Marc", "fr": "Oh non! T'es-tu correcte?", "en": "Oh no! Are you okay?" },
+                { "speaker": "Julie", "fr": "Ouin, ça va. Chu fatiguée, par exemple. Merci!", "en": "Yeah, it's okay. I'm tired, though. Thanks!" },
+                { "speaker": "Marc", "fr": "Bienvenue! Bonne soirée, à la prochaine!", "en": "You're welcome! Have a good evening, until next time!" }
+              ]
+            },
+            "items": [
+              { "id": "q1", "kind": "multiple_choice", "prompt": "How is Julie?", "options": ["Sick and tired", "Very well", "Busy", "Happy"], "answer": 0 },
+              { "id": "q2", "kind": "multiple_choice", "prompt": "« T'es-tu correcte? » means:", "options": ["Are you okay?", "Are you right?", "Where are you?", "Are you coming?"], "answer": 0 },
+              { "id": "q3", "kind": "multiple_choice", "prompt": "Marc's « Bienvenue! » means:", "options": ["You're welcome!", "Welcome home!", "Goodbye!", "Get well soon!"], "answer": 0 },
+              { "id": "q4", "kind": "multiple_choice", "prompt": "« Pas fort » means:", "options": ["Not great", "Not bad", "Very strong", "Not now"], "answer": 0 },
+              { "id": "q5", "kind": "true_false", "prompt": "Marc and Julie use vous with each other.", "answer": false }
+            ]
+          }
+        ]
+      },
+      {
+        "skill": "ecouter",
+        "title": "Écoute",
+        "reviewLessons": ["1.2", "1.4", "1.6"],
+        "activities": [
+          {
+            "id": "G1-ecouter-1", "type": "quiz", "skill": "ecouter", "title": "À la réception",
+            "instructions": "Listen to a conversation at a gym reception desk. You can play it twice.",
+            "draw": 5,
+            "stimulus": {
+              "kind": "audio", "title": "Au gym", "transcript": "after-submit", "maxPlays": 2,
+              "tts": { "lang": "fr-CA", "rate": 0.9 },
+              "lines": [
+                { "speaker": "Réceptionniste", "voice": "female", "fr": "Bonjour! Bienvenue au gym. C'est quoi votre nom?", "en": "Hello! Welcome to the gym. What's your name?" },
+                { "speaker": "Client", "voice": "male", "fr": "Bonjour! Je m'appelle Thomas Pelletier.", "en": "Hello! My name is Thomas Pelletier." },
+                { "speaker": "Réceptionniste", "voice": "female", "fr": "Pelletier, ça s'écrit comment?", "en": "Pelletier, how is that spelled?" },
+                { "speaker": "Client", "voice": "male", "fr": "P, E, L, L, E, T, I, E, R.", "en": "P, E, L, L, E, T, I, E, R." },
+                { "speaker": "Réceptionniste", "voice": "female", "fr": "Merci. Pis, quel âge avez-vous?", "en": "Thanks. And how old are you?" },
+                { "speaker": "Client", "voice": "male", "fr": "J'ai cinquante-trois ans.", "en": "I'm 53." },
+                { "speaker": "Réceptionniste", "voice": "female", "fr": "Pis votre numéro de téléphone?", "en": "And your phone number?" },
+                { "speaker": "Client", "voice": "male", "fr": "C'est le huit-un-neuf, cinq-cinq-cinq, zéro-quatre-six-deux.", "en": "It's 819 555-0462." },
+                { "speaker": "Réceptionniste", "voice": "female", "fr": "Parfait! Bonne journée, monsieur Pelletier!", "en": "Perfect! Have a good day, Mr. Pelletier!" }
+              ]
+            },
+            "items": [
+              { "id": "q1", "kind": "short_answer", "prompt": "What is the man's first name?", "acceptedAnswers": ["Thomas"] },
+              { "id": "q2", "kind": "dictation", "prompt": "Type his family name, as he spelled it.", "audioText": "P, E, L, L, E, T, I, E, R.", "acceptedAnswers": ["Pelletier"] },
+              { "id": "q3", "kind": "short_answer", "prompt": "How old is he? (digits)", "acceptedAnswers": ["53"] },
+              { "id": "q4", "kind": "short_answer", "prompt": "What is his phone number?", "acceptedAnswers": ["819 555-0462", "819-555-0462", "8195550462", "819 555 0462", "(819) 555-0462"] },
+              { "id": "q5", "kind": "multiple_choice", "prompt": "Does the receptionist use tu or vous?", "options": ["vous", "tu", "both"], "answer": 0 },
+              { "id": "q6", "kind": "multiple_choice", "prompt": "What does she wish him at the end?", "options": ["A good day", "A good weekend", "A good evening", "Good luck"], "answer": 0 }
+            ]
+          },
+          {
+            "id": "G1-ecouter-2", "type": "quiz", "skill": "ecouter", "title": "Les nombres",
+            "instructions": "Type each number you hear, in digits. Each one plays twice at most.",
+            "draw": 5,
+            "items": [
+              { "id": "n1", "kind": "dictation", "prompt": "Number:", "audioText": "trente-huit", "acceptedAnswers": ["38"] },
+              { "id": "n2", "kind": "dictation", "prompt": "Number:", "audioText": "quatorze", "acceptedAnswers": ["14"] },
+              { "id": "n3", "kind": "dictation", "prompt": "Number:", "audioText": "cinquante et un", "acceptedAnswers": ["51"] },
+              { "id": "n4", "kind": "dictation", "prompt": "Number:", "audioText": "soixante-six", "acceptedAnswers": ["66"] },
+              { "id": "n5", "kind": "dictation", "prompt": "Number:", "audioText": "douze", "acceptedAnswers": ["12"] },
+              { "id": "n6", "kind": "dictation", "prompt": "Number:", "audioText": "quarante-neuf", "acceptedAnswers": ["49"] },
+              { "id": "n7", "kind": "dictation", "prompt": "Number:", "audioText": "vingt-sept", "acceptedAnswers": ["27"] },
+              { "id": "n8", "kind": "dictation", "prompt": "Number:", "audioText": "seize", "acceptedAnswers": ["16"] }
+            ]
+          },
+          {
+            "id": "G1-ecouter-3", "type": "quiz", "skill": "ecouter", "title": "Comment ça va?",
+            "instructions": "Listen to two friends meeting on the street. You can play it twice.",
+            "draw": 4,
+            "stimulus": {
+              "kind": "audio", "title": "Dans la rue", "transcript": "after-submit", "maxPlays": 2,
+              "tts": { "lang": "fr-CA", "rate": 0.95 },
+              "lines": [
+                { "speaker": "Vincent", "voice": "male", "fr": "Hé, Mélanie! Ça fait longtemps! Ça roule?", "en": "Hey, Mélanie! Long time no see! Things good?" },
+                { "speaker": "Mélanie", "voice": "female", "fr": "Allô Vincent! Ouin, pas pire. Chu occupée, par exemple. Pis toi?", "en": "Hi Vincent! Yeah, not bad. I'm busy, though. And you?" },
+                { "speaker": "Vincent", "voice": "male", "fr": "Ben, chu correct. Je reste à Laval maintenant.", "en": "Well, I'm okay. I live in Laval now." },
+                { "speaker": "Mélanie", "voice": "female", "fr": "Ah oui? Cool! Bon, je dois y aller. À la prochaine!", "en": "Oh yeah? Cool! Well, I have to go. Until next time!" }
+              ]
+            },
+            "items": [
+              { "id": "q1", "kind": "multiple_choice", "prompt": "How is Mélanie?", "options": ["Pretty good, but busy", "Sick", "Very tired", "Not great"], "answer": 0 },
+              { "id": "q2", "kind": "multiple_choice", "prompt": "How is Vincent?", "options": ["Okay", "Sick", "Busy", "Excellent"], "answer": 0 },
+              { "id": "q3", "kind": "short_answer", "prompt": "Where does Vincent live now?", "acceptedAnswers": ["Laval", "à Laval"] },
+              { "id": "q4", "kind": "true_false", "prompt": "They haven't seen each other for a long time.", "answer": true },
+              { "id": "q5", "kind": "multiple_choice", "prompt": "How does Mélanie say goodbye?", "options": ["À la prochaine!", "À tantôt!", "Bonne fin de semaine!", "Au revoir, monsieur!"], "answer": 0 }
+            ]
+          }
+        ]
+      },
+      {
+        "skill": "ecrire",
+        "title": "Écriture",
+        "reviewLessons": ["1.2", "1.3", "1.4", "1.5"],
+        "activities": [
+          {
+            "id": "G1-ecrire-1", "type": "quiz", "skill": "ecrire", "title": "Grammaire et vocabulaire",
+            "instructions": "Fill in the blanks. Accents count in this section, but a missing accent only costs half a point.",
+            "draw": 10,
+            "items": [
+              { "id": "g1", "kind": "fill_blank", "prompt": "Tu ___ comment? (s'appeler)", "acceptedAnswers": [["t'appelles"]] },
+              { "id": "g2", "kind": "fill_blank", "prompt": "Nous ___ de Regina. (être)", "acceptedAnswers": [["sommes"]] },
+              { "id": "g3", "kind": "fill_blank", "prompt": "Vous ___ d'où? (être)", "acceptedAnswers": [["êtes"]], "strictAccents": true },
+              { "id": "g4", "kind": "fill_blank", "prompt": "J'___ trente ans. (avoir)", "acceptedAnswers": [["ai"]] },
+              { "id": "g5", "kind": "fill_blank", "prompt": "Ils ___ vingt ans. (avoir)", "acceptedAnswers": [["ont"]] },
+              { "id": "g6", "kind": "fill_blank", "prompt": "Je reste ___ Colombie-Britannique.", "acceptedAnswers": [["en"]] },
+              { "id": "g7", "kind": "fill_blank", "prompt": "Elle vient de Moncton, ___ Nouveau-Brunswick.", "acceptedAnswers": [["au"]] },
+              { "id": "g8", "kind": "fill_blank", "prompt": "Il habite ___ Winnipeg.", "acceptedAnswers": [["à"]] },
+              { "id": "g9", "kind": "fill_blank", "prompt": "Ma sœur est ___. (canadien)", "acceptedAnswers": [["canadienne"]] },
+              { "id": "g10", "kind": "fill_blank", "prompt": "Julie est ___. (fatigué)", "acceptedAnswers": [["fatiguée"]], "strictAccents": true },
+              { "id": "g11", "kind": "short_answer", "prompt": "Write 57 in words.", "acceptedAnswers": ["cinquante-sept", "cinquante sept"] },
+              { "id": "g12", "kind": "short_answer", "prompt": "Write 31 in words.", "acceptedAnswers": ["trente et un", "trente-et-un"] },
+              { "id": "g13", "kind": "fill_blank", "prompt": "« Merci! » « ___! » (Québec reply)", "acceptedAnswers": [["bienvenue"]] },
+              { "id": "g14", "kind": "short_answer", "prompt": "Write the standard form of « Chu content ».", "acceptedAnswers": ["je suis content"] }
+            ]
+          },
+          {
+            "id": "G1-ecrire-2", "type": "writing", "skill": "ecrire", "title": "Écriture : un courriel",
+            "instructions": "Write a short email. This is graded with the writing rubric.",
+            "prompt": "Tu veux participer au groupe de conversation d'Annie (voir la lecture). Écris-lui un courriel : salue-la, présente-toi (nom, origine, où tu restes, âge), dis comment va ton français, donne ton numéro de téléphone en chiffres, et termine poliment.",
+            "promptEn": "You want to join Annie's conversation group (see the reading). Write her an email: greet her, introduce yourself (name, origin, where you live, age), say how your French is going, give your phone number in digits, and close politely.",
+            "minWords": 50, "maxWords": 100,
+            "targetStructures": ["greeting", "s'appeler", "être de / venir de", "rester à / habiter à + preposition", "avoir … ans", "comment on French", "phone number with c'est le", "polite closing"],
+            "expectedPhrases": ["bonjour | allô", "je m'appelle | moi, c'est", "je viens de | je suis de", "je reste | j'habite", "ans", "français", "merci | bonne journée | bonne soirée | à vendredi | au revoir"],
+            "modelAnswer": "Bonjour Annie!\n\nJe m'appelle Jordan Miller. Je suis de Calgary, en Alberta, mais je reste à Toronto maintenant. J'ai trente-quatre ans. Je parle un peu français, je suis en train d'apprendre. Des fois, je comprends pas, mais ça s'en vient! Je veux participer au groupe de conversation. Mon numéro, c'est le 416 555-0198.\n\nMerci et bonne journée!\nJordan",
+            "rubricRef": "writing-a1"
+          }
+        ]
+      },
+      {
+        "skill": "parler",
+        "title": "Expression orale",
+        "reviewLessons": ["1.1", "1.5", "1.6"],
+        "activities": [
+          {
+            "id": "G1-parler-1", "type": "speaking", "skill": "parler", "title": "Conversation au 5 à 7",
+            "instructions": "Answer each line. You have 20 seconds per answer. No notes.",
+            "mode": "roleplay", "maxSeconds": 20,
+            "turns": [
+              { "speaker": "partner", "fr": "Allô! Moi, c'est Sarah. C'est quoi ton nom?" },
+              { "speaker": "learner", "task": "Give your name and say nice to meet you.", "expectedPhrases": ["je m'appelle | moi, c'est", "enchanté"] },
+              { "speaker": "partner", "fr": "Enchantée! T'es d'où?" },
+              { "speaker": "learner", "task": "Say where you're from (city and province) and where you live.", "expectedPhrases": ["je viens de | je suis de", "en | au", "je reste | j'habite"] },
+              { "speaker": "partner", "fr": "Cool! Pis, comment ça va ce soir?" },
+              { "speaker": "learner", "task": "Say how you are, with a Québec expression and an adjective, and ask back.", "expectedPhrases": ["pas pire | correct | ça roule | ça va bien", "pis toi | toi"] },
+              { "speaker": "partner", "fr": "Moi, chu correcte! T'as quel âge, toi, si c'est pas indiscret?" },
+              { "speaker": "learner", "task": "Give your age.", "expectedPhrases": ["j'ai", "ans"] },
+              { "speaker": "partner", "fr": "Bon, faut que j'y aille. Bonne soirée!" },
+              { "speaker": "learner", "task": "Wish her a good evening too and say goodbye.", "expectedPhrases": ["toi aussi | bonne soirée", "bye | salut | à la prochaine | à tantôt | au revoir"] }
+            ],
+            "modelAnswer": "Moi, c'est Jordan. Enchanté! / Je viens de Calgary, en Alberta, mais je reste à Toronto. / Pas pire! Chu un peu fatigué, par exemple. Pis toi? / J'ai trente-quatre ans. / Merci, toi aussi! À la prochaine!",
+            "selfCheck": ["I gave my name and said enchanté(e)", "I said where I'm from with en/au and where I live", "I said how I am with a Québec expression and asked back", "I gave my age with « j'ai … ans »", "I closed politely"],
+            "rubricRef": "speaking-a1"
+          },
+          {
+            "id": "G1-parler-2", "type": "speaking", "skill": "parler", "title": "Présentation",
+            "instructions": "Introduce yourself for about one minute, without notes.",
+            "mode": "describe", "maxSeconds": 75,
+            "prompt": "Présente-toi : nom, origine, où tu restes, âge, comment tu vas, et ton français.",
+            "expectedPhrases": ["je m'appelle | moi, c'est", "je viens de | je suis de", "je reste | j'habite", "ans", "français"],
+            "selfCheck": ["I spoke for at least 45 seconds", "I covered name, origin, where I live and age", "I said how I am", "I said something about my French", "I didn't read from notes"],
+            "rubricRef": "speaking-a1"
+          }
+        ]
+      }
+    ]
+  }
+}
