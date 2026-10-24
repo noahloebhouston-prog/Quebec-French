@@ -1,0 +1,1023 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/quebec-french/level.schema.json",
+  "title": "Québécois French curriculum level",
+  "description": "One level of the self-paced curriculum. Each levels/level-NN.json file validates against this schema.",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "id",
+    "number",
+    "title",
+    "cefr",
+    "objectives",
+    "vocabulary",
+    "lessons",
+    "gateTest"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schemaVersion": {
+      "const": "1.0"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^L[0-9]{2}$",
+      "description": "e.g. L01"
+    },
+    "number": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "Order in the course. A level unlocks when the previous level's gate test is passed."
+    },
+    "title": {
+      "type": "string"
+    },
+    "titleEn": {
+      "type": "string"
+    },
+    "cefr": {
+      "type": "string",
+      "enum": [
+        "A1.1",
+        "A1.2",
+        "A1.3",
+        "A2.1",
+        "A2.2",
+        "A2.3",
+        "B1.1",
+        "B1.2",
+        "B1.3",
+        "B2.1",
+        "B2.2",
+        "C1"
+      ]
+    },
+    "description": {
+      "type": "string"
+    },
+    "objectives": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1,
+      "description": "Can-do statements, in English."
+    },
+    "vocabulary": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/vocab"
+      },
+      "description": "Every word or phrase introduced in this level. Feeds the spaced-repetition deck."
+    },
+    "lessons": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/lesson"
+      },
+      "minItems": 1
+    },
+    "gateTest": {
+      "$ref": "#/$defs/gateTest"
+    },
+    "rubrics": {
+      "type": "object",
+      "description": "Reusable rubrics, referenced from activities by rubricRef.",
+      "additionalProperties": {
+        "$ref": "#/$defs/rubric"
+      }
+    }
+  },
+  "$defs": {
+    "skill": {
+      "type": "string",
+      "enum": [
+        "lire",
+        "ecrire",
+        "ecouter",
+        "parler",
+        "vocabulaire"
+      ]
+    },
+    "register": {
+      "type": "string",
+      "enum": [
+        "standard",
+        "quebecois",
+        "both"
+      ],
+      "description": "standard = used everywhere incl. formal Québec French; quebecois = Québec usage, mostly spoken/informal; both = common in both."
+    },
+    "vocab": {
+      "type": "object",
+      "required": [
+        "id",
+        "fr",
+        "en",
+        "register"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^v[0-9]{2}-[a-z0-9-]+$",
+          "description": "e.g. v01-allo"
+        },
+        "fr": {
+          "type": "string"
+        },
+        "en": {
+          "type": "string"
+        },
+        "register": {
+          "$ref": "#/$defs/register"
+        },
+        "standardEquivalent": {
+          "type": "string",
+          "description": "For quebecois items: the standard-French form."
+        },
+        "pos": {
+          "type": "string",
+          "description": "noun, verb, phrase, adj, etc."
+        },
+        "gender": {
+          "type": "string",
+          "enum": [
+            "m",
+            "f",
+            "m/f"
+          ]
+        },
+        "example": {
+          "type": "string"
+        },
+        "exampleEn": {
+          "type": "string"
+        },
+        "notes": {
+          "type": "string"
+        },
+        "lesson": {
+          "type": "string",
+          "description": "Lesson id where it is introduced."
+        }
+      }
+    },
+    "tts": {
+      "type": "object",
+      "description": "Hints for text-to-speech (e.g. Web Speech API speechSynthesis). Swap in a recorded file via audioUrl when available.",
+      "additionalProperties": false,
+      "properties": {
+        "lang": {
+          "type": "string",
+          "default": "fr-CA"
+        },
+        "rate": {
+          "type": "number",
+          "minimum": 0.5,
+          "maximum": 1.5,
+          "default": 0.9
+        },
+        "audioUrl": {
+          "type": "string",
+          "description": "Optional recorded audio, preferred over TTS."
+        }
+      }
+    },
+    "dialogueLine": {
+      "type": "object",
+      "required": [
+        "speaker",
+        "fr"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "speaker": {
+          "type": "string"
+        },
+        "fr": {
+          "type": "string"
+        },
+        "en": {
+          "type": "string",
+          "description": "Optional translation, shown only after the activity is submitted."
+        },
+        "voice": {
+          "type": "string",
+          "enum": [
+            "female",
+            "male"
+          ],
+          "description": "Pick a matching fr-CA voice if available."
+        }
+      }
+    },
+    "stimulus": {
+      "type": "object",
+      "description": "What the learner reads or hears before answering.",
+      "required": [
+        "kind"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "kind": {
+          "type": "string",
+          "enum": [
+            "text",
+            "dialogue",
+            "audio"
+          ]
+        },
+        "title": {
+          "type": "string"
+        },
+        "text": {
+          "type": "string",
+          "description": "For kind=text, or the script for kind=audio."
+        },
+        "lines": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/dialogueLine"
+          },
+          "description": "For kind=dialogue, or a multi-voice audio script."
+        },
+        "tts": {
+          "$ref": "#/$defs/tts"
+        },
+        "transcript": {
+          "type": "string",
+          "enum": [
+            "always",
+            "after-submit",
+            "never"
+          ],
+          "default": "always",
+          "description": "When the script is visible. Listening activities use after-submit."
+        },
+        "maxPlays": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "Audio replay limit (gate tests). Omit for unlimited."
+        },
+        "translationEn": {
+          "type": "string",
+          "description": "Shown after submit."
+        }
+      }
+    },
+    "item": {
+      "type": "object",
+      "description": "One auto-graded question.",
+      "required": [
+        "id",
+        "kind",
+        "prompt"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "kind": {
+          "type": "string",
+          "enum": [
+            "multiple_choice",
+            "true_false",
+            "fill_blank",
+            "short_answer",
+            "matching",
+            "ordering",
+            "dictation"
+          ]
+        },
+        "prompt": {
+          "type": "string",
+          "description": "For fill_blank, mark each blank with ___ ."
+        },
+        "points": {
+          "type": "number",
+          "default": 1
+        },
+        "explanation": {
+          "type": "string",
+          "description": "Shown after answering, right or wrong."
+        },
+        "hint": {
+          "type": "string"
+        },
+        "options": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "multiple_choice: choices."
+        },
+        "answer": {
+          "description": "multiple_choice: index of correct option (0-based). true_false: boolean. ordering: correct order of the given 'options' as indexes.",
+          "oneOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "array",
+              "items": {
+                "type": "integer"
+              }
+            }
+          ]
+        },
+        "acceptedAnswers": {
+          "description": "fill_blank / short_answer / dictation: accepted strings. For multiple blanks, one array per blank. Compare after normalising (see WIDGET-NOTES).",
+          "type": "array",
+          "items": {
+            "oneOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            ]
+          }
+        },
+        "strictAccents": {
+          "type": "boolean",
+          "default": false,
+          "description": "If false, a missing accent earns full marks with a warning."
+        },
+        "pairs": {
+          "type": "array",
+          "description": "matching: left/right pairs; the widget shuffles the right column.",
+          "items": {
+            "type": "object",
+            "required": [
+              "left",
+              "right"
+            ],
+            "properties": {
+              "left": {
+                "type": "string"
+              },
+              "right": {
+                "type": "string"
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "tts": {
+          "$ref": "#/$defs/tts"
+        },
+        "audioText": {
+          "type": "string",
+          "description": "dictation or per-item listening: text to speak."
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Diagnostic tags (e.g. grammar:etre, qc:spoken, numbers). The adaptive engine tracks accuracy per tag."
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "multiple_choice"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "options",
+              "answer"
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "true_false"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "answer"
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "enum": [
+                  "fill_blank",
+                  "short_answer"
+                ]
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "acceptedAnswers"
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "dictation"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "acceptedAnswers",
+              "audioText"
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "matching"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "pairs"
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "ordering"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "options",
+              "answer"
+            ]
+          }
+        }
+      ]
+    },
+    "rubric": {
+      "type": "object",
+      "description": "Used to grade writing and speaking. Grader may be an LLM, the learner (self-assessment), or a tutor.",
+      "required": [
+        "criteria"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "criteria": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "name",
+              "maxPoints",
+              "bands"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "maxPoints": {
+                "type": "number"
+              },
+              "bands": {
+                "type": "array",
+                "description": "Score bands, highest first.",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "points",
+                    "descriptor"
+                  ],
+                  "additionalProperties": false,
+                  "properties": {
+                    "points": {
+                      "type": "number"
+                    },
+                    "descriptor": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "passPercent": {
+          "type": "number",
+          "default": 70
+        }
+      }
+    },
+    "activity": {
+      "type": "object",
+      "required": [
+        "id",
+        "type",
+        "skill",
+        "title",
+        "instructions"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "e.g. 1.1-a3"
+        },
+        "type": {
+          "type": "string",
+          "enum": [
+            "notes",
+            "flashcards",
+            "quiz",
+            "writing",
+            "speaking"
+          ]
+        },
+        "skill": {
+          "$ref": "#/$defs/skill"
+        },
+        "title": {
+          "type": "string"
+        },
+        "instructions": {
+          "type": "string",
+          "description": "Shown to the learner, in English at A1-A2, French from B1."
+        },
+        "required": {
+          "type": "boolean",
+          "default": true,
+          "description": "Required activities must be completed to finish the lesson."
+        },
+        "body": {
+          "type": "string",
+          "description": "notes: Markdown lesson content (grammar, culture, pronunciation)."
+        },
+        "vocabIds": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "flashcards: vocab ids from the level's vocabulary."
+        },
+        "stimulus": {
+          "$ref": "#/$defs/stimulus"
+        },
+        "items": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/item"
+          },
+          "description": "quiz: questions."
+        },
+        "draw": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "quiz: randomly pick this many items from 'items' (used for gate-test pools)."
+        },
+        "shuffle": {
+          "type": "boolean",
+          "default": true
+        },
+        "prompt": {
+          "type": "string",
+          "description": "writing/speaking: the task."
+        },
+        "promptEn": {
+          "type": "string"
+        },
+        "minWords": {
+          "type": "integer"
+        },
+        "maxWords": {
+          "type": "integer"
+        },
+        "maxSeconds": {
+          "type": "integer",
+          "description": "speaking: recording limit."
+        },
+        "mode": {
+          "type": "string",
+          "enum": [
+            "repeat",
+            "respond",
+            "roleplay",
+            "describe"
+          ],
+          "description": "speaking: repeat = shadow a model line; respond = answer a question; roleplay = multi-turn with scripted partner lines; describe = talk about a topic."
+        },
+        "turns": {
+          "type": "array",
+          "description": "speaking roleplay: partner lines (spoken by TTS) alternating with the learner's turn.",
+          "items": {
+            "type": "object",
+            "required": [
+              "speaker"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "speaker": {
+                "type": "string",
+                "enum": [
+                  "partner",
+                  "learner"
+                ]
+              },
+              "fr": {
+                "type": "string",
+                "description": "partner: line to speak."
+              },
+              "task": {
+                "type": "string",
+                "description": "learner: what to say, in English."
+              },
+              "expectedPhrases": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "expectedPhrases": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "speaking/writing: key forms the response should contain, for a quick automatic check on the transcript. Alternatives inside one entry are separated by ' | '. In mode=repeat these are also the lines the learner repeats, in order."
+        },
+        "targetStructures": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Grammar/vocab the grader should look for."
+        },
+        "modelAnswer": {
+          "type": "string",
+          "description": "Shown after submission."
+        },
+        "rubric": {
+          "$ref": "#/$defs/rubric"
+        },
+        "selfCheck": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "speaking: yes/no checklist for self-assessment when no automatic grader is available."
+        },
+        "tts": {
+          "$ref": "#/$defs/tts"
+        },
+        "rubricRef": {
+          "type": "string",
+          "description": "Key into the level's rubrics map. Use instead of an inline rubric."
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Diagnostic tags (e.g. grammar:etre, qc:spoken, numbers). The adaptive engine tracks accuracy per tag."
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "notes"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "body"
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "flashcards"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "vocabIds"
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "quiz"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "items"
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "writing"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "prompt"
+            ],
+            "anyOf": [
+              {
+                "required": [
+                  "rubric"
+                ]
+              },
+              {
+                "required": [
+                  "rubricRef"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "speaking"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "mode",
+              "selfCheck"
+            ],
+            "anyOf": [
+              {
+                "required": [
+                  "rubric"
+                ]
+              },
+              {
+                "required": [
+                  "rubricRef"
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "lesson": {
+      "type": "object",
+      "required": [
+        "id",
+        "number",
+        "title",
+        "objectives",
+        "activities"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[0-9]+\\.[0-9]+$",
+          "description": "e.g. 1.3"
+        },
+        "number": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "title": {
+          "type": "string"
+        },
+        "titleEn": {
+          "type": "string"
+        },
+        "objectives": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "activities": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/activity"
+          },
+          "minItems": 1
+        }
+      }
+    },
+    "gateTest": {
+      "type": "object",
+      "required": [
+        "id",
+        "title",
+        "passRule",
+        "sections"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        },
+        "instructions": {
+          "type": "string"
+        },
+        "passRule": {
+          "type": "object",
+          "required": [
+            "overallPercent",
+            "sectionMinPercent"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "overallPercent": {
+              "type": "number"
+            },
+            "sectionMinPercent": {
+              "type": "number"
+            }
+          }
+        },
+        "sections": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": [
+              "skill",
+              "title",
+              "activities"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "skill": {
+                "$ref": "#/$defs/skill"
+              },
+              "title": {
+                "type": "string"
+              },
+              "reviewLessons": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "description": "Lessons to send the learner back to if this section is below the minimum."
+              },
+              "activities": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/activity"
+                },
+                "minItems": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    "placementTest": {
+      "type": "object",
+      "required": [
+        "schemaVersion",
+        "id",
+        "title",
+        "placementRule",
+        "bands"
+      ],
+      "properties": {
+        "schemaVersion": {
+          "const": "1.0"
+        },
+        "id": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        },
+        "titleEn": {
+          "type": "string"
+        },
+        "instructions": {
+          "type": "string"
+        },
+        "dontKnowOption": {
+          "type": "string",
+          "description": "Label for an extra option the widget appends to every multiple_choice item; choosing it scores 0 without counting as a wrong guess."
+        },
+        "priorKnowledge": {
+          "type": "object",
+          "description": "What is already known about the learner before the test."
+        },
+        "placementRule": {
+          "type": "object",
+          "required": [
+            "bandPassPercent",
+            "stopBelowPercent"
+          ],
+          "properties": {
+            "bandPassPercent": {
+              "type": "number"
+            },
+            "stopBelowPercent": {
+              "type": "number"
+            },
+            "description": {
+              "type": "string"
+            }
+          }
+        },
+        "bands": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "level",
+              "cefr",
+              "title",
+              "activities"
+            ],
+            "properties": {
+              "level": {
+                "type": "integer",
+                "minimum": 0,
+                "description": "0 = production tasks that always run at the end."
+              },
+              "cefr": {
+                "type": "string"
+              },
+              "title": {
+                "type": "string"
+              },
+              "alwaysRun": {
+                "type": "boolean"
+              },
+              "activities": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/activity"
+                }
+              }
+            }
+          }
+        },
+        "rubrics": {
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "#/$defs/rubric"
+          }
+        }
+      }
+    }
+  }
+}
