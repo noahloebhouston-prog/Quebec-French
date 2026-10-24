@@ -1,16 +1,88 @@
 {
   "levels": [
-    { "id": "L01", "number": 1, "title": "Allô! Premiers contacts", "cefr": "A1.1", "file": "levels/level-01.json" },
-    { "id": "L02", "number": 2, "title": "Ma vie, ma famille", "cefr": "A1.2", "file": null },
-    { "id": "L03", "number": 3, "title": "En ville", "cefr": "A1.3", "file": null },
-    { "id": "L04", "number": 4, "title": "Au quotidien", "cefr": "A2.1", "file": null },
-    { "id": "L05", "number": 5, "title": "Ce qui s'est passé", "cefr": "A2.2", "file": null },
-    { "id": "L06", "number": 6, "title": "Autrefois", "cefr": "A2.3", "file": null },
-    { "id": "L07", "number": 7, "title": "Au travail et au service", "cefr": "B1.1", "file": null },
-    { "id": "L08", "number": 8, "title": "Mes opinions", "cefr": "B1.2", "file": null },
-    { "id": "L09", "number": 9, "title": "Les médias québécois", "cefr": "B1.3", "file": null },
-    { "id": "L10", "number": 10, "title": "Débattre", "cefr": "B2.1", "file": null },
-    { "id": "L11", "number": 11, "title": "La culture", "cefr": "B2.2", "file": null },
-    { "id": "L12", "number": 12, "title": "Aisance", "cefr": "C1", "file": null }
+    {
+      "id": "L01",
+      "number": 1,
+      "title": "Allô! Premiers contacts",
+      "cefr": "A1.1",
+      "file": "levels/level-01.json"
+    },
+    {
+      "id": "L02",
+      "number": 2,
+      "title": "Ma vie, ma famille",
+      "cefr": "A1.2",
+      "file": "levels/level-02.json"
+    },
+    {
+      "id": "L03",
+      "number": 3,
+      "title": "En ville",
+      "cefr": "A1.3",
+      "file": null
+    },
+    {
+      "id": "L04",
+      "number": 4,
+      "title": "Au quotidien",
+      "cefr": "A2.1",
+      "file": null
+    },
+    {
+      "id": "L05",
+      "number": 5,
+      "title": "Ce qui s'est passé",
+      "cefr": "A2.2",
+      "file": null
+    },
+    {
+      "id": "L06",
+      "number": 6,
+      "title": "Autrefois",
+      "cefr": "A2.3",
+      "file": null
+    },
+    {
+      "id": "L07",
+      "number": 7,
+      "title": "Au travail et au service",
+      "cefr": "B1.1",
+      "file": null
+    },
+    {
+      "id": "L08",
+      "number": 8,
+      "title": "Mes opinions",
+      "cefr": "B1.2",
+      "file": null
+    },
+    {
+      "id": "L09",
+      "number": 9,
+      "title": "Les médias québécois",
+      "cefr": "B1.3",
+      "file": null
+    },
+    {
+      "id": "L10",
+      "number": 10,
+      "title": "Débattre",
+      "cefr": "B2.1",
+      "file": null
+    },
+    {
+      "id": "L11",
+      "number": 11,
+      "title": "La culture",
+      "cefr": "B2.2",
+      "file": null
+    },
+    {
+      "id": "L12",
+      "number": 12,
+      "title": "Aisance",
+      "cefr": "C1",
+      "file": null
+    }
   ]
 }

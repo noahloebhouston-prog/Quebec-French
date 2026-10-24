@@ -457,7 +457,9 @@ function focusSkills() {
   return [...fs];
 }
 function itemTags(item, act, lesson) {
-  return item.tags || act.tags || (lesson ? ['lesson:' + lesson.id] : []);
+  const tags = (item.tags || act.tags || []).slice();
+  if (lesson && !tags.includes('lesson:' + lesson.id)) tags.push('lesson:' + lesson.id);
+  return tags;
 }
 function reviewPool(tag) {
   const pool = [];
@@ -503,7 +505,6 @@ function notesPlayer(act, ctx, done) {
   const body = h('div', { class: 'card notes', html: renderMd(act.body) });
   wireSay(body, act.tts);
   return h('div', {},
-    h('p', { class: 'small muted' }, 'Tap any bold French phrase to hear it.'),
     body,
     h('div', { class: 'sticky-actions' }, h('button', { class: 'btn primary', onclick: () => done({ score: 1, earned: 1, max: 1 }) }, 'Terminé'))
   );
@@ -606,6 +607,7 @@ function makeItem(item, ctx) {
       : shuffle(item.options.map((o, idx) => ({ label: o, idx })));
     if (ctx.mode === 'placement' && item.kind === 'multiple_choice') opts.push({ label: DATA.placement.dontKnowOption || 'Je ne sais pas', idx: -1 });
     add(el, h('div', { class: 'prompt' }, item.prompt));
+    if (item.audioText) add(el, h('div', { class: 'row', style: 'margin-bottom:6px' }, playButton('Écouter', () => speak(item.audioText, { tts: item.tts }), ctx.mode === 'gate' || ctx.mode === 'placement' ? 2 : 0)));
     const labels = opts.map(o => {
       const inp = h('input', { type: 'radio', name, value: String(o.idx) });
       const lab = h('label', { class: 'opt' }, inp, h('span', {}, o.label));

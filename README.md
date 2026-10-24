@@ -13,6 +13,7 @@ Files in this folder:
 | `placement/placement-test.json` | Placement test that finds your starting level and weak skills |
 | `adaptive-rules.json` | Rules that adjust the plan to your results as you go |
 | `levels/level-01.json` | Level 1, fully built: lessons, activities, gate test |
+| `levels/level-02.json` | Level 2, fully built: family, work, likes, negation, days and time, conversation |
 | `WIDGET-NOTES.md` | How the widget should render, grade and track each activity type |
 | `index.html`, `app/` | The web app itself: no build step, no server, it reads the JSON files above |
 | `levels/index.json` | The list of levels the app shows; a new level goes live when its `file` is filled in |
