@@ -198,6 +198,13 @@ function playButton(label, onPlay, maxPlays) {
 const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
 let activeRecording = null;
 
+/* claude.ai Artifact capabilities: resolve to null anywhere else */
+const capCache = {};
+function cap(name) {
+  if (!(name in capCache)) capCache[name] = (window.claude && window.claude.use) ? Promise.resolve(window.claude.use(name)).catch(() => null) : Promise.resolve(null);
+  return capCache[name];
+}
+
 async function startRecording(maxSeconds, onText) {
   const rec = { transcript: '', url: null };
   let stream = null, mr = null, chunks = [], recog = null, timer = null, stopped = false;
@@ -799,6 +806,16 @@ function rubricRater(rubric, suggestions) {
   return { el, get, set };
 }
 
+function copyText(text, pre, btn) {
+  const fallback = () => {
+    const r = document.createRange(); r.selectNodeContents(pre);
+    const sel = getSelection(); sel.removeAllRanges(); sel.addRange(r);
+    btn.textContent = 'Selected: copy it now';
+  };
+  if (!navigator.clipboard) return fallback();
+  navigator.clipboard.writeText(text).then(() => { btn.textContent = 'Copied ✓'; }, fallback);
+}
+
 /* Writing */
 function writingPlayer(act, ctx, done) {
   const rubric = rubricFor(act, ctx);
@@ -838,6 +855,33 @@ function writingPlayer(act, ctx, done) {
         pasteMsg.textContent = "Couldn't read that. Paste the whole reply, including the { } braces.";
       }
     };
+    const promptPre = h('pre', { class: 'copy' }, prompt);
+    const askMsg = h('div', { class: 'small' });
+    const askBtn = h('button', { class: 'btn primary' }, 'Grade it with Claude');
+    const askBox = h('div', { hidden: true, style: 'margin-bottom:10px' }, askBtn, askMsg);
+    cap('sample').then(sample => {
+      if (!sample) return;
+      askBox.hidden = false;
+      askBtn.addEventListener('click', async () => {
+        askBtn.disabled = true;
+        askMsg.textContent = 'Claude is reading your text…';
+        try {
+          const r = await sample(prompt, { cache: false });
+          paste.value = r.text;
+          usePaste();
+          askMsg.textContent = pasteMsg.textContent.startsWith('✓') ? '✓ Claude graded it. The scores are filled in below and you can still adjust them.' : "Claude's answer couldn't be read. Try again, or rate yourself below.";
+          pasteMsg.textContent = '';
+          askBtn.disabled = false;
+          askBtn.textContent = 'Grade it again';
+        } catch (e) {
+          askBtn.disabled = e.code === 'not_granted';
+          askMsg.textContent = e.code === 'not_granted' ? 'Grading by Claude is turned off for this page. Use the copy option or rate yourself below.'
+            : e.code === 'rate_limited' ? 'Too many requests right now. Wait a minute and try again.'
+            : "Claude couldn't grade it this time. Try again, or rate yourself below.";
+          if (e.code !== 'not_granted') askBtn.disabled = false;
+        }
+      });
+    });
     const finishMsg = h('div', { class: 'small', style: 'color:var(--bad)' });
     add(after, 
       act.expectedPhrases ? h('div', { class: 'card' },
@@ -846,11 +890,12 @@ function writingPlayer(act, ctx, done) {
       act.modelAnswer ? h('div', { class: 'card' }, h('h3', {}, 'Model answer'), h('p', { style: 'white-space:pre-wrap' }, act.modelAnswer)) : null,
       h('div', { class: 'card' },
         h('h3', {}, 'Grade it'),
+        askBox,
         h('details', {},
           h('summary', {}, 'Option A: have Claude grade it (recommended)'),
           h('p', { class: 'small' }, 'Copy this, paste it into a Claude chat, then paste the reply back here.'),
-          h('pre', { class: 'copy' }, prompt),
-          h('button', { class: 'btn small', onclick: e => { navigator.clipboard && navigator.clipboard.writeText(prompt).then(() => { e.target.textContent = 'Copied ✓'; }); } }, 'Copy'),
+          promptPre,
+          h('button', { class: 'btn small', onclick: e => copyText(prompt, promptPre, e.target) }, 'Copy'),
           h('div', { style: 'margin-top:8px' }, paste),
           h('button', { class: 'btn small', onclick: usePaste }, 'Use this grade'), pasteMsg, corrections),
         h('p', { class: 'small muted' }, 'Option B: rate yourself honestly with the rubric, comparing to the model answer.'),
@@ -1366,8 +1411,17 @@ function viewSettings() {
       h('div', { class: 'row' },
         h('button', {
           class: 'btn', onclick: () => {
-            const a = h('a', { href: URL.createObjectURL(new Blob([JSON.stringify(S, null, 2)], { type: 'application/json' })), download: 'quebec-french-progress.json' });
-            add(document.body, a); a.click(); a.remove();
+            const json = JSON.stringify(S, null, 2);
+            cap('downloads').then(dl => {
+              if (dl) {
+                dl.save({ filename: 'quebec-french-progress.json', data: json }).catch(e => {
+                  if (e.code !== 'declined') msg.textContent = "Couldn't save the file here.";
+                });
+                return;
+              }
+              const a = h('a', { href: URL.createObjectURL(new Blob([json], { type: 'application/json' })), download: 'quebec-french-progress.json' });
+              add(document.body, a); a.click(); a.remove();
+            });
           }
         }, 'Export'),
         h('label', { class: 'btn' }, 'Import', h('span', { hidden: true }, file)),
