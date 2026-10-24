@@ -266,6 +266,8 @@ function playButton(label, onPlay, maxPlays) {
 
 const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
 let activeRecording = null;
+// claude.ai Artifact pages can't use the microphone, so start in say-it-aloud mode there
+let micBlocked = !!(window.claude && window.claude.use);
 
 /* claude.ai Artifact capabilities: resolve to null anywhere else */
 const capCache = {};
@@ -284,6 +286,7 @@ async function startRecording(maxSeconds, onText) {
     mr.start();
   } catch (e) {
     rec.error = 'Microphone not available (' + e.message + ').';
+    micBlocked = true;
   }
   if (SR) {
     try {
@@ -302,7 +305,10 @@ async function startRecording(maxSeconds, onText) {
         rec.transcript = (finals + interim).trim();
         onText && onText(rec.transcript);
       };
-      recog.onerror = ev => { if (ev.error !== 'no-speech' && ev.error !== 'aborted') rec.recogError = ev.error; };
+      recog.onerror = ev => {
+        if (ev.error !== 'no-speech' && ev.error !== 'aborted') rec.recogError = ev.error;
+        if (ev.error === 'not-allowed' || ev.error === 'service-not-allowed') { micBlocked = true; rec.stop && rec.stop(); }
+      };
       recog.onend = () => { if (!stopped && !rec.recogError) { try { recog.start(); } catch (e) { /* ended */ } } };
       recog.start();
     } catch (e) { recog = null; }
@@ -1006,8 +1012,11 @@ function speakingPlayer(act, ctx, done) {
   const steps = speakingSteps(act);
   const results = steps.map(() => null);
   const wrap = h('div');
-  if (!SR) add(wrap, h('div', { class: 'notice' }, 'Speech recognition isn\'t available in this browser, so you\'ll self-check instead. Chrome (desktop or Android) or Safari give you automatic transcripts.'));
+  if (micBlocked) add(wrap, h('div', { class: 'notice' }, "Recording doesn't work on this page. For each part, say your answer out loud, tap “Je l'ai dit”, then tick the self-check boxes."));
+  else if (!SR) add(wrap, h('div', { class: 'notice' }, 'Speech recognition isn\'t available in this browser, so you\'ll self-check instead. Chrome (desktop or Android) or Safari give you automatic transcripts.'));
   const stepsBox = h('div', { class: 'card' });
+  const sayButtons = [];
+  const noMic = () => sayButtons.forEach(b => { b.btn.hidden = true; b.said.classList.add('primary'); });
   steps.forEach((st, i) => {
     const box = h('div', { class: 'turn' });
     if (st.model) {
@@ -1023,7 +1032,16 @@ function speakingPlayer(act, ctx, done) {
     if (st.task) add(box, h('div', { class: 'small', style: 'margin-top:6px' }, '👉 ' + st.task));
     if (!st.closing) {
       const out = h('div');
-      const btn = h('button', { class: 'btn', type: 'button', style: 'margin-top:8px' }, '🎙️ Enregistrer');
+      const btn = h('button', { class: 'btn', type: 'button' }, '🎙️ Enregistrer');
+      const said = h('button', { class: 'btn', type: 'button' }, '✓ Je l\'ai dit');
+      said.addEventListener('click', () => {
+        if (rec) return;
+        speechSynthesis.cancel();
+        out.innerHTML = '';
+        add(out, h('div', { class: 'small good' }, '✓ Done. Say it again as many times as you like.'));
+        results[i] = { transcript: null, frac: null };
+      });
+      sayButtons.push({ btn, said });
       let rec = null;
       btn.addEventListener('click', async () => {
         if (rec) { rec.stop(); return; }
@@ -1032,6 +1050,13 @@ function speakingPlayer(act, ctx, done) {
         const live = h('div', { class: 'transcript' }, SR ? '…' : 'Recording…');
         add(out, live);
         rec = await startRecording(act.maxSeconds || 30, t => { live.textContent = t; });
+        if (rec.error) {
+          rec.stop(); await rec.done; rec = null;
+          out.innerHTML = '';
+          add(out, h('div', { class: 'notice' }, "Recording doesn't work on this page. Say your answer out loud, then tap “Je l'ai dit”."));
+          noMic();
+          return;
+        }
         if (rec.error) { out.innerHTML = ''; add(out, h('div', { class: 'notice' }, rec.error)); }
         btn.textContent = '■ Arrêter';
         btn.classList.add('rec');
@@ -1051,7 +1076,7 @@ function speakingPlayer(act, ctx, done) {
           results[i] = { transcript: null, frac: null };
         }
       });
-      add(box, btn, out);
+      add(box, h('div', { class: 'row', style: 'margin-top:8px' }, btn, said), out);
     }
     add(stepsBox, box);
   });
@@ -1059,12 +1084,18 @@ function speakingPlayer(act, ctx, done) {
   const rubric = rubricFor(act, ctx);
   const levelRater = ctx.mode === 'placement' && rubric ? rubricRater(rubric) : null;
   const msg = h('div', { class: 'small', style: 'color:var(--bad)' });
+  let warnedSelf = false;
   const finish = h('button', {
     class: 'btn primary', onclick: () => {
       const recorded = results.filter(Boolean);
       const needed = steps.filter(s => !s.closing).length;
-      if (recorded.length < needed) { msg.textContent = `Record all ${needed} answers first.`; return; }
+      if (recorded.length < needed) { msg.textContent = `Answer all ${needed} parts first: record each one, or say it out loud and tap “Je l'ai dit”.`; return; }
       if (levelRater && !levelRater.get().complete) { msg.textContent = 'Pick the level that matches what you said.'; return; }
+      if (checks.length && !checks.some(c => c.inp.checked) && !warnedSelf) {
+        warnedSelf = true;
+        msg.textContent = 'Your score comes from the self-check. Tick each box you managed, then tap Terminer again.';
+        return;
+      }
       const self = checks.length ? checks.filter(c => c.inp.checked).length / checks.length : 1;
       const fr = recorded.filter(r => r.frac != null).map(r => r.frac);
       let score = fr.length ? 0.5 * (fr.reduce((a, b) => a + b, 0) / fr.length) + 0.5 * self : self;
@@ -1080,6 +1111,7 @@ function speakingPlayer(act, ctx, done) {
       checks.map(c => c.el),
       levelRater ? [h('h3', {}, 'Which best describes what you said?'), levelRater.el] : null),
     h('div', { class: 'sticky-actions' }, finish, msg));
+  if (micBlocked) noMic();
   return wrap;
 }
 

@@ -166,3 +166,4 @@ pre.copy { white-space: pre-wrap; background: var(--surface-2); padding: 10px; b
 }
 .sync { font-size: 13px; color: var(--muted); }
 .sync.bad { color: var(--bad); }
+.small.good, .good-text { color: var(--good); }
