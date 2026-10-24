@@ -1,0 +1,4371 @@
+{
+  "schemaVersion": "1.0",
+  "id": "L02",
+  "number": 2,
+  "title": "Ma vie, ma famille",
+  "titleEn": "My life, my family",
+  "cefr": "A1.2",
+  "description": "Talk about the people in your life, what you do for work, what you like and don't like, and when things happen. You'll learn regular -er verbs, negation the way it's really spoken, possessives, days and time, plus Québec essentials like mon chum, ma blonde, ma job, ça me tente, pantoute, déjeuner/dîner/souper and à soir.",
+  "objectives": [
+    "Describe your family and partner with possessives (mon, ma, mes…)",
+    "Say what you do for work or study, using regular -er verbs in the present",
+    "Say what you like, love, hate and feel like doing",
+    "Make sentences negative, in writing (ne… pas) and in speech (pas alone)",
+    "Name the days, tell the time and talk about meals the Québec way",
+    "Keep a getting-to-know-you conversation going with questions"
+  ],
+  "rubrics": {
+    "writing-a1": {
+      "passPercent": 70,
+      "criteria": [
+        {
+          "id": "task",
+          "name": "Task completion",
+          "maxPoints": 4,
+          "description": "Does the text do everything the prompt asks, within the word range?",
+          "bands": [
+            {
+              "points": 4,
+              "descriptor": "Every required element is present and clear; length is within range."
+            },
+            {
+              "points": 3,
+              "descriptor": "All but one element present, or slightly outside the length range."
+            },
+            {
+              "points": 2,
+              "descriptor": "About half the required elements are present."
+            },
+            {
+              "points": 1,
+              "descriptor": "Only one element addressed, or mostly off-task."
+            },
+            {
+              "points": 0,
+              "descriptor": "No relevant French text."
+            }
+          ]
+        },
+        {
+          "id": "vocab",
+          "name": "Vocabulary and register",
+          "maxPoints": 3,
+          "description": "Uses vocabulary from the lesson; tone fits the situation (tu/vous, informal/formal). Québec and standard forms are both correct.",
+          "bands": [
+            {
+              "points": 3,
+              "descriptor": "Lesson vocabulary used accurately; register fits the reader."
+            },
+            {
+              "points": 2,
+              "descriptor": "Mostly appropriate; one wrong word choice or register slip (e.g. vous to a close friend)."
+            },
+            {
+              "points": 1,
+              "descriptor": "Limited vocabulary, several wrong words or English words."
+            },
+            {
+              "points": 0,
+              "descriptor": "Vocabulary prevents understanding."
+            }
+          ]
+        },
+        {
+          "id": "grammar",
+          "name": "Grammar",
+          "maxPoints": 3,
+          "description": "Correct forms for the structures taught so far: -er verbs in the present, possessives, negation (ne… pas / jamais / plus, pas de), aimer + infinitive or le/la/les, être/avoir, times. Dropped ne is fine in informal tasks.",
+          "bands": [
+            {
+              "points": 3,
+              "descriptor": "No errors in the target structures, at most one minor slip elsewhere."
+            },
+            {
+              "points": 2,
+              "descriptor": "One or two errors in target structures; meaning stays clear."
+            },
+            {
+              "points": 1,
+              "descriptor": "Frequent errors; meaning sometimes unclear."
+            },
+            {
+              "points": 0,
+              "descriptor": "Errors make the text hard to understand."
+            }
+          ]
+        },
+        {
+          "id": "spelling",
+          "name": "Spelling and accents",
+          "maxPoints": 2,
+          "description": "Words spelled correctly, accents present (é, è, ç…). Informal Québec spellings such as chu, t'es, pis are accepted in informal tasks.",
+          "bands": [
+            {
+              "points": 2,
+              "descriptor": "At most one spelling or accent error."
+            },
+            {
+              "points": 1,
+              "descriptor": "Two to four errors."
+            },
+            {
+              "points": 0,
+              "descriptor": "Five or more errors."
+            }
+          ]
+        }
+      ]
+    },
+    "speaking-a1": {
+      "passPercent": 70,
+      "criteria": [
+        {
+          "id": "task",
+          "name": "Task completion",
+          "maxPoints": 4,
+          "description": "Says everything the task asks for.",
+          "bands": [
+            {
+              "points": 4,
+              "descriptor": "Every part of the task done."
+            },
+            {
+              "points": 3,
+              "descriptor": "One part missing or unclear."
+            },
+            {
+              "points": 2,
+              "descriptor": "About half done."
+            },
+            {
+              "points": 1,
+              "descriptor": "Only one part done."
+            },
+            {
+              "points": 0,
+              "descriptor": "Nothing relevant said in French."
+            }
+          ]
+        },
+        {
+          "id": "accuracy",
+          "name": "Accuracy",
+          "maxPoints": 3,
+          "description": "Correct words and verb forms for this level.",
+          "bands": [
+            {
+              "points": 3,
+              "descriptor": "Accurate, at most one slip."
+            },
+            {
+              "points": 2,
+              "descriptor": "A few errors; meaning clear."
+            },
+            {
+              "points": 1,
+              "descriptor": "Many errors; listener has to guess."
+            },
+            {
+              "points": 0,
+              "descriptor": "Not understandable."
+            }
+          ]
+        },
+        {
+          "id": "pron",
+          "name": "Pronunciation",
+          "maxPoints": 3,
+          "description": "A French listener would understand without effort. Judge from the transcript: if speech recognition got the words right, pronunciation is intelligible.",
+          "bands": [
+            {
+              "points": 3,
+              "descriptor": "Transcript matches what was intended almost entirely."
+            },
+            {
+              "points": 2,
+              "descriptor": "A few words misrecognised."
+            },
+            {
+              "points": 1,
+              "descriptor": "Many words misrecognised."
+            },
+            {
+              "points": 0,
+              "descriptor": "Mostly unrecognisable."
+            }
+          ]
+        },
+        {
+          "id": "fluency",
+          "name": "Fluency",
+          "maxPoints": 2,
+          "description": "Speaks in phrases rather than word by word; long pauses are OK at A1.",
+          "bands": [
+            {
+              "points": 2,
+              "descriptor": "Phrases flow; few restarts."
+            },
+            {
+              "points": 1,
+              "descriptor": "Word by word with long pauses, but finishes."
+            },
+            {
+              "points": 0,
+              "descriptor": "Cannot finish the task."
+            }
+          ]
+        }
+      ]
+    },
+    "speaking-repeat": {
+      "passPercent": 70,
+      "criteria": [
+        {
+          "id": "complete",
+          "name": "Completeness",
+          "maxPoints": 3,
+          "description": "Repeats every line.",
+          "bands": [
+            {
+              "points": 3,
+              "descriptor": "Every line repeated in full."
+            },
+            {
+              "points": 2,
+              "descriptor": "Most lines repeated."
+            },
+            {
+              "points": 1,
+              "descriptor": "About half."
+            },
+            {
+              "points": 0,
+              "descriptor": "Little or nothing."
+            }
+          ]
+        },
+        {
+          "id": "pron",
+          "name": "Pronunciation",
+          "maxPoints": 3,
+          "description": "Transcript matches the model lines.",
+          "bands": [
+            {
+              "points": 3,
+              "descriptor": "Almost every word recognised."
+            },
+            {
+              "points": 2,
+              "descriptor": "Most words recognised."
+            },
+            {
+              "points": 1,
+              "descriptor": "About half recognised."
+            },
+            {
+              "points": 0,
+              "descriptor": "Little recognised."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "vocabulary": [
+    {
+      "id": "v02-famille",
+      "fr": "la famille",
+      "en": "family",
+      "register": "both",
+      "pos": "noun",
+      "gender": "f",
+      "lesson": "2.1"
+    },
+    {
+      "id": "v02-parents",
+      "fr": "ma mère, mon père, mes parents",
+      "en": "my mother, my father, my parents",
+      "register": "both",
+      "pos": "noun",
+      "lesson": "2.1"
+    },
+    {
+      "id": "v02-frere-soeur",
+      "fr": "mon frère, ma sœur",
+      "en": "my brother, my sister",
+      "register": "both",
+      "pos": "noun",
+      "lesson": "2.1"
+    },
+    {
+      "id": "v02-fils-fille",
+      "fr": "mon fils, ma fille",
+      "en": "my son, my daughter",
+      "register": "both",
+      "pos": "noun",
+      "lesson": "2.1",
+      "notes": "fils: the l is silent and the s is pronounced (fiss)."
+    },
+    {
+      "id": "v02-enfants",
+      "fr": "un enfant, des enfants",
+      "en": "a child, children",
+      "register": "both",
+      "pos": "noun",
+      "gender": "m/f",
+      "lesson": "2.1"
+    },
+    {
+      "id": "v02-grands-parents",
+      "fr": "mes grands-parents (ma grand-mère, mon grand-père)",
+      "en": "my grandparents (grandmother, grandfather)",
+      "register": "both",
+      "pos": "noun",
+      "lesson": "2.1"
+    },
+    {
+      "id": "v02-oncle-tante",
+      "fr": "mon oncle, ma tante",
+      "en": "my uncle, my aunt",
+      "register": "both",
+      "pos": "noun",
+      "lesson": "2.1"
+    },
+    {
+      "id": "v02-cousin",
+      "fr": "mon cousin, ma cousine",
+      "en": "my cousin (m / f)",
+      "register": "both",
+      "pos": "noun",
+      "lesson": "2.1"
+    },
+    {
+      "id": "v02-neveu-niece",
+      "fr": "mon neveu, ma nièce",
+      "en": "my nephew, my niece",
+      "register": "both",
+      "pos": "noun",
+      "lesson": "2.1"
+    },
+    {
+      "id": "v02-mon-chum",
+      "fr": "mon chum",
+      "en": "my boyfriend / husband / male partner; also my buddy",
+      "register": "quebecois",
+      "standardEquivalent": "mon copain / mon mari",
+      "pos": "noun",
+      "gender": "m",
+      "lesson": "2.1",
+      "notes": "Context decides: « mon chum » is usually your partner; « mes chums » or « un chum à moi » are your friends."
+    },
+    {
+      "id": "v02-ma-blonde",
+      "fr": "ma blonde",
+      "en": "my girlfriend / wife / female partner",
+      "register": "quebecois",
+      "standardEquivalent": "ma copine / ma femme",
+      "pos": "noun",
+      "gender": "f",
+      "lesson": "2.1",
+      "notes": "Nothing to do with hair colour."
+    },
+    {
+      "id": "v02-conjoint",
+      "fr": "mon conjoint, ma conjointe",
+      "en": "my (common-law) partner, spouse",
+      "register": "both",
+      "pos": "noun",
+      "lesson": "2.1",
+      "notes": "Very common in Québec, where many couples live together without marrying (conjoints de fait)."
+    },
+    {
+      "id": "v02-marie",
+      "fr": "marié / mariée",
+      "en": "married",
+      "register": "both",
+      "pos": "adj",
+      "lesson": "2.1"
+    },
+    {
+      "id": "v02-celibataire",
+      "fr": "célibataire",
+      "en": "single",
+      "register": "both",
+      "pos": "adj",
+      "lesson": "2.1"
+    },
+    {
+      "id": "v02-chien-chat",
+      "fr": "un chien, un chat",
+      "en": "a dog, a cat",
+      "register": "both",
+      "pos": "noun",
+      "gender": "m",
+      "lesson": "2.1"
+    },
+    {
+      "id": "v02-on-est-quatre",
+      "fr": "On est quatre dans ma famille.",
+      "en": "There are four of us in my family.",
+      "register": "both",
+      "pos": "phrase",
+      "lesson": "2.1"
+    },
+    {
+      "id": "v02-dans-la-vie",
+      "fr": "Qu'est-ce que tu fais dans la vie?",
+      "en": "What do you do (for a living)?",
+      "register": "both",
+      "pos": "phrase",
+      "lesson": "2.2"
+    },
+    {
+      "id": "v02-travailler",
+      "fr": "travailler",
+      "en": "to work",
+      "register": "both",
+      "pos": "verb",
+      "lesson": "2.2"
+    },
+    {
+      "id": "v02-etudier",
+      "fr": "étudier",
+      "en": "to study",
+      "register": "both",
+      "pos": "verb",
+      "lesson": "2.2"
+    },
+    {
+      "id": "v02-ma-job",
+      "fr": "ma job",
+      "en": "my job",
+      "register": "quebecois",
+      "standardEquivalent": "mon travail / mon emploi",
+      "pos": "noun",
+      "gender": "f",
+      "lesson": "2.2",
+      "notes": "Feminine in Québec (la job), masculine in France (le job)."
+    },
+    {
+      "id": "v02-emploi",
+      "fr": "un emploi, le travail",
+      "en": "a job, work",
+      "register": "both",
+      "pos": "noun",
+      "gender": "m",
+      "lesson": "2.2"
+    },
+    {
+      "id": "v02-bureau",
+      "fr": "au bureau",
+      "en": "at the office",
+      "register": "both",
+      "pos": "phrase",
+      "lesson": "2.2"
+    },
+    {
+      "id": "v02-teletravail",
+      "fr": "en télétravail",
+      "en": "working from home (remote)",
+      "register": "both",
+      "pos": "phrase",
+      "lesson": "2.2"
+    },
+    {
+      "id": "v02-temps-plein",
+      "fr": "à temps plein / à temps partiel",
+      "en": "full-time / part-time",
+      "register": "both",
+      "pos": "phrase",
+      "lesson": "2.2"
+    },
+    {
+      "id": "v02-retraite",
+      "fr": "à la retraite / retraité(e)",
+      "en": "retired",
+      "register": "both",
+      "pos": "phrase",
+      "lesson": "2.2"
+    },
+    {
+      "id": "v02-infirmier",
+      "fr": "infirmier / infirmière",
+      "en": "nurse",
+      "register": "both",
+      "pos": "noun",
+      "lesson": "2.2"
+    },
+    {
+      "id": "v02-enseignant",
+      "fr": "enseignant / enseignante",
+      "en": "teacher",
+      "register": "both",
+      "pos": "noun",
+      "lesson": "2.2"
+    },
+    {
+      "id": "v02-ingenieur",
+      "fr": "ingénieur / ingénieure",
+      "en": "engineer",
+      "register": "both",
+      "pos": "noun",
+      "lesson": "2.2",
+      "notes": "Québec feminine forms often add -e: ingénieure, professeure, auteure."
+    },
+    {
+      "id": "v02-etudiant",
+      "fr": "étudiant / étudiante",
+      "en": "student",
+      "register": "both",
+      "pos": "noun",
+      "lesson": "2.2"
+    },
+    {
+      "id": "v02-vendeur",
+      "fr": "vendeur / vendeuse",
+      "en": "salesperson",
+      "register": "both",
+      "pos": "noun",
+      "lesson": "2.2"
+    },
+    {
+      "id": "v02-chez",
+      "fr": "Je travaille chez Desjardins.",
+      "en": "I work at Desjardins (a company).",
+      "register": "both",
+      "pos": "phrase",
+      "lesson": "2.2",
+      "notes": "chez + company name; dans + type of place (dans une banque)."
+    },
+    {
+      "id": "v02-aimer",
+      "fr": "aimer",
+      "en": "to like, to love",
+      "register": "both",
+      "pos": "verb",
+      "lesson": "2.3"
+    },
+    {
+      "id": "v02-adorer",
+      "fr": "adorer",
+      "en": "to love, adore",
+      "register": "both",
+      "pos": "verb",
+      "lesson": "2.3"
+    },
+    {
+      "id": "v02-detester",
+      "fr": "détester",
+      "en": "to hate",
+      "register": "both",
+      "pos": "verb",
+      "lesson": "2.3"
+    },
+    {
+      "id": "v02-preferer",
+      "fr": "préférer (je préfère)",
+      "en": "to prefer",
+      "register": "both",
+      "pos": "verb",
+      "lesson": "2.3"
+    },
+    {
+      "id": "v02-jaime-ca",
+      "fr": "J'aime ça!",
+      "en": "I like it!",
+      "register": "both",
+      "pos": "phrase",
+      "lesson": "2.3",
+      "notes": "Québécois say « j'aime ça » constantly, where France often says « j'aime bien »."
+    },
+    {
+      "id": "v02-jhais-ca",
+      "fr": "J'haïs ça!",
+      "en": "I hate it!",
+      "register": "quebecois",
+      "standardEquivalent": "Je déteste ça!",
+      "pos": "phrase",
+      "lesson": "2.3",
+      "notes": "Informal. Pronounced « j'haï », often « j'hais ». Recognise it; détester is always safe."
+    },
+    {
+      "id": "v02-ca-me-tente",
+      "fr": "Ça me tente!",
+      "en": "I feel like it! / I'm up for it!",
+      "register": "quebecois",
+      "standardEquivalent": "J'ai envie / Ça me dit",
+      "pos": "phrase",
+      "lesson": "2.3"
+    },
+    {
+      "id": "v02-ca-me-tente-pas",
+      "fr": "Ça me tente pas.",
+      "en": "I don't feel like it.",
+      "register": "quebecois",
+      "standardEquivalent": "Je n'ai pas envie.",
+      "pos": "phrase",
+      "lesson": "2.3"
+    },
+    {
+      "id": "v02-ca-te-tente",
+      "fr": "Ça te tente-tu de…?",
+      "en": "Do you feel like…? / Want to…?",
+      "register": "quebecois",
+      "standardEquivalent": "Tu as envie de…?",
+      "pos": "phrase",
+      "lesson": "2.3"
+    },
+    {
+      "id": "v02-pantoute",
+      "fr": "pantoute",
+      "en": "not at all",
+      "register": "quebecois",
+      "standardEquivalent": "pas du tout",
+      "pos": "adverb",
+      "lesson": "2.3",
+      "example": "J'aime pas ça pantoute.",
+      "exampleEn": "I don't like that at all."
+    },
+    {
+      "id": "v02-magasiner",
+      "fr": "magasiner",
+      "en": "to go shopping",
+      "register": "quebecois",
+      "standardEquivalent": "faire du shopping / faire les magasins",
+      "pos": "verb",
+      "lesson": "2.3"
+    },
+    {
+      "id": "v02-jouer-au",
+      "fr": "jouer au hockey / jouer aux cartes",
+      "en": "to play hockey / to play cards",
+      "register": "both",
+      "pos": "phrase",
+      "lesson": "2.3"
+    },
+    {
+      "id": "v02-regarder",
+      "fr": "regarder la télé / des séries",
+      "en": "to watch TV / series",
+      "register": "both",
+      "pos": "phrase",
+      "lesson": "2.3"
+    },
+    {
+      "id": "v02-ecouter",
+      "fr": "écouter de la musique",
+      "en": "to listen to music",
+      "register": "both",
+      "pos": "phrase",
+      "lesson": "2.3"
+    },
+    {
+      "id": "v02-cuisiner",
+      "fr": "cuisiner",
+      "en": "to cook",
+      "register": "both",
+      "pos": "verb",
+      "lesson": "2.3"
+    },
+    {
+      "id": "v02-plein-air",
+      "fr": "le plein air",
+      "en": "the outdoors, outdoor activities",
+      "register": "both",
+      "pos": "noun",
+      "gender": "m",
+      "lesson": "2.3",
+      "notes": "Hiking, camping, canoeing: faire du plein air is a Québec passion."
+    },
+    {
+      "id": "v02-prefere",
+      "fr": "préféré / préférée",
+      "en": "favourite",
+      "register": "both",
+      "pos": "adj",
+      "lesson": "2.3",
+      "example": "Mon sport préféré, c'est le hockey."
+    },
+    {
+      "id": "v02-ne-pas",
+      "fr": "ne… pas",
+      "en": "not",
+      "register": "both",
+      "pos": "phrase",
+      "lesson": "2.4",
+      "example": "Je ne travaille pas le lundi. → (spoken) Je travaille pas le lundi."
+    },
+    {
+      "id": "v02-ne-jamais",
+      "fr": "ne… jamais",
+      "en": "never",
+      "register": "both",
+      "pos": "phrase",
+      "lesson": "2.4"
+    },
+    {
+      "id": "v02-ne-plus",
+      "fr": "ne… plus",
+      "en": "not anymore, no longer",
+      "register": "both",
+      "pos": "phrase",
+      "lesson": "2.4"
+    },
+    {
+      "id": "v02-pas-de",
+      "fr": "pas de / pas d'",
+      "en": "no / not any",
+      "register": "both",
+      "pos": "phrase",
+      "lesson": "2.4",
+      "example": "J'ai pas d'enfants.",
+      "exampleEn": "I don't have any kids."
+    },
+    {
+      "id": "v02-y-spoken",
+      "fr": "y (spoken il)",
+      "en": "he (in casual speech)",
+      "register": "quebecois",
+      "standardEquivalent": "il",
+      "pos": "pronoun",
+      "lesson": "2.4",
+      "example": "Y travaille pas. = Il ne travaille pas."
+    },
+    {
+      "id": "v02-a-spoken",
+      "fr": "a (spoken elle)",
+      "en": "she (in casual speech)",
+      "register": "quebecois",
+      "standardEquivalent": "elle",
+      "pos": "pronoun",
+      "lesson": "2.4",
+      "example": "A l'aime pas. = Elle ne l'aime pas."
+    },
+    {
+      "id": "v02-moi-non-plus",
+      "fr": "Moi non plus.",
+      "en": "Me neither.",
+      "register": "both",
+      "pos": "phrase",
+      "lesson": "2.4"
+    },
+    {
+      "id": "v02-pas-encore",
+      "fr": "pas encore",
+      "en": "not yet",
+      "register": "both",
+      "pos": "phrase",
+      "lesson": "2.4"
+    },
+    {
+      "id": "v02-jours",
+      "fr": "lundi, mardi, mercredi, jeudi, vendredi, samedi, dimanche",
+      "en": "Monday … Sunday",
+      "register": "both",
+      "pos": "noun",
+      "lesson": "2.5",
+      "notes": "No capital letters in French."
+    },
+    {
+      "id": "v02-le-lundi",
+      "fr": "le lundi",
+      "en": "on Mondays (every Monday)",
+      "register": "both",
+      "pos": "phrase",
+      "lesson": "2.5",
+      "notes": "lundi alone = this coming Monday."
+    },
+    {
+      "id": "v02-quelle-heure",
+      "fr": "Il est quelle heure?",
+      "en": "What time is it?",
+      "register": "both",
+      "standardEquivalent": "Quelle heure est-il?",
+      "pos": "phrase",
+      "lesson": "2.5"
+    },
+    {
+      "id": "v02-heures",
+      "fr": "Il est trois heures.",
+      "en": "It's three o'clock.",
+      "register": "both",
+      "pos": "phrase",
+      "lesson": "2.5"
+    },
+    {
+      "id": "v02-quart-demie",
+      "fr": "et quart / et demie / moins quart",
+      "en": "quarter past / half past / quarter to",
+      "register": "both",
+      "pos": "phrase",
+      "lesson": "2.5",
+      "notes": "Québec usually says « moins quart »; France says « moins le quart »."
+    },
+    {
+      "id": "v02-midi-minuit",
+      "fr": "midi, minuit",
+      "en": "noon, midnight",
+      "register": "both",
+      "pos": "noun",
+      "lesson": "2.5"
+    },
+    {
+      "id": "v02-moments",
+      "fr": "le matin, l'après-midi, le soir",
+      "en": "the morning, the afternoon, the evening",
+      "register": "both",
+      "pos": "noun",
+      "lesson": "2.5"
+    },
+    {
+      "id": "v02-a-matin",
+      "fr": "à matin",
+      "en": "this morning",
+      "register": "quebecois",
+      "standardEquivalent": "ce matin",
+      "pos": "phrase",
+      "lesson": "2.5"
+    },
+    {
+      "id": "v02-a-soir",
+      "fr": "à soir",
+      "en": "tonight, this evening",
+      "register": "quebecois",
+      "standardEquivalent": "ce soir",
+      "pos": "phrase",
+      "lesson": "2.5"
+    },
+    {
+      "id": "v02-dejeuner",
+      "fr": "le déjeuner",
+      "en": "breakfast",
+      "register": "quebecois",
+      "standardEquivalent": "le petit-déjeuner",
+      "pos": "noun",
+      "gender": "m",
+      "lesson": "2.5",
+      "notes": "In France le déjeuner is lunch!"
+    },
+    {
+      "id": "v02-diner",
+      "fr": "le dîner",
+      "en": "lunch (noon meal)",
+      "register": "quebecois",
+      "standardEquivalent": "le déjeuner",
+      "pos": "noun",
+      "gender": "m",
+      "lesson": "2.5",
+      "notes": "In France le dîner is the evening meal."
+    },
+    {
+      "id": "v02-souper",
+      "fr": "le souper",
+      "en": "supper, dinner (evening meal)",
+      "register": "quebecois",
+      "standardEquivalent": "le dîner",
+      "pos": "noun",
+      "gender": "m",
+      "lesson": "2.5"
+    },
+    {
+      "id": "v02-aujourdhui",
+      "fr": "aujourd'hui, demain, hier",
+      "en": "today, tomorrow, yesterday",
+      "register": "both",
+      "pos": "adverb",
+      "lesson": "2.5"
+    },
+    {
+      "id": "v02-tas-tu",
+      "fr": "T'as-tu des enfants?",
+      "en": "Do you have kids?",
+      "register": "quebecois",
+      "standardEquivalent": "As-tu des enfants? / Est-ce que tu as des enfants?",
+      "pos": "phrase",
+      "lesson": "2.6"
+    },
+    {
+      "id": "v02-quest-ce-que-taimes",
+      "fr": "Qu'est-ce que t'aimes faire?",
+      "en": "What do you like to do?",
+      "register": "both",
+      "pos": "phrase",
+      "lesson": "2.6"
+    },
+    {
+      "id": "v02-parle-moi",
+      "fr": "Parle-moi de toi!",
+      "en": "Tell me about yourself!",
+      "register": "both",
+      "pos": "phrase",
+      "lesson": "2.6"
+    },
+    {
+      "id": "v02-ca-depend",
+      "fr": "Ça dépend.",
+      "en": "It depends.",
+      "register": "both",
+      "pos": "phrase",
+      "lesson": "2.6"
+    },
+    {
+      "id": "v02-frequence",
+      "fr": "souvent, parfois / des fois, toujours",
+      "en": "often, sometimes, always",
+      "register": "both",
+      "pos": "adverb",
+      "lesson": "2.6"
+    },
+    {
+      "id": "v02-cest-vrai",
+      "fr": "Ah oui? C'est vrai?",
+      "en": "Oh yeah? Really?",
+      "register": "both",
+      "pos": "phrase",
+      "lesson": "2.6"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "2.1",
+      "number": 1,
+      "title": "Ma famille",
+      "titleEn": "My family",
+      "objectives": [
+        "Name family members",
+        "Use possessives: mon, ma, mes, ton, ta, tes, son, sa, ses…",
+        "Talk about your partner the Québec way (mon chum, ma blonde, mon conjoint)",
+        "Say how many people are in your family"
+      ],
+      "activities": [
+        {
+          "id": "2.1-a1",
+          "type": "notes",
+          "skill": "vocabulaire",
+          "title": "La famille et les possessifs",
+          "instructions": "Read the notes. Tap bold French to hear it.",
+          "tts": {
+            "lang": "fr-CA",
+            "rate": 0.9
+          },
+          "body": "## Possessives\n\nThe possessive agrees with the **thing owned**, not the owner.\n\n| | masculine | feminine | plural |\n|---|---|---|---|\n| my | **mon** frère | **ma** sœur | **mes** parents |\n| your (tu) | **ton** père | **ta** mère | **tes** enfants |\n| his / her | **son** fils | **sa** fille | **ses** cousins |\n| our | **notre** chien | **notre** maison | **nos** amis |\n| your (vous) | **votre** oncle | **votre** tante | **vos** grands-parents |\n| their | **leur** neveu | **leur** nièce | **leurs** enfants |\n\nBefore a feminine word starting with a vowel, use **mon / ton / son**: *mon amie, ton auto*.\n\n*Sa mère* can mean his mother or her mother: French doesn't care who owns it, only that mère is feminine.\n\n## Partners, Québec style\n\n- **mon chum**: my boyfriend or husband (also: my buddy; context decides)\n- **ma blonde**: my girlfriend or wife (no link to hair colour!)\n- **mon conjoint / ma conjointe**: my partner, very common since many Québec couples aren't married\n- **marié(e)**, **célibataire**\n\n## Counting your family\n\n- **On est quatre dans ma famille.** There are four of us.\n- **J'ai deux enfants, un fils pis une fille.**\n- **J'ai pas de frère.** (negation comes in lesson 2.4)"
+        },
+        {
+          "id": "2.1-a2",
+          "type": "flashcards",
+          "skill": "vocabulaire",
+          "title": "Flashcards : la famille",
+          "instructions": "Flip each card, say the French out loud, then mark whether you knew it.",
+          "vocabIds": [
+            "v02-famille",
+            "v02-parents",
+            "v02-frere-soeur",
+            "v02-fils-fille",
+            "v02-enfants",
+            "v02-grands-parents",
+            "v02-oncle-tante",
+            "v02-cousin",
+            "v02-neveu-niece",
+            "v02-mon-chum",
+            "v02-ma-blonde",
+            "v02-conjoint",
+            "v02-marie",
+            "v02-celibataire",
+            "v02-chien-chat",
+            "v02-on-est-quatre"
+          ]
+        },
+        {
+          "id": "2.1-a3",
+          "type": "quiz",
+          "skill": "lire",
+          "title": "Lecture : la famille de Kim",
+          "instructions": "Read Kim's post, then answer.",
+          "stimulus": {
+            "kind": "text",
+            "title": "Publication de Kim",
+            "transcript": "always",
+            "text": "Allô tout le monde! Voici ma famille. Mon chum s'appelle Patrick. On a deux enfants : notre fils Léo a huit ans, pis notre fille Rose a cinq ans. On a aussi un chien, Biscuit! Mes parents restent à Rimouski, mais ma sœur Julie reste à côté de chez nous, à Lévis. Ses enfants, mes neveux, adorent Biscuit!",
+            "translationEn": "Hi everyone! Here's my family. My partner's name is Patrick. We have two kids: our son Léo is eight, and our daughter Rose is five. We also have a dog, Biscuit! My parents live in Rimouski, but my sister Julie lives next to us, in Lévis. Her kids, my nephews, love Biscuit!"
+          },
+          "items": [
+            {
+              "id": "q1",
+              "kind": "multiple_choice",
+              "prompt": "Who is Patrick?",
+              "options": [
+                "Kim's partner",
+                "Kim's brother",
+                "Kim's son",
+                "Kim's dad"
+              ],
+              "answer": 0,
+              "tags": [
+                "qc:vocab"
+              ]
+            },
+            {
+              "id": "q2",
+              "kind": "short_answer",
+              "prompt": "How old is Rose? (digits)",
+              "acceptedAnswers": [
+                "5"
+              ]
+            },
+            {
+              "id": "q3",
+              "kind": "multiple_choice",
+              "prompt": "Who is Biscuit?",
+              "options": [
+                "The dog",
+                "The cat",
+                "Kim's nephew",
+                "Kim's son"
+              ],
+              "answer": 0
+            },
+            {
+              "id": "q4",
+              "kind": "true_false",
+              "prompt": "Kim's parents live near her, in Lévis.",
+              "answer": false,
+              "explanation": "Her parents live in Rimouski; her sister lives in Lévis."
+            },
+            {
+              "id": "q5",
+              "kind": "multiple_choice",
+              "prompt": "In « Ses enfants », whose children are they?",
+              "options": [
+                "Julie's",
+                "Kim's",
+                "Patrick's",
+                "The parents'"
+              ],
+              "answer": 0,
+              "tags": [
+                "grammar:possessives"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2.1-a4",
+          "type": "quiz",
+          "skill": "ecouter",
+          "title": "Écoute : la photo de famille",
+          "instructions": "Marc shows a family photo to a coworker. Listen, then answer.",
+          "stimulus": {
+            "kind": "audio",
+            "title": "La photo",
+            "transcript": "after-submit",
+            "tts": {
+              "lang": "fr-CA",
+              "rate": 0.9
+            },
+            "lines": [
+              {
+                "speaker": "Sarah",
+                "voice": "female",
+                "fr": "C'est qui, sur la photo?",
+                "en": "Who's in the photo?"
+              },
+              {
+                "speaker": "Marc",
+                "voice": "male",
+                "fr": "Ça, c'est ma blonde, Annie. Pis ça, c'est ma mère pis mon grand-père.",
+                "en": "That's my girlfriend, Annie. And that's my mother and my grandfather."
+              },
+              {
+                "speaker": "Sarah",
+                "voice": "female",
+                "fr": "Pis le petit gars?",
+                "en": "And the little boy?"
+              },
+              {
+                "speaker": "Marc",
+                "voice": "male",
+                "fr": "C'est mon neveu, Thomas. C'est le fils de mon frère.",
+                "en": "That's my nephew, Thomas. He's my brother's son."
+              }
+            ]
+          },
+          "items": [
+            {
+              "id": "q1",
+              "kind": "multiple_choice",
+              "prompt": "Who is Annie?",
+              "options": [
+                "Marc's girlfriend",
+                "Marc's sister",
+                "Marc's mother",
+                "Marc's niece"
+              ],
+              "answer": 0,
+              "tags": [
+                "qc:vocab"
+              ]
+            },
+            {
+              "id": "q2",
+              "kind": "multiple_choice",
+              "prompt": "Which family members are in the photo?",
+              "options": [
+                "His girlfriend, mother, grandfather and nephew",
+                "His girlfriend, father and son",
+                "His wife, sister and niece",
+                "His parents and brother"
+              ],
+              "answer": 0
+            },
+            {
+              "id": "q3",
+              "kind": "multiple_choice",
+              "prompt": "Thomas is…",
+              "options": [
+                "the son of Marc's brother",
+                "Marc's son",
+                "Marc's brother",
+                "Annie's son"
+              ],
+              "answer": 0
+            },
+            {
+              "id": "q4",
+              "kind": "multiple_choice",
+              "prompt": "« le petit gars » means:",
+              "options": [
+                "the little boy",
+                "the young man",
+                "the small cat",
+                "the grandfather"
+              ],
+              "answer": 0
+            }
+          ]
+        },
+        {
+          "id": "2.1-a5",
+          "type": "quiz",
+          "skill": "ecrire",
+          "title": "Pratique : les possessifs",
+          "instructions": "Fill in the right possessive.",
+          "items": [
+            {
+              "id": "q1",
+              "kind": "fill_blank",
+              "prompt": "___ sœur s'appelle Julie. (my)",
+              "acceptedAnswers": [
+                [
+                  "ma"
+                ]
+              ],
+              "tags": [
+                "grammar:possessives"
+              ]
+            },
+            {
+              "id": "q2",
+              "kind": "fill_blank",
+              "prompt": "___ parents restent à Québec. (my)",
+              "acceptedAnswers": [
+                [
+                  "mes"
+                ]
+              ],
+              "tags": [
+                "grammar:possessives"
+              ]
+            },
+            {
+              "id": "q3",
+              "kind": "fill_blank",
+              "prompt": "C'est ___ chum? (your, tu)",
+              "acceptedAnswers": [
+                [
+                  "ton"
+                ]
+              ],
+              "tags": [
+                "grammar:possessives"
+              ]
+            },
+            {
+              "id": "q4",
+              "kind": "fill_blank",
+              "prompt": "Paul aime ___ fille. (his)",
+              "acceptedAnswers": [
+                [
+                  "sa"
+                ]
+              ],
+              "tags": [
+                "grammar:possessives"
+              ]
+            },
+            {
+              "id": "q5",
+              "kind": "fill_blank",
+              "prompt": "On adore ___ chien. (our)",
+              "acceptedAnswers": [
+                [
+                  "notre"
+                ]
+              ],
+              "tags": [
+                "grammar:possessives"
+              ]
+            },
+            {
+              "id": "q6",
+              "kind": "fill_blank",
+              "prompt": "Ils parlent avec ___ enfants. (their)",
+              "acceptedAnswers": [
+                [
+                  "leurs"
+                ]
+              ],
+              "tags": [
+                "grammar:possessives"
+              ]
+            },
+            {
+              "id": "q7",
+              "kind": "fill_blank",
+              "prompt": "C'est ___ amie Sophie. (my)",
+              "acceptedAnswers": [
+                [
+                  "mon"
+                ]
+              ],
+              "explanation": "Before a vowel, feminine words take mon: mon amie.",
+              "tags": [
+                "grammar:possessives"
+              ]
+            },
+            {
+              "id": "q8",
+              "kind": "matching",
+              "prompt": "Match the Québec word to its meaning.",
+              "pairs": [
+                {
+                  "left": "mon chum",
+                  "right": "my boyfriend / husband"
+                },
+                {
+                  "left": "ma blonde",
+                  "right": "my girlfriend / wife"
+                },
+                {
+                  "left": "ma conjointe",
+                  "right": "my (female) partner"
+                },
+                {
+                  "left": "célibataire",
+                  "right": "single"
+                }
+              ],
+              "tags": [
+                "qc:vocab"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2.1-a6",
+          "type": "writing",
+          "skill": "ecrire",
+          "title": "Écriture : ma famille",
+          "instructions": "Describe your family (real or invented).",
+          "prompt": "Présente ta famille : combien vous êtes, les noms et l'âge de deux ou trois personnes, où elles restent, et un animal si tu en as un. Utilise au moins quatre possessifs différents.",
+          "promptEn": "Introduce your family: how many of you there are, the names and ages of two or three people, where they live, and a pet if you have one. Use at least four different possessives.",
+          "minWords": 35,
+          "maxWords": 80,
+          "targetStructures": [
+            "possessives (mon/ma/mes/son/sa/ses/notre/nos…)",
+            "s'appeler, avoir … ans, rester à",
+            "On est … dans ma famille",
+            "family vocabulary"
+          ],
+          "expectedPhrases": [
+            "on est | nous sommes",
+            "mon | ma",
+            "mes",
+            "s'appelle",
+            "ans",
+            "reste | habite"
+          ],
+          "modelAnswer": "On est cinq dans ma famille. Ma blonde s'appelle Émilie, elle a trente-deux ans. On a deux enfants : notre fils Noé a six ans pis notre fille Léa a trois ans. Mes parents restent à Sherbrooke. Mon frère reste à Calgary avec sa conjointe. On a aussi un chat, Pistache!",
+          "rubricRef": "writing-a1"
+        },
+        {
+          "id": "2.1-a7",
+          "type": "speaking",
+          "skill": "parler",
+          "title": "Parler : c'est qui?",
+          "instructions": "A new friend asks about your family. Answer each question.",
+          "mode": "roleplay",
+          "maxSeconds": 25,
+          "turns": [
+            {
+              "speaker": "partner",
+              "fr": "Pis, t'as une grosse famille?"
+            },
+            {
+              "speaker": "learner",
+              "task": "Say how many people are in your family.",
+              "expectedPhrases": [
+                "on est | nous sommes",
+                "famille"
+              ]
+            },
+            {
+              "speaker": "partner",
+              "fr": "As-tu un chum ou une blonde?"
+            },
+            {
+              "speaker": "learner",
+              "task": "Answer: name your partner, or say you're single.",
+              "expectedPhrases": [
+                "mon chum | ma blonde | mon conjoint | ma conjointe | célibataire | mon mari | ma femme"
+              ]
+            },
+            {
+              "speaker": "partner",
+              "fr": "Pis tes parents, y restent où?"
+            },
+            {
+              "speaker": "learner",
+              "task": "Say where your parents live.",
+              "expectedPhrases": [
+                "mes parents",
+                "restent | habitent"
+              ]
+            }
+          ],
+          "modelAnswer": "On est quatre dans ma famille. / Oui, ma blonde s'appelle Émilie. / Mes parents restent à Calgary.",
+          "selfCheck": [
+            "I said how many we are with « on est »",
+            "I used mon / ma / mes correctly",
+            "I answered the partner question",
+            "I said where my parents live"
+          ],
+          "rubricRef": "speaking-a1"
+        }
+      ]
+    },
+    {
+      "id": "2.2",
+      "number": 2,
+      "title": "Qu'est-ce que tu fais dans la vie?",
+      "titleEn": "What do you do?",
+      "objectives": [
+        "Conjugate regular -er verbs in the present",
+        "Say your job or studies (no article: je suis infirmière)",
+        "Use chez and dans for workplaces",
+        "Talk about your job the Québec way (ma job, temps plein, télétravail)"
+      ],
+      "activities": [
+        {
+          "id": "2.2-a1",
+          "type": "notes",
+          "skill": "vocabulaire",
+          "title": "Les verbes en -er et le travail",
+          "instructions": "Read the notes. Tap bold French to hear it.",
+          "tts": {
+            "lang": "fr-CA",
+            "rate": 0.9
+          },
+          "body": "## Regular -er verbs\n\nMost French verbs end in -er and follow one pattern. Drop **-er** and add the ending:\n\n| travailler | |\n|---|---|\n| je **travaille** | nous **travaillons** (spoken: on **travaille**) |\n| tu **travailles** | vous **travaillez** |\n| il / elle / on **travaille** | ils / elles **travaillent** |\n\nGood news for speaking: **travaille, travailles, travaillent** all sound the same. Only *-ons* and *-ez* are heard.\n\nBefore a vowel, **je** becomes **j'**: *j'étudie, j'habite, j'aime*.\n\nSmall spelling changes: *manger → nous mang**e**ons*, *commencer → nous commen**ç**ons*, *préférer → je préf**è**re*.\n\nUseful -er verbs: **travailler, étudier, parler, habiter, rester, aimer, regarder, écouter, jouer, cuisiner, magasiner, marcher, voyager**.\n\n## Your job\n\n- **Qu'est-ce que tu fais dans la vie?** What do you do?\n- **Je suis infirmière.** No *une* before a job after *je suis*.\n- **Je travaille dans une banque.** (type of place) / **Je travaille chez Desjardins.** (company)\n- **J'étudie à l'université.** / **Je suis étudiant.**\n- **Je travaille à temps plein / à temps partiel / en télétravail.**\n- **Je suis à la retraite.**\n- **J'aime ma job!** In Québec *job* is feminine: *la job, ma job*.\n\n## Feminine job titles in Québec\n\nQuébec feminises job titles more than France: **une professeure, une ingénieure, une auteure, une cheffe**. You'll see them on signs and in the news."
+        },
+        {
+          "id": "2.2-a2",
+          "type": "flashcards",
+          "skill": "vocabulaire",
+          "title": "Flashcards : le travail",
+          "instructions": "Flip each card, say the French out loud, then mark whether you knew it.",
+          "vocabIds": [
+            "v02-dans-la-vie",
+            "v02-travailler",
+            "v02-etudier",
+            "v02-ma-job",
+            "v02-emploi",
+            "v02-bureau",
+            "v02-teletravail",
+            "v02-temps-plein",
+            "v02-retraite",
+            "v02-infirmier",
+            "v02-enseignant",
+            "v02-ingenieur",
+            "v02-etudiant",
+            "v02-vendeur",
+            "v02-chez"
+          ]
+        },
+        {
+          "id": "2.2-a3",
+          "type": "quiz",
+          "skill": "lire",
+          "title": "Lecture : trois profils",
+          "instructions": "Read three short profiles from a networking event, then answer.",
+          "stimulus": {
+            "kind": "dialogue",
+            "title": "Soirée réseautage",
+            "transcript": "always",
+            "lines": [
+              {
+                "speaker": "Isabelle",
+                "fr": "Je suis ingénieure. Je travaille chez Hydro-Québec, à Montréal. Je travaille à temps plein, mais le vendredi, je suis en télétravail.",
+                "en": "I'm an engineer. I work at Hydro-Québec, in Montréal. I work full-time, but on Fridays I work from home."
+              },
+              {
+                "speaker": "Samuel",
+                "fr": "Moi, j'étudie en informatique à l'Université Laval. Je travaille aussi à temps partiel dans un café. J'aime ma job!",
+                "en": "I study computer science at Université Laval. I also work part-time in a café. I like my job!"
+              },
+              {
+                "speaker": "Ginette",
+                "fr": "Moi, je suis à la retraite. Avant, j'étais enseignante. Maintenant, je voyage pis je cuisine!",
+                "en": "I'm retired. Before, I was a teacher. Now I travel and I cook!"
+              }
+            ]
+          },
+          "items": [
+            {
+              "id": "q1",
+              "kind": "multiple_choice",
+              "prompt": "Who works from home on Fridays?",
+              "options": [
+                "Isabelle",
+                "Samuel",
+                "Ginette",
+                "Nobody"
+              ],
+              "answer": 0
+            },
+            {
+              "id": "q2",
+              "kind": "multiple_choice",
+              "prompt": "Where does Samuel work?",
+              "options": [
+                "In a café, part-time",
+                "At Hydro-Québec",
+                "At the university",
+                "He doesn't work"
+              ],
+              "answer": 0
+            },
+            {
+              "id": "q3",
+              "kind": "multiple_choice",
+              "prompt": "What was Ginette's job?",
+              "options": [
+                "Teacher",
+                "Engineer",
+                "Cook",
+                "Nurse"
+              ],
+              "answer": 0
+            },
+            {
+              "id": "q4",
+              "kind": "multiple_choice",
+              "prompt": "Why does Isabelle say « chez Hydro-Québec » and not « dans Hydro-Québec »?",
+              "options": [
+                "Because Hydro-Québec is a company name",
+                "Because it's in Montréal",
+                "Because she's an engineer",
+                "Because it's feminine"
+              ],
+              "answer": 0,
+              "tags": [
+                "grammar:prepositions"
+              ]
+            },
+            {
+              "id": "q5",
+              "kind": "true_false",
+              "prompt": "In « J'aime ma job », job is feminine.",
+              "answer": true,
+              "tags": [
+                "qc:vocab"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2.2-a4",
+          "type": "quiz",
+          "skill": "ecouter",
+          "title": "Écoute : au party de bureau",
+          "instructions": "Two people meet at an office party. Listen, then answer.",
+          "stimulus": {
+            "kind": "audio",
+            "title": "Party de bureau",
+            "transcript": "after-submit",
+            "tts": {
+              "lang": "fr-CA",
+              "rate": 0.9
+            },
+            "lines": [
+              {
+                "speaker": "Nathalie",
+                "voice": "female",
+                "fr": "Pis toi, qu'est-ce que tu fais dans la vie?",
+                "en": "And you, what do you do?"
+              },
+              {
+                "speaker": "Kevin",
+                "voice": "male",
+                "fr": "Je suis infirmier à l'hôpital. Je travaille le soir, pis des fois la nuit.",
+                "en": "I'm a nurse at the hospital. I work evenings, and sometimes nights."
+              },
+              {
+                "speaker": "Nathalie",
+                "voice": "female",
+                "fr": "Ouf! C'est pas facile.",
+                "en": "Phew! That's not easy."
+              },
+              {
+                "speaker": "Kevin",
+                "voice": "male",
+                "fr": "Non, mais j'aime ça. Pis toi?",
+                "en": "No, but I like it. And you?"
+              },
+              {
+                "speaker": "Nathalie",
+                "voice": "female",
+                "fr": "Moi, je travaille dans une banque. Je travaille de neuf heures à cinq heures, au bureau.",
+                "en": "I work in a bank. I work nine to five, at the office."
+              }
+            ]
+          },
+          "items": [
+            {
+              "id": "q1",
+              "kind": "multiple_choice",
+              "prompt": "What's Kevin's job?",
+              "options": [
+                "Nurse",
+                "Doctor",
+                "Banker",
+                "Teacher"
+              ],
+              "answer": 0
+            },
+            {
+              "id": "q2",
+              "kind": "multiple_choice",
+              "prompt": "When does Kevin work?",
+              "options": [
+                "Evenings and sometimes nights",
+                "Mornings",
+                "Weekends only",
+                "Nine to five"
+              ],
+              "answer": 0
+            },
+            {
+              "id": "q3",
+              "kind": "true_false",
+              "prompt": "Kevin doesn't like his job.",
+              "answer": false,
+              "explanation": "« Non, mais j'aime ça » = No (it's not easy), but I like it."
+            },
+            {
+              "id": "q4",
+              "kind": "multiple_choice",
+              "prompt": "Where does Nathalie work?",
+              "options": [
+                "In a bank, at the office",
+                "At the hospital",
+                "From home",
+                "In a café"
+              ],
+              "answer": 0
+            }
+          ]
+        },
+        {
+          "id": "2.2-a5",
+          "type": "quiz",
+          "skill": "ecrire",
+          "title": "Pratique : les verbes en -er",
+          "instructions": "Conjugate the verb in the present.",
+          "items": [
+            {
+              "id": "q1",
+              "kind": "fill_blank",
+              "prompt": "Je ___ dans une banque. (travailler)",
+              "acceptedAnswers": [
+                [
+                  "travaille"
+                ]
+              ],
+              "tags": [
+                "grammar:er-verbs"
+              ]
+            },
+            {
+              "id": "q2",
+              "kind": "fill_blank",
+              "prompt": "Tu ___ à l'université? (étudier)",
+              "acceptedAnswers": [
+                [
+                  "étudies"
+                ]
+              ],
+              "tags": [
+                "grammar:er-verbs"
+              ]
+            },
+            {
+              "id": "q3",
+              "kind": "fill_blank",
+              "prompt": "Nous ___ français à la maison. (parler)",
+              "acceptedAnswers": [
+                [
+                  "parlons"
+                ]
+              ],
+              "tags": [
+                "grammar:er-verbs"
+              ]
+            },
+            {
+              "id": "q4",
+              "kind": "fill_blank",
+              "prompt": "Vous ___ à Laval? (habiter)",
+              "acceptedAnswers": [
+                [
+                  "habitez"
+                ]
+              ],
+              "tags": [
+                "grammar:er-verbs"
+              ]
+            },
+            {
+              "id": "q5",
+              "kind": "fill_blank",
+              "prompt": "Mes parents ___ beaucoup. (voyager)",
+              "acceptedAnswers": [
+                [
+                  "voyagent"
+                ]
+              ],
+              "tags": [
+                "grammar:er-verbs"
+              ]
+            },
+            {
+              "id": "q6",
+              "kind": "fill_blank",
+              "prompt": "Nous ___ à six heures. (manger)",
+              "acceptedAnswers": [
+                [
+                  "mangeons"
+                ]
+              ],
+              "tags": [
+                "grammar:er-verbs"
+              ]
+            },
+            {
+              "id": "q7",
+              "kind": "fill_blank",
+              "prompt": "On ___ en télétravail le lundi. (travailler)",
+              "acceptedAnswers": [
+                [
+                  "travaille"
+                ]
+              ],
+              "tags": [
+                "grammar:er-verbs"
+              ]
+            },
+            {
+              "id": "q8",
+              "kind": "multiple_choice",
+              "prompt": "Which is correct?",
+              "options": [
+                "Elle est enseignante.",
+                "Elle est une enseignante.",
+                "Elle a enseignante.",
+                "Elle enseignante."
+              ],
+              "answer": 0,
+              "explanation": "No article before a job after être.",
+              "tags": [
+                "grammar:jobs"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2.2-a6",
+          "type": "writing",
+          "skill": "ecrire",
+          "title": "Écriture : ma job",
+          "instructions": "Write about your work or studies (real or invented).",
+          "prompt": "Qu'est-ce que tu fais dans la vie? Dis ton travail ou tes études, où tu travailles (chez / dans), quand tu travailles, si c'est à temps plein ou à temps partiel, et si tu aimes ça. Parle aussi du travail d'une autre personne (il / elle).",
+          "promptEn": "What do you do? Say your job or studies, where you work (chez / dans), when you work, whether it's full- or part-time, and if you like it. Also describe someone else's work (il / elle).",
+          "minWords": 35,
+          "maxWords": 80,
+          "targetStructures": [
+            "-er verbs in the present (je, il/elle, on)",
+            "je suis + job without article",
+            "chez / dans",
+            "temps plein / partiel / télétravail",
+            "aimer ça"
+          ],
+          "expectedPhrases": [
+            "je suis | je travaille | j'étudie",
+            "chez | dans",
+            "temps plein | temps partiel | télétravail | à la retraite",
+            "j'aime"
+          ],
+          "modelAnswer": "Je suis gestionnaire de projets. Je travaille chez Desjardins, à Toronto. Je travaille à temps plein, du lundi au vendredi, pis le mercredi je suis en télétravail. J'aime ma job! Ma blonde est infirmière. Elle travaille dans un hôpital, le soir. Elle aime ça, mais elle est souvent fatiguée.",
+          "rubricRef": "writing-a1"
+        },
+        {
+          "id": "2.2-a7",
+          "type": "speaking",
+          "skill": "parler",
+          "title": "Parler : répète les verbes",
+          "instructions": "Repeat each line. Notice that travaille / travailles / travaillent sound the same.",
+          "mode": "repeat",
+          "maxSeconds": 10,
+          "tts": {
+            "lang": "fr-CA",
+            "rate": 0.9
+          },
+          "expectedPhrases": [
+            "Je travaille, tu travailles, il travaille.",
+            "On travaille, vous travaillez, ils travaillent.",
+            "J'étudie à l'université.",
+            "Je suis infirmière.",
+            "J'aime ma job!",
+            "Je travaille en télétravail le vendredi."
+          ],
+          "selfCheck": [
+            "I said every line",
+            "travaille / travailles / travaillent sounded the same",
+            "I pronounced the -ez in travaillez like 'ay'",
+            "I linked « j'aime » and « j'étudie » as one word"
+          ],
+          "rubricRef": "speaking-repeat"
+        },
+        {
+          "id": "2.2-a8",
+          "type": "speaking",
+          "skill": "parler",
+          "title": "Parler : au réseautage",
+          "instructions": "You meet someone at a networking event. Answer their questions.",
+          "mode": "roleplay",
+          "maxSeconds": 25,
+          "turns": [
+            {
+              "speaker": "partner",
+              "fr": "Bonsoir! Qu'est-ce que tu fais dans la vie?"
+            },
+            {
+              "speaker": "learner",
+              "task": "Say your job or what you study.",
+              "expectedPhrases": [
+                "je suis | je travaille | j'étudie"
+              ]
+            },
+            {
+              "speaker": "partner",
+              "fr": "Ah oui? Pis tu travailles où?"
+            },
+            {
+              "speaker": "learner",
+              "task": "Say where you work, with chez or dans.",
+              "expectedPhrases": [
+                "chez | dans | à"
+              ]
+            },
+            {
+              "speaker": "partner",
+              "fr": "Pis, t'aimes ça?"
+            },
+            {
+              "speaker": "learner",
+              "task": "Say if you like it, and ask what they do.",
+              "expectedPhrases": [
+                "j'aime | j'adore | je déteste",
+                "toi | vous"
+              ]
+            }
+          ],
+          "modelAnswer": "Je suis gestionnaire de projets. / Je travaille chez Desjardins. / Oui, j'aime ça! Pis toi, qu'est-ce que tu fais dans la vie?",
+          "selfCheck": [
+            "I said my job without « un / une »",
+            "I used chez or dans",
+            "I said whether I like it",
+            "I asked a question back"
+          ],
+          "rubricRef": "speaking-a1"
+        }
+      ]
+    },
+    {
+      "id": "2.3",
+      "number": 3,
+      "title": "J'aime ça!",
+      "titleEn": "I like it!",
+      "objectives": [
+        "Say what you like, love, hate and prefer",
+        "Use aimer + infinitive and aimer + le / la / les",
+        "Use Québec expressions: ça me tente, pantoute, magasiner",
+        "Talk about hobbies"
+      ],
+      "activities": [
+        {
+          "id": "2.3-a1",
+          "type": "notes",
+          "skill": "vocabulaire",
+          "title": "Les goûts",
+          "instructions": "Read the notes. Tap bold French to hear it.",
+          "tts": {
+            "lang": "fr-CA",
+            "rate": 0.9
+          },
+          "body": "## From love to hate\n\n**J'adore** › **J'aime** › **J'aime pas** › **Je déteste**\n\n- **J'aime ça!** You'll hear this everywhere in Québec.\n- **J'haïs ça!** Casual Québec for *je déteste ça*. Recognise it; *détester* is always safe.\n- **Je préfère** (I prefer): *je préf**è**re, tu préf**è**res, nous préf**é**rons*.\n\n## What you like: two patterns\n\n1. **aimer + infinitive** (an activity): *J'aime **cuisiner**. Il adore **voyager**.*\n2. **aimer + le / la / les** (a thing in general): *J'aime **le** hockey. Elle déteste **la** neige. On adore **les** chiens.* French uses *le / la / les* where English uses nothing (I like dogs).\n\n## Feeling like it: ça me tente\n\n- **Ça me tente!** I'm up for it.\n- **Ça me tente pas.** I don't feel like it.\n- **Ça te tente-tu d'aller au cinéma?** Do you want to go to the movies?\n- **pantoute** = not at all: *Ça me tente pas pantoute!*\n\n## Hobbies\n\n- **jouer au hockey, jouer aux cartes, jouer de la guitare** (sport/game → *à*, instrument → *de*)\n- **regarder la télé / des séries**, **écouter de la musique**\n- **cuisiner**, **marcher**, **voyager**, **chanter**, **danser**\n- **magasiner**: to go shopping (Québec)\n- **faire du plein air**: outdoor activities (hiking, camping, canoeing)\n- **Mon sport préféré, c'est le hockey.**"
+        },
+        {
+          "id": "2.3-a2",
+          "type": "flashcards",
+          "skill": "vocabulaire",
+          "title": "Flashcards : les goûts",
+          "instructions": "Flip each card, say the French out loud, then mark whether you knew it.",
+          "vocabIds": [
+            "v02-aimer",
+            "v02-adorer",
+            "v02-detester",
+            "v02-preferer",
+            "v02-jaime-ca",
+            "v02-jhais-ca",
+            "v02-ca-me-tente",
+            "v02-ca-me-tente-pas",
+            "v02-ca-te-tente",
+            "v02-pantoute",
+            "v02-magasiner",
+            "v02-jouer-au",
+            "v02-regarder",
+            "v02-ecouter",
+            "v02-cuisiner",
+            "v02-plein-air",
+            "v02-prefere"
+          ]
+        },
+        {
+          "id": "2.3-a3",
+          "type": "quiz",
+          "skill": "lire",
+          "title": "Lecture : un profil de rencontre",
+          "instructions": "Read this profile from a dating app, then answer.",
+          "stimulus": {
+            "kind": "text",
+            "title": "Profil : Maxime, 34 ans",
+            "transcript": "always",
+            "text": "Salut! Moi, c'est Maxime. J'adore le plein air : l'été, je fais du camping pis l'hiver, je joue au hockey avec mes chums. J'aime aussi cuisiner (mon plat préféré, c'est le pâté chinois!). Magasiner? Ça me tente pas pantoute. Pis la télé-réalité, j'haïs ça! Ça te tente-tu d'aller prendre un café?",
+            "translationEn": "Hi! I'm Maxime. I love the outdoors: in summer I go camping and in winter I play hockey with my buddies. I also like cooking (my favourite dish is pâté chinois!). Shopping? I don't feel like it at all. And reality TV, I hate it! Want to go for a coffee?"
+          },
+          "items": [
+            {
+              "id": "q1",
+              "kind": "multiple_choice",
+              "prompt": "What does Maxime do in winter?",
+              "options": [
+                "Plays hockey with friends",
+                "Goes camping",
+                "Goes shopping",
+                "Watches reality TV"
+              ],
+              "answer": 0
+            },
+            {
+              "id": "q2",
+              "kind": "multiple_choice",
+              "prompt": "How does Maxime feel about shopping?",
+              "options": [
+                "Doesn't feel like it at all",
+                "Loves it",
+                "Does it every weekend",
+                "Prefers it to hockey"
+              ],
+              "answer": 0,
+              "tags": [
+                "qc:expressions"
+              ]
+            },
+            {
+              "id": "q3",
+              "kind": "multiple_choice",
+              "prompt": "« J'haïs ça » means:",
+              "options": [
+                "I hate it",
+                "I have it",
+                "I like it",
+                "I'm hungry"
+              ],
+              "answer": 0,
+              "tags": [
+                "qc:expressions"
+              ]
+            },
+            {
+              "id": "q4",
+              "kind": "multiple_choice",
+              "prompt": "Here « mes chums » means:",
+              "options": [
+                "my (male) friends",
+                "my boyfriends",
+                "my brothers",
+                "my kids"
+              ],
+              "answer": 0,
+              "tags": [
+                "qc:vocab"
+              ]
+            },
+            {
+              "id": "q5",
+              "kind": "multiple_choice",
+              "prompt": "« Ça te tente-tu d'aller prendre un café? » is:",
+              "options": [
+                "An invitation for coffee",
+                "A question about his favourite café",
+                "A complaint about coffee",
+                "A job offer"
+              ],
+              "answer": 0,
+              "tags": [
+                "qc:expressions"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2.3-a4",
+          "type": "quiz",
+          "skill": "ecouter",
+          "title": "Écoute : qu'est-ce qu'on fait?",
+          "instructions": "A couple plans their Saturday. Listen, then answer.",
+          "stimulus": {
+            "kind": "audio",
+            "title": "Samedi",
+            "transcript": "after-submit",
+            "tts": {
+              "lang": "fr-CA",
+              "rate": 0.95
+            },
+            "lines": [
+              {
+                "speaker": "Julie",
+                "voice": "female",
+                "fr": "Ça te tente-tu de magasiner samedi?",
+                "en": "Do you feel like going shopping Saturday?"
+              },
+              {
+                "speaker": "Éric",
+                "voice": "male",
+                "fr": "Bof, pas vraiment. Je préfère marcher sur le mont Royal.",
+                "en": "Meh, not really. I'd rather walk on Mount Royal."
+              },
+              {
+                "speaker": "Julie",
+                "voice": "female",
+                "fr": "OK! Pis le soir, on regarde un film?",
+                "en": "OK! And in the evening, shall we watch a movie?"
+              },
+              {
+                "speaker": "Éric",
+                "voice": "male",
+                "fr": "Oui, ça me tente! Mais pas un film d'horreur, je déteste ça!",
+                "en": "Yes, I'm up for that! But not a horror movie, I hate those!"
+              }
+            ]
+          },
+          "items": [
+            {
+              "id": "q1",
+              "kind": "multiple_choice",
+              "prompt": "What does Julie suggest first?",
+              "options": [
+                "Going shopping",
+                "Walking on Mount Royal",
+                "Watching a movie",
+                "Playing hockey"
+              ],
+              "answer": 0,
+              "tags": [
+                "qc:vocab"
+              ]
+            },
+            {
+              "id": "q2",
+              "kind": "multiple_choice",
+              "prompt": "What does Éric prefer to do?",
+              "options": [
+                "Walk on Mount Royal",
+                "Go shopping",
+                "Stay home",
+                "Cook"
+              ],
+              "answer": 0
+            },
+            {
+              "id": "q3",
+              "kind": "true_false",
+              "prompt": "Éric wants to watch a movie in the evening.",
+              "answer": true
+            },
+            {
+              "id": "q4",
+              "kind": "multiple_choice",
+              "prompt": "What kind of movie does Éric hate?",
+              "options": [
+                "Horror",
+                "Comedy",
+                "Romance",
+                "Action"
+              ],
+              "answer": 0
+            }
+          ]
+        },
+        {
+          "id": "2.3-a5",
+          "type": "quiz",
+          "skill": "ecrire",
+          "title": "Pratique : aimer, préférer",
+          "instructions": "Fill in the blank.",
+          "items": [
+            {
+              "id": "q1",
+              "kind": "fill_blank",
+              "prompt": "J'aime ___ hockey. (the)",
+              "acceptedAnswers": [
+                [
+                  "le"
+                ]
+              ],
+              "tags": [
+                "grammar:articles-likes"
+              ]
+            },
+            {
+              "id": "q2",
+              "kind": "fill_blank",
+              "prompt": "Elle déteste ___ neige.",
+              "acceptedAnswers": [
+                [
+                  "la"
+                ]
+              ],
+              "tags": [
+                "grammar:articles-likes"
+              ]
+            },
+            {
+              "id": "q3",
+              "kind": "fill_blank",
+              "prompt": "On adore ___ chats.",
+              "acceptedAnswers": [
+                [
+                  "les"
+                ]
+              ],
+              "tags": [
+                "grammar:articles-likes"
+              ]
+            },
+            {
+              "id": "q4",
+              "kind": "fill_blank",
+              "prompt": "Je ___ le café au thé. (préférer)",
+              "acceptedAnswers": [
+                [
+                  "préfère"
+                ]
+              ],
+              "strictAccents": true,
+              "tags": [
+                "grammar:er-verbs"
+              ]
+            },
+            {
+              "id": "q5",
+              "kind": "fill_blank",
+              "prompt": "Nous ___ le soccer. (préférer)",
+              "acceptedAnswers": [
+                [
+                  "préférons"
+                ]
+              ],
+              "tags": [
+                "grammar:er-verbs"
+              ]
+            },
+            {
+              "id": "q6",
+              "kind": "multiple_choice",
+              "prompt": "Which means 'I love cooking'?",
+              "options": [
+                "J'adore cuisiner.",
+                "J'adore la cuisiner.",
+                "J'adore de cuisiner.",
+                "J'adore cuisine."
+              ],
+              "answer": 0,
+              "tags": [
+                "grammar:aimer-infinitive"
+              ]
+            },
+            {
+              "id": "q7",
+              "kind": "fill_blank",
+              "prompt": "Il joue ___ hockey. (sport)",
+              "acceptedAnswers": [
+                [
+                  "au"
+                ]
+              ],
+              "tags": [
+                "grammar:jouer"
+              ]
+            },
+            {
+              "id": "q8",
+              "kind": "short_answer",
+              "prompt": "Say 'I don't feel like it at all' the Québec way.",
+              "acceptedAnswers": [
+                "ça me tente pas pantoute",
+                "ca me tente pas pantoute"
+              ],
+              "tags": [
+                "qc:expressions"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2.3-a6",
+          "type": "writing",
+          "skill": "ecrire",
+          "title": "Écriture : mon profil",
+          "instructions": "Write a profile for a friendship or language-exchange app, like Maxime's.",
+          "prompt": "Écris ton profil : deux choses que tu adores, une chose que tu aimes faire la fin de semaine, une chose que tu détestes, ton sport ou ton activité préférée, et une invitation (« Ça te tente-tu de… ? »).",
+          "promptEn": "Write your profile: two things you love, something you like doing on weekends, something you hate, your favourite sport or activity, and an invitation (« Ça te tente-tu de… ? »).",
+          "minWords": 35,
+          "maxWords": 80,
+          "targetStructures": [
+            "adorer / aimer / détester / préférer",
+            "aimer + infinitive",
+            "le / la / les with likes",
+            "préféré(e)",
+            "ça te tente-tu de…"
+          ],
+          "expectedPhrases": [
+            "j'adore",
+            "j'aime",
+            "je déteste | j'haïs | j'aime pas",
+            "préféré",
+            "ça te tente"
+          ],
+          "modelAnswer": "Allô! J'adore le plein air pis les chiens. La fin de semaine, j'aime marcher dans le parc pis cuisiner pour mes amis. Je déteste la télé-réalité! Mon activité préférée, c'est le ski de fond. Ça te tente-tu de pratiquer le français en marchant?",
+          "rubricRef": "writing-a1"
+        },
+        {
+          "id": "2.3-a7",
+          "type": "speaking",
+          "skill": "parler",
+          "title": "Parler : ça te tente-tu?",
+          "instructions": "A friend makes suggestions. Accept or refuse each one, Québec style.",
+          "mode": "roleplay",
+          "maxSeconds": 20,
+          "turns": [
+            {
+              "speaker": "partner",
+              "fr": "Ça te tente-tu de magasiner samedi?"
+            },
+            {
+              "speaker": "learner",
+              "task": "Refuse: say you don't feel like it at all, and say what you prefer to do.",
+              "expectedPhrases": [
+                "ça me tente pas | non",
+                "je préfère"
+              ]
+            },
+            {
+              "speaker": "partner",
+              "fr": "OK! Pis un souper au resto, ça te tente?"
+            },
+            {
+              "speaker": "learner",
+              "task": "Accept enthusiastically.",
+              "expectedPhrases": [
+                "ça me tente | oui | j'adore"
+              ]
+            },
+            {
+              "speaker": "partner",
+              "fr": "Cool! T'aimes la cuisine italienne?"
+            },
+            {
+              "speaker": "learner",
+              "task": "Say if you like Italian food, and name a food you hate.",
+              "expectedPhrases": [
+                "j'aime | j'adore",
+                "je déteste | j'haïs | j'aime pas"
+              ]
+            }
+          ],
+          "modelAnswer": "Non, ça me tente pas pantoute. Je préfère marcher. / Oui, ça me tente! / Oui, j'adore ça! Mais je déteste les champignons.",
+          "selfCheck": [
+            "I used « ça me tente » or « ça me tente pas »",
+            "I used je préfère",
+            "I used le / la / les with a food",
+            "I sounded natural, not word by word"
+          ],
+          "rubricRef": "speaking-a1"
+        }
+      ]
+    },
+    {
+      "id": "2.4",
+      "number": 4,
+      "title": "Je parle pas… la négation",
+      "titleEn": "Negation",
+      "objectives": [
+        "Make sentences negative with ne… pas, ne… jamais, ne… plus",
+        "Use pas de after a negative",
+        "Drop ne in speech, like Québécois do",
+        "Recognise spoken y (il) and a (elle)"
+      ],
+      "activities": [
+        {
+          "id": "2.4-a1",
+          "type": "notes",
+          "skill": "vocabulaire",
+          "title": "La négation, écrite et parlée",
+          "instructions": "Read the notes. Tap bold French to hear it.",
+          "tts": {
+            "lang": "fr-CA",
+            "rate": 0.9
+          },
+          "body": "## Written: ne… pas\n\n**ne** goes before the verb, **pas** after it. **ne** → **n'** before a vowel.\n\n- Je **ne** travaille **pas** le lundi.\n- Elle **n'**aime **pas** le café.\n\nOther negatives work the same way:\n\n- **ne… jamais** (never): *Je ne magasine jamais.*\n- **ne… plus** (not anymore): *Il ne fume plus.*\n\n## Spoken: just pas\n\nIn conversation, almost everyone drops **ne**, in Québec even more than in France:\n\n- **Je travaille pas le lundi.**\n- **J'aime pas ça.**\n- **Je comprends pas.**\n- **Y fume pus.** (pus = plus, very casual)\n\nWrite *ne… pas* in emails and anything formal. Say *pas* in conversation.\n\n## pas de\n\nAfter a negative, **un / une / des** become **de / d'**:\n\n- J'ai **un** chien. → J'ai **pas de** chien.\n- On a **des** enfants. → On a **pas d'**enfants.\n\n(But *le / la / les* stay: *J'aime pas **le** hockey.*)\n\n## Spoken pronouns: y and a\n\nIn casual Québec speech, **il** often sounds like **y** and **elle** like **a**:\n\n- **Y travaille pas.** = Il ne travaille pas.\n- **A l'aime pas.** = Elle ne l'aime pas.\n- **Y'est où?** = Il est où? (Where is he/it?)\n\nYou don't need to say these yet. Just recognise them.\n\n## Agreeing with a negative\n\n- *J'aime pas ça.* → **Moi non plus!** (Me neither!)\n- *J'aime ça.* → **Moi aussi!**"
+        },
+        {
+          "id": "2.4-a2",
+          "type": "flashcards",
+          "skill": "vocabulaire",
+          "title": "Flashcards : la négation",
+          "instructions": "Flip each card, say the French out loud, then mark whether you knew it.",
+          "vocabIds": [
+            "v02-ne-pas",
+            "v02-ne-jamais",
+            "v02-ne-plus",
+            "v02-pas-de",
+            "v02-y-spoken",
+            "v02-a-spoken",
+            "v02-moi-non-plus",
+            "v02-pas-encore",
+            "v02-pantoute"
+          ]
+        },
+        {
+          "id": "2.4-a3",
+          "type": "quiz",
+          "skill": "lire",
+          "title": "Lecture : des textos",
+          "instructions": "Read the text messages, then answer.",
+          "stimulus": {
+            "kind": "dialogue",
+            "title": "Textos",
+            "transcript": "always",
+            "lines": [
+              {
+                "speaker": "Léa",
+                "fr": "Allô! Ton chum vient au souper vendredi?",
+                "en": "Hi! Is your boyfriend coming to supper Friday?"
+              },
+              {
+                "speaker": "Camille",
+                "fr": "Non, y travaille le vendredi soir. Pis y aime pas les gros partys, de toute façon 😅",
+                "en": "No, he works Friday nights. And he doesn't like big parties anyway 😅"
+              },
+              {
+                "speaker": "Léa",
+                "fr": "Haha OK! Pis ta sœur?",
+                "en": "Haha OK! And your sister?"
+              },
+              {
+                "speaker": "Camille",
+                "fr": "A reste plus à Montréal, a reste à Gatineau maintenant. Mais moi, chu là!",
+                "en": "She doesn't live in Montréal anymore, she lives in Gatineau now. But I'll be there!"
+              },
+              {
+                "speaker": "Léa",
+                "fr": "Super! Oh, pis j'ai pas de vin, peux-tu en apporter?",
+                "en": "Great! Oh, and I don't have any wine, can you bring some?"
+              }
+            ]
+          },
+          "items": [
+            {
+              "id": "q1",
+              "kind": "multiple_choice",
+              "prompt": "Why isn't Camille's boyfriend coming?",
+              "options": [
+                "He works Friday nights",
+                "He's sick",
+                "He doesn't like Léa",
+                "He lives in Gatineau"
+              ],
+              "answer": 0,
+              "tags": [
+                "qc:spoken-pronouns"
+              ]
+            },
+            {
+              "id": "q2",
+              "kind": "multiple_choice",
+              "prompt": "In « A reste plus à Montréal », « a » means:",
+              "options": [
+                "she (elle)",
+                "he (il)",
+                "has (a)",
+                "to (à)"
+              ],
+              "answer": 0,
+              "tags": [
+                "qc:spoken-pronouns"
+              ]
+            },
+            {
+              "id": "q3",
+              "kind": "multiple_choice",
+              "prompt": "Where does Camille's sister live now?",
+              "options": [
+                "Gatineau",
+                "Montréal",
+                "Ottawa",
+                "We don't know"
+              ],
+              "answer": 0,
+              "tags": [
+                "grammar:negation"
+              ]
+            },
+            {
+              "id": "q4",
+              "kind": "multiple_choice",
+              "prompt": "What does Léa need?",
+              "options": [
+                "Wine",
+                "A ride",
+                "Food",
+                "Nothing"
+              ],
+              "answer": 0,
+              "tags": [
+                "grammar:negation"
+              ]
+            },
+            {
+              "id": "q5",
+              "kind": "short_answer",
+              "prompt": "Write « y aime pas les gros partys » in standard written French.",
+              "acceptedAnswers": [
+                "il n'aime pas les gros partys",
+                "il n'aime pas les grosses fêtes",
+                "il n'aime pas les gros party"
+              ],
+              "tags": [
+                "grammar:negation",
+                "qc:spoken-pronouns"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2.4-a4",
+          "type": "quiz",
+          "skill": "ecouter",
+          "title": "Écoute : oui ou non?",
+          "instructions": "Type each sentence you hear. Listen for the negative words: pas, jamais, plus.",
+          "items": [
+            {
+              "id": "q1",
+              "kind": "dictation",
+              "prompt": "Type the sentence you hear.",
+              "audioText": "Je travaille pas le lundi.",
+              "acceptedAnswers": [
+                "je travaille pas le lundi",
+                "je ne travaille pas le lundi"
+              ],
+              "tags": [
+                "grammar:negation"
+              ]
+            },
+            {
+              "id": "q2",
+              "kind": "multiple_choice",
+              "prompt": "🔊 Listen: is the sentence positive or negative?",
+              "audioText": "J'aime ça, magasiner.",
+              "options": [
+                "Positive",
+                "Negative"
+              ],
+              "answer": 0,
+              "tags": [
+                "grammar:negation"
+              ]
+            },
+            {
+              "id": "q3",
+              "kind": "dictation",
+              "prompt": "Type the sentence you hear.",
+              "audioText": "Y fume plus.",
+              "acceptedAnswers": [
+                "y fume plus",
+                "il fume plus",
+                "il ne fume plus",
+                "y fume pus"
+              ],
+              "tags": [
+                "grammar:negation",
+                "qc:spoken-pronouns"
+              ]
+            },
+            {
+              "id": "q4",
+              "kind": "dictation",
+              "prompt": "Type the sentence you hear.",
+              "audioText": "On a pas d'enfants.",
+              "acceptedAnswers": [
+                "on a pas d'enfants",
+                "on n'a pas d'enfants"
+              ],
+              "tags": [
+                "grammar:negation"
+              ]
+            },
+            {
+              "id": "q5",
+              "kind": "dictation",
+              "prompt": "Type the sentence you hear.",
+              "audioText": "Je magasine jamais.",
+              "acceptedAnswers": [
+                "je magasine jamais",
+                "je ne magasine jamais"
+              ],
+              "tags": [
+                "grammar:negation"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2.4-a5",
+          "type": "quiz",
+          "skill": "ecrire",
+          "title": "Pratique : rends la phrase négative",
+          "instructions": "Write the negative sentence in standard written French (with ne).",
+          "items": [
+            {
+              "id": "q1",
+              "kind": "short_answer",
+              "prompt": "Je travaille le dimanche.",
+              "acceptedAnswers": [
+                "je ne travaille pas le dimanche"
+              ],
+              "tags": [
+                "grammar:negation"
+              ]
+            },
+            {
+              "id": "q2",
+              "kind": "short_answer",
+              "prompt": "Elle aime le café.",
+              "acceptedAnswers": [
+                "elle n'aime pas le café"
+              ],
+              "tags": [
+                "grammar:negation"
+              ]
+            },
+            {
+              "id": "q3",
+              "kind": "short_answer",
+              "prompt": "J'ai un chat.",
+              "acceptedAnswers": [
+                "je n'ai pas de chat"
+              ],
+              "explanation": "un → de after a negative.",
+              "tags": [
+                "grammar:negation",
+                "grammar:pas-de"
+              ]
+            },
+            {
+              "id": "q4",
+              "kind": "short_answer",
+              "prompt": "Nous avons des enfants.",
+              "acceptedAnswers": [
+                "nous n'avons pas d'enfants"
+              ],
+              "tags": [
+                "grammar:negation",
+                "grammar:pas-de"
+              ]
+            },
+            {
+              "id": "q5",
+              "kind": "short_answer",
+              "prompt": "Il fume. (not anymore)",
+              "acceptedAnswers": [
+                "il ne fume plus"
+              ],
+              "tags": [
+                "grammar:negation"
+              ]
+            },
+            {
+              "id": "q6",
+              "kind": "short_answer",
+              "prompt": "Je magasine. (never)",
+              "acceptedAnswers": [
+                "je ne magasine jamais"
+              ],
+              "tags": [
+                "grammar:negation"
+              ]
+            },
+            {
+              "id": "q7",
+              "kind": "multiple_choice",
+              "prompt": "« J'aime pas ça. » Best reply if you agree:",
+              "options": [
+                "Moi non plus!",
+                "Moi aussi!",
+                "Moi pas!",
+                "Non plus moi!"
+              ],
+              "answer": 0,
+              "tags": [
+                "grammar:negation"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2.4-a6",
+          "type": "writing",
+          "skill": "ecrire",
+          "title": "Écriture : vrai ou faux sur moi",
+          "instructions": "Write six sentences about yourself: three positive, three negative. Use ne… pas, ne… jamais and ne… plus at least once each (written style).",
+          "prompt": "Écris six phrases sur toi : trois positives et trois négatives. Utilise ne… pas, ne… jamais et ne… plus au moins une fois, et « pas de » une fois.",
+          "promptEn": "Write six sentences about yourself: three positive and three negative. Use ne… pas, ne… jamais and ne… plus at least once, and « pas de » once.",
+          "minWords": 30,
+          "maxWords": 80,
+          "targetStructures": [
+            "ne… pas",
+            "ne… jamais",
+            "ne… plus",
+            "pas de / pas d'",
+            "-er verbs"
+          ],
+          "expectedPhrases": [
+            "ne | n'",
+            "pas",
+            "jamais",
+            "plus",
+            "pas de | pas d'"
+          ],
+          "modelAnswer": "Je travaille à Toronto. J'adore le hockey. Je cuisine souvent. Je ne parle pas espagnol. Je ne magasine jamais le samedi. Je n'habite plus à Calgary. Je n'ai pas de chat, mais j'ai un chien.",
+          "rubricRef": "writing-a1"
+        },
+        {
+          "id": "2.4-a7",
+          "type": "speaking",
+          "skill": "parler",
+          "title": "Parler : non, non, non!",
+          "instructions": "Answer each question in the negative, spoken style (drop ne).",
+          "mode": "roleplay",
+          "maxSeconds": 12,
+          "turns": [
+            {
+              "speaker": "partner",
+              "fr": "Tu travailles le dimanche?"
+            },
+            {
+              "speaker": "learner",
+              "task": "No, you don't work on Sundays.",
+              "expectedPhrases": [
+                "travaille pas"
+              ]
+            },
+            {
+              "speaker": "partner",
+              "fr": "T'as un chat?"
+            },
+            {
+              "speaker": "learner",
+              "task": "No, you don't have a cat.",
+              "expectedPhrases": [
+                "pas de chat"
+              ]
+            },
+            {
+              "speaker": "partner",
+              "fr": "Tu restes encore à Calgary?"
+            },
+            {
+              "speaker": "learner",
+              "task": "No, you don't live there anymore.",
+              "expectedPhrases": [
+                "reste plus | reste pus | habite plus"
+              ]
+            },
+            {
+              "speaker": "partner",
+              "fr": "Moi, j'aime pas la télé-réalité."
+            },
+            {
+              "speaker": "learner",
+              "task": "Say 'me neither'.",
+              "expectedPhrases": [
+                "moi non plus"
+              ]
+            }
+          ],
+          "modelAnswer": "Non, je travaille pas le dimanche. / Non, j'ai pas de chat. / Non, je reste plus à Calgary. / Moi non plus!",
+          "selfCheck": [
+            "I dropped « ne » like in real conversation",
+            "I said « pas de chat », not « pas un chat »",
+            "I used « plus » for 'anymore'",
+            "I said « moi non plus »"
+          ],
+          "rubricRef": "speaking-a1"
+        }
+      ]
+    },
+    {
+      "id": "2.5",
+      "number": 5,
+      "title": "Les jours et l'heure",
+      "titleEn": "Days and time",
+      "objectives": [
+        "Name the days of the week and say 'on Mondays'",
+        "Ask and tell the time",
+        "Talk about meals the Québec way: déjeuner, dîner, souper",
+        "Use à matin, à soir, aujourd'hui, demain, hier"
+      ],
+      "activities": [
+        {
+          "id": "2.5-a1",
+          "type": "notes",
+          "skill": "vocabulaire",
+          "title": "Les jours, l'heure et les repas",
+          "instructions": "Read the notes. Tap bold French to hear it.",
+          "tts": {
+            "lang": "fr-CA",
+            "rate": 0.9
+          },
+          "body": "## Days\n\n**lundi, mardi, mercredi, jeudi, vendredi, samedi, dimanche**. No capitals.\n\n- **lundi** = this (coming) Monday: *On se voit lundi.*\n- **le lundi** = every Monday: *Je travaille pas le lundi.*\n- **la fin de semaine** = the weekend\n\n## Time\n\n- **Il est quelle heure?** (everyday) / **Quelle heure est-il?** (formal)\n- **Il est trois heures.** **Il est une heure.** (heure is feminine: *une*)\n- **et quart** (:15), **et demie** (:30), **moins quart** (:45; France: *moins le quart*)\n  - *Il est huit heures et demie.* 8:30\n  - *Il est neuf heures moins quart.* 8:45\n- **midi** (noon), **minuit** (midnight)\n- **le matin, l'après-midi, le soir, la nuit**\n- **à quelle heure?** at what time? → **à sept heures**\n\nSchedules use the 24-hour clock, written with **h**: **13 h 30** (*treize heures trente*), **18 h** (*dix-huit heures*).\n\n## Today, tonight… Québec style\n\n- **à matin** = ce matin (this morning)\n- **à soir** = ce soir (tonight)\n- **aujourd'hui, demain, hier** (today, tomorrow, yesterday)\n\n## Meals: careful!\n\n| | Québec | France |\n|---|---|---|\n| breakfast | **le déjeuner** | le petit-déjeuner |\n| lunch | **le dîner** | le déjeuner |\n| supper | **le souper** | le dîner |\n\nSo in Québec **On dîne à midi** and **On soupe à six heures**."
+        },
+        {
+          "id": "2.5-a2",
+          "type": "flashcards",
+          "skill": "vocabulaire",
+          "title": "Flashcards : le temps",
+          "instructions": "Flip each card, say the French out loud, then mark whether you knew it.",
+          "vocabIds": [
+            "v02-jours",
+            "v02-le-lundi",
+            "v02-quelle-heure",
+            "v02-heures",
+            "v02-quart-demie",
+            "v02-midi-minuit",
+            "v02-moments",
+            "v02-a-matin",
+            "v02-a-soir",
+            "v02-dejeuner",
+            "v02-diner",
+            "v02-souper",
+            "v02-aujourdhui"
+          ]
+        },
+        {
+          "id": "2.5-a3",
+          "type": "quiz",
+          "skill": "lire",
+          "title": "Lecture : l'horaire de la semaine",
+          "instructions": "Read Sophie's week on the fridge, then answer.",
+          "stimulus": {
+            "kind": "text",
+            "title": "La semaine de Sophie",
+            "transcript": "always",
+            "text": "lundi : travail 8 h 30 – 16 h 30\nmardi : travail, pis cours de yoga à 18 h\nmercredi : télétravail · dîner avec maman à midi\njeudi : travail · souper chez Marc à 19 h\nvendredi : congé! 🎉\nsamedi : marché Jean-Talon à 10 h\ndimanche : déjeuner en famille à 9 h",
+            "translationEn": "Monday: work 8:30–4:30. Tuesday: work, and yoga class at 6 p.m. Wednesday: working from home · lunch with mom at noon. Thursday: work · supper at Marc's at 7 p.m. Friday: day off! Saturday: Jean-Talon market at 10. Sunday: family breakfast at 9."
+          },
+          "items": [
+            {
+              "id": "q1",
+              "kind": "multiple_choice",
+              "prompt": "When does Sophie eat with her mother?",
+              "options": [
+                "Wednesday at noon (lunch)",
+                "Wednesday evening (supper)",
+                "Sunday breakfast",
+                "Thursday evening"
+              ],
+              "answer": 0,
+              "tags": [
+                "qc:meals"
+              ]
+            },
+            {
+              "id": "q2",
+              "kind": "multiple_choice",
+              "prompt": "What's on Sunday at 9?",
+              "options": [
+                "Breakfast with family",
+                "Lunch with family",
+                "Supper with family",
+                "Yoga"
+              ],
+              "answer": 0,
+              "tags": [
+                "qc:meals"
+              ]
+            },
+            {
+              "id": "q3",
+              "kind": "multiple_choice",
+              "prompt": "« 18 h » is…",
+              "options": [
+                "6 p.m.",
+                "8 p.m.",
+                "6 a.m.",
+                "8 a.m."
+              ],
+              "answer": 0,
+              "tags": [
+                "time"
+              ]
+            },
+            {
+              "id": "q4",
+              "kind": "true_false",
+              "prompt": "Sophie doesn't work on Friday.",
+              "answer": true
+            },
+            {
+              "id": "q5",
+              "kind": "multiple_choice",
+              "prompt": "Where is Sophie Thursday evening?",
+              "options": [
+                "At Marc's, for supper",
+                "At yoga",
+                "At the market",
+                "At work"
+              ],
+              "answer": 0
+            }
+          ]
+        },
+        {
+          "id": "2.5-a4",
+          "type": "quiz",
+          "skill": "ecouter",
+          "title": "Écoute : il est quelle heure?",
+          "instructions": "Type each time you hear in digits (e.g. 8:30). Then answer the questions about the conversation.",
+          "stimulus": {
+            "kind": "audio",
+            "title": "On se voit quand?",
+            "transcript": "after-submit",
+            "tts": {
+              "lang": "fr-CA",
+              "rate": 0.95
+            },
+            "lines": [
+              {
+                "speaker": "Alex",
+                "voice": "male",
+                "fr": "On soupe ensemble à soir?",
+                "en": "Shall we have supper together tonight?"
+              },
+              {
+                "speaker": "Marie",
+                "voice": "female",
+                "fr": "À soir, je peux pas, je travaille. Demain?",
+                "en": "Tonight I can't, I'm working. Tomorrow?"
+              },
+              {
+                "speaker": "Alex",
+                "voice": "male",
+                "fr": "Demain, c'est parfait. À six heures et demie?",
+                "en": "Tomorrow's perfect. At six-thirty?"
+              },
+              {
+                "speaker": "Marie",
+                "voice": "female",
+                "fr": "Plutôt sept heures moins quart. Je finis à six heures.",
+                "en": "Rather a quarter to seven. I finish at six."
+              }
+            ]
+          },
+          "items": [
+            {
+              "id": "t1",
+              "kind": "dictation",
+              "prompt": "Time (digits, e.g. 8:30):",
+              "audioText": "Il est huit heures et demie.",
+              "acceptedAnswers": [
+                "8:30",
+                "8 h 30",
+                "8h30",
+                "20:30"
+              ],
+              "tags": [
+                "time"
+              ]
+            },
+            {
+              "id": "t2",
+              "kind": "dictation",
+              "prompt": "Time (digits):",
+              "audioText": "Il est trois heures et quart.",
+              "acceptedAnswers": [
+                "3:15",
+                "3 h 15",
+                "3h15",
+                "15:15"
+              ],
+              "tags": [
+                "time"
+              ]
+            },
+            {
+              "id": "t3",
+              "kind": "dictation",
+              "prompt": "Time (digits):",
+              "audioText": "Il est onze heures moins quart.",
+              "acceptedAnswers": [
+                "10:45",
+                "10 h 45",
+                "10h45",
+                "22:45"
+              ],
+              "tags": [
+                "time"
+              ]
+            },
+            {
+              "id": "q1",
+              "kind": "multiple_choice",
+              "prompt": "Why can't Marie have supper tonight?",
+              "options": [
+                "She's working",
+                "She's sick",
+                "She's eating with her mom",
+                "She doesn't like Alex"
+              ],
+              "answer": 0
+            },
+            {
+              "id": "q2",
+              "kind": "multiple_choice",
+              "prompt": "What time do they agree on?",
+              "options": [
+                "6:45 tomorrow",
+                "6:30 tonight",
+                "6:00 tomorrow",
+                "7:15 tomorrow"
+              ],
+              "answer": 0,
+              "tags": [
+                "time"
+              ]
+            },
+            {
+              "id": "q3",
+              "kind": "multiple_choice",
+              "prompt": "« à soir » means:",
+              "options": [
+                "tonight",
+                "tomorrow",
+                "at night every day",
+                "this morning"
+              ],
+              "answer": 0,
+              "tags": [
+                "qc:vocab"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2.5-a5",
+          "type": "quiz",
+          "skill": "ecrire",
+          "title": "Pratique : jours, heures, repas",
+          "instructions": "Fill in the blank or choose.",
+          "items": [
+            {
+              "id": "q1",
+              "kind": "short_answer",
+              "prompt": "Write 9:30 in words: « Il est … »",
+              "acceptedAnswers": [
+                "il est neuf heures et demie",
+                "neuf heures et demie",
+                "il est neuf heures trente",
+                "neuf heures trente"
+              ],
+              "tags": [
+                "time"
+              ]
+            },
+            {
+              "id": "q2",
+              "kind": "short_answer",
+              "prompt": "Write 1:00 in words: « Il est … »",
+              "acceptedAnswers": [
+                "il est une heure",
+                "une heure"
+              ],
+              "tags": [
+                "time"
+              ]
+            },
+            {
+              "id": "q3",
+              "kind": "short_answer",
+              "prompt": "Write 4:45 the Québec way: « Il est … »",
+              "acceptedAnswers": [
+                "il est cinq heures moins quart",
+                "cinq heures moins quart",
+                "il est cinq heures moins le quart",
+                "cinq heures moins le quart"
+              ],
+              "tags": [
+                "time"
+              ]
+            },
+            {
+              "id": "q4",
+              "kind": "matching",
+              "prompt": "Match the Québec meal to the English.",
+              "pairs": [
+                {
+                  "left": "le déjeuner",
+                  "right": "breakfast"
+                },
+                {
+                  "left": "le dîner",
+                  "right": "lunch"
+                },
+                {
+                  "left": "le souper",
+                  "right": "supper"
+                }
+              ],
+              "tags": [
+                "qc:meals"
+              ]
+            },
+            {
+              "id": "q5",
+              "kind": "multiple_choice",
+              "prompt": "'I don't work on Saturdays.'",
+              "options": [
+                "Je travaille pas le samedi.",
+                "Je travaille pas samedi.",
+                "Je travaille pas les Samedi.",
+                "Je travaille pas au samedi."
+              ],
+              "answer": 0,
+              "explanation": "le samedi = every Saturday. No capital.",
+              "tags": [
+                "time"
+              ]
+            },
+            {
+              "id": "q6",
+              "kind": "fill_blank",
+              "prompt": "On se voit à ___ ? (tonight, Québec)",
+              "acceptedAnswers": [
+                [
+                  "soir"
+                ]
+              ],
+              "tags": [
+                "qc:vocab"
+              ]
+            },
+            {
+              "id": "q7",
+              "kind": "ordering",
+              "prompt": "Put the days in order.",
+              "options": [
+                "jeudi",
+                "lundi",
+                "dimanche",
+                "mercredi"
+              ],
+              "answer": [
+                1,
+                3,
+                0,
+                2
+              ],
+              "tags": [
+                "time"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2.5-a6",
+          "type": "writing",
+          "skill": "ecrire",
+          "title": "Écriture : ma journée typique",
+          "instructions": "Describe a typical weekday with times.",
+          "prompt": "Décris une journée typique de la semaine : à quelle heure tu déjeunes, tu travailles (ou étudies), tu dînes et tu soupes, et ce que tu fais le soir. Ajoute un jour où ta routine est différente (« Le vendredi, … »).",
+          "promptEn": "Describe a typical weekday: what time you have breakfast, work (or study), have lunch and supper, and what you do in the evening. Add one day when your routine is different (« Le vendredi, … »).",
+          "minWords": 40,
+          "maxWords": 90,
+          "targetStructures": [
+            "à + time (à sept heures et demie)",
+            "déjeuner / dîner / souper",
+            "le + day for habits",
+            "-er verbs",
+            "le matin / le soir"
+          ],
+          "expectedPhrases": [
+            "heures",
+            "déjeune | déjeuner",
+            "dîne | dîner",
+            "soupe | souper",
+            "le lundi | le mardi | le mercredi | le jeudi | le vendredi | le samedi | le dimanche"
+          ],
+          "modelAnswer": "Le matin, je déjeune à sept heures. Je travaille de huit heures et demie à cinq heures. Je dîne à midi avec mes collègues. On soupe à six heures et quart, pis le soir, je regarde une série ou je joue aux cartes avec ma blonde. Le vendredi, je travaille en télétravail, fait que je déjeune plus tard, à huit heures.",
+          "rubricRef": "writing-a1"
+        },
+        {
+          "id": "2.5-a7",
+          "type": "speaking",
+          "skill": "parler",
+          "title": "Parler : on se voit quand?",
+          "instructions": "Plan a meal with a friend. Answer each line.",
+          "mode": "roleplay",
+          "maxSeconds": 20,
+          "turns": [
+            {
+              "speaker": "partner",
+              "fr": "Ça te tente-tu de souper ensemble cette semaine?"
+            },
+            {
+              "speaker": "learner",
+              "task": "Say yes, and suggest a day.",
+              "expectedPhrases": [
+                "oui | ça me tente",
+                "lundi | mardi | mercredi | jeudi | vendredi | samedi | dimanche"
+              ]
+            },
+            {
+              "speaker": "partner",
+              "fr": "Parfait! À quelle heure?"
+            },
+            {
+              "speaker": "learner",
+              "task": "Suggest a time with et quart, et demie or moins quart.",
+              "expectedPhrases": [
+                "heure",
+                "et quart | et demie | moins quart"
+              ]
+            },
+            {
+              "speaker": "partner",
+              "fr": "Super. Pis il est quelle heure, là? J'ai pas ma montre."
+            },
+            {
+              "speaker": "learner",
+              "task": "Tell them the time right now.",
+              "expectedPhrases": [
+                "il est",
+                "heure"
+              ]
+            }
+          ],
+          "modelAnswer": "Oui, ça me tente! Jeudi? / À six heures et demie. / Il est trois heures et quart.",
+          "selfCheck": [
+            "I named a day",
+            "I gave a time with et quart / et demie / moins quart",
+            "I said « il est … heures »",
+            "I said heure(s), not « o'clock » English-style"
+          ],
+          "rubricRef": "speaking-a1"
+        }
+      ]
+    },
+    {
+      "id": "2.6",
+      "number": 6,
+      "title": "Parle-moi de toi",
+      "titleEn": "Tell me about yourself",
+      "objectives": [
+        "Hold a getting-to-know-you conversation about family, work and hobbies",
+        "Ask questions three ways: intonation, est-ce que, and Québec -tu",
+        "React naturally (Ah oui? Moi aussi! Moi non plus! Ça dépend.)",
+        "Use frequency words: souvent, des fois, toujours, jamais"
+      ],
+      "activities": [
+        {
+          "id": "2.6-a1",
+          "type": "notes",
+          "skill": "vocabulaire",
+          "title": "Poser des questions",
+          "instructions": "Read the notes. Tap bold French to hear it.",
+          "tts": {
+            "lang": "fr-CA",
+            "rate": 0.9
+          },
+          "body": "## Three ways to ask a yes/no question\n\n1. **Intonation** (most common in speech): *Tu as des enfants?* (voice goes up)\n2. **Est-ce que** (neutral, always correct): *Est-ce que tu as des enfants?*\n3. **Québec -tu** (very casual): *T'as-tu des enfants?* The extra *tu* just means 'question'. It even works with *il* or *on*: *On y va-tu?* (Shall we go?)\n\nInversion (*As-tu des enfants?*) is formal in writing but also common in Québec speech with *tu*: **As-tu**, **Veux-tu**, **Peux-tu**.\n\n## Question words\n\n- **Qu'est-ce que** tu fais? (what)\n- Tu restes **où**? (where)\n- Tu travailles **quand**? (when)\n- **Pourquoi** tu étudies le français? → **Parce que**… (why / because)\n- **Comment** s'appelle ta blonde? (how / what)\n\n## Keeping it going\n\n- **Ah oui? C'est vrai?** Oh yeah? Really?\n- **Moi aussi! / Moi non plus!**\n- **Ça dépend.** It depends.\n- **Pis toi?** And you?\n- **Parle-moi de toi!** Tell me about yourself!\n\n## How often\n\n**toujours** (always) › **souvent** (often) › **des fois / parfois** (sometimes) › **(ne…) jamais** (never)\n\n*Je cuisine souvent. Des fois, je magasine. Je travaille jamais le dimanche.*"
+        },
+        {
+          "id": "2.6-a2",
+          "type": "flashcards",
+          "skill": "vocabulaire",
+          "title": "Flashcards : la conversation",
+          "instructions": "Flip each card, say the French out loud, then mark whether you knew it.",
+          "vocabIds": [
+            "v02-tas-tu",
+            "v02-quest-ce-que-taimes",
+            "v02-parle-moi",
+            "v02-ca-depend",
+            "v02-frequence",
+            "v02-cest-vrai",
+            "v02-moi-non-plus",
+            "v02-ca-te-tente"
+          ]
+        },
+        {
+          "id": "2.6-a3",
+          "type": "quiz",
+          "skill": "lire",
+          "title": "Lecture : premier rendez-vous",
+          "instructions": "Read the conversation between Audrey and Jérôme on a first coffee date, then answer.",
+          "stimulus": {
+            "kind": "dialogue",
+            "title": "Au café",
+            "transcript": "always",
+            "lines": [
+              {
+                "speaker": "Audrey",
+                "fr": "Pis, parle-moi de toi! Qu'est-ce que tu fais dans la vie?",
+                "en": "So, tell me about yourself! What do you do?"
+              },
+              {
+                "speaker": "Jérôme",
+                "fr": "Je suis enseignant au secondaire. J'enseigne l'histoire. Pis toi?",
+                "en": "I'm a high-school teacher. I teach history. And you?"
+              },
+              {
+                "speaker": "Audrey",
+                "fr": "Moi, je travaille pour une compagnie de jeux vidéo. As-tu des enfants?",
+                "en": "I work at a video game company. Do you have kids?"
+              },
+              {
+                "speaker": "Jérôme",
+                "fr": "Non, pas d'enfants, mais j'ai un chien. Toi?",
+                "en": "No, no kids, but I have a dog. You?"
+              },
+              {
+                "speaker": "Audrey",
+                "fr": "Moi non plus, pas d'enfants. Pis la fin de semaine, qu'est-ce que t'aimes faire?",
+                "en": "Me neither, no kids. And on weekends, what do you like to do?"
+              },
+              {
+                "speaker": "Jérôme",
+                "fr": "Ça dépend. L'hiver, je fais souvent du ski de fond. Des fois, je joue aux cartes avec mes chums.",
+                "en": "It depends. In winter I often go cross-country skiing. Sometimes I play cards with my buddies."
+              },
+              {
+                "speaker": "Audrey",
+                "fr": "Ah oui? Moi aussi, j'adore le ski de fond! On y va-tu ensemble samedi?",
+                "en": "Oh yeah? Me too, I love cross-country skiing! Shall we go together Saturday?"
+              }
+            ]
+          },
+          "items": [
+            {
+              "id": "q1",
+              "kind": "multiple_choice",
+              "prompt": "What does Jérôme do?",
+              "options": [
+                "He teaches history in high school",
+                "He works at a video game company",
+                "He's a ski instructor",
+                "He's a student"
+              ],
+              "answer": 0
+            },
+            {
+              "id": "q2",
+              "kind": "multiple_choice",
+              "prompt": "Who has a dog?",
+              "options": [
+                "Jérôme",
+                "Audrey",
+                "Both",
+                "Neither"
+              ],
+              "answer": 0
+            },
+            {
+              "id": "q3",
+              "kind": "multiple_choice",
+              "prompt": "Why does Audrey say « Moi non plus »?",
+              "options": [
+                "She doesn't have kids either",
+                "She doesn't have a dog either",
+                "She doesn't like skiing",
+                "She doesn't work"
+              ],
+              "answer": 0,
+              "tags": [
+                "grammar:negation"
+              ]
+            },
+            {
+              "id": "q4",
+              "kind": "multiple_choice",
+              "prompt": "How often does Jérôme play cards?",
+              "options": [
+                "Sometimes",
+                "Often",
+                "Always",
+                "Never"
+              ],
+              "answer": 0,
+              "tags": [
+                "vocab:frequency"
+              ]
+            },
+            {
+              "id": "q5",
+              "kind": "multiple_choice",
+              "prompt": "« On y va-tu ensemble samedi? » is:",
+              "options": [
+                "An invitation to go together on Saturday",
+                "A question about where he goes",
+                "A statement that they go every Saturday",
+                "A refusal"
+              ],
+              "answer": 0,
+              "tags": [
+                "qc:tu-question"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2.6-a4",
+          "type": "quiz",
+          "skill": "ecouter",
+          "title": "Écoute : une nouvelle voisine",
+          "instructions": "Listen to two neighbours meeting for the first time. The speech is a bit faster now.",
+          "stimulus": {
+            "kind": "audio",
+            "title": "La nouvelle voisine",
+            "transcript": "after-submit",
+            "tts": {
+              "lang": "fr-CA",
+              "rate": 1.0
+            },
+            "lines": [
+              {
+                "speaker": "Denis",
+                "voice": "male",
+                "fr": "Bonjour! Vous êtes la nouvelle voisine?",
+                "en": "Hello! You're the new neighbour?"
+              },
+              {
+                "speaker": "Fatima",
+                "voice": "female",
+                "fr": "Oui! Je m'appelle Fatima. On peut se tutoyer, hein?",
+                "en": "Yes! I'm Fatima. We can use tu, right?"
+              },
+              {
+                "speaker": "Denis",
+                "voice": "male",
+                "fr": "Ben oui! Moi, c'est Denis. Tu restes ici avec ta famille?",
+                "en": "Sure! I'm Denis. You live here with your family?"
+              },
+              {
+                "speaker": "Fatima",
+                "voice": "female",
+                "fr": "Avec mon chum pis nos deux filles. Y travaille de nuit, fait que tu le vois pas souvent!",
+                "en": "With my partner and our two daughters. He works nights, so you won't see him often!"
+              },
+              {
+                "speaker": "Denis",
+                "voice": "male",
+                "fr": "Ha! Pis toi, tu travailles?",
+                "en": "Ha! And you, do you work?"
+              },
+              {
+                "speaker": "Fatima",
+                "voice": "female",
+                "fr": "Oui, je suis pharmacienne. Je travaille le jour, du mardi au samedi.",
+                "en": "Yes, I'm a pharmacist. I work days, Tuesday to Saturday."
+              }
+            ]
+          },
+          "items": [
+            {
+              "id": "q1",
+              "kind": "multiple_choice",
+              "prompt": "Who does Fatima live with?",
+              "options": [
+                "Her partner and their two daughters",
+                "Her parents",
+                "Her two sons",
+                "Alone"
+              ],
+              "answer": 0,
+              "tags": [
+                "qc:vocab"
+              ]
+            },
+            {
+              "id": "q2",
+              "kind": "multiple_choice",
+              "prompt": "Why won't Denis see Fatima's partner often?",
+              "options": [
+                "He works nights",
+                "He travels a lot",
+                "He lives elsewhere",
+                "He's shy"
+              ],
+              "answer": 0,
+              "tags": [
+                "qc:spoken-pronouns"
+              ]
+            },
+            {
+              "id": "q3",
+              "kind": "multiple_choice",
+              "prompt": "« On peut se tutoyer » means:",
+              "options": [
+                "We can use tu with each other",
+                "We can talk tomorrow",
+                "We can be friends",
+                "We can meet later"
+              ],
+              "answer": 0
+            },
+            {
+              "id": "q4",
+              "kind": "multiple_choice",
+              "prompt": "Which days does Fatima work?",
+              "options": [
+                "Tuesday to Saturday",
+                "Monday to Friday",
+                "Weekends",
+                "Nights"
+              ],
+              "answer": 0,
+              "tags": [
+                "time"
+              ]
+            },
+            {
+              "id": "q5",
+              "kind": "multiple_choice",
+              "prompt": "« fait que » means:",
+              "options": [
+                "so",
+                "because",
+                "but",
+                "makes"
+              ],
+              "answer": 0,
+              "tags": [
+                "qc:spoken"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2.6-a5",
+          "type": "quiz",
+          "skill": "ecrire",
+          "title": "Pratique : les questions",
+          "instructions": "Write the question that matches each answer (tu form).",
+          "items": [
+            {
+              "id": "q1",
+              "kind": "short_answer",
+              "prompt": "Answer: « Je suis infirmière. » → Question:",
+              "acceptedAnswers": [
+                "qu'est-ce que tu fais dans la vie",
+                "qu'est ce que tu fais dans la vie",
+                "tu fais quoi dans la vie"
+              ],
+              "tags": [
+                "grammar:questions"
+              ]
+            },
+            {
+              "id": "q2",
+              "kind": "short_answer",
+              "prompt": "Answer: « Je reste à Laval. » → Question with où:",
+              "acceptedAnswers": [
+                "tu restes où",
+                "où est-ce que tu restes",
+                "où restes-tu",
+                "tu habites où",
+                "où est-ce que tu habites",
+                "où habites-tu"
+              ],
+              "tags": [
+                "grammar:questions"
+              ]
+            },
+            {
+              "id": "q3",
+              "kind": "short_answer",
+              "prompt": "Answer: « Oui, j'ai deux enfants. » → Question with est-ce que:",
+              "acceptedAnswers": [
+                "est-ce que tu as des enfants",
+                "est ce que tu as des enfants"
+              ],
+              "tags": [
+                "grammar:questions"
+              ]
+            },
+            {
+              "id": "q4",
+              "kind": "short_answer",
+              "prompt": "Answer: « J'aime cuisiner pis marcher. » → Question:",
+              "acceptedAnswers": [
+                "qu'est-ce que tu aimes faire",
+                "qu'est-ce que t'aimes faire",
+                "qu'est ce que tu aimes faire",
+                "qu'est ce que t'aimes faire",
+                "tu aimes faire quoi",
+                "t'aimes faire quoi"
+              ],
+              "tags": [
+                "grammar:questions"
+              ]
+            },
+            {
+              "id": "q5",
+              "kind": "multiple_choice",
+              "prompt": "Which is the casual Québec version of « Est-ce que tu as un chat? »",
+              "options": [
+                "T'as-tu un chat?",
+                "As-tu-tu un chat?",
+                "Tu-tu as un chat?",
+                "Est-ce tu as un chat?"
+              ],
+              "answer": 0,
+              "tags": [
+                "qc:tu-question"
+              ]
+            },
+            {
+              "id": "q6",
+              "kind": "ordering",
+              "prompt": "Order from most to least often.",
+              "options": [
+                "jamais",
+                "toujours",
+                "des fois",
+                "souvent"
+              ],
+              "answer": [
+                1,
+                3,
+                2,
+                0
+              ],
+              "tags": [
+                "vocab:frequency"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2.6-a6",
+          "type": "writing",
+          "skill": "ecrire",
+          "title": "Écriture : réponds à un correspondant",
+          "instructions": "This is a review of the whole level. Use as much as you can from lessons 2.1 to 2.5.",
+          "prompt": "Ton nouveau correspondant québécois t'écrit : « Salut! Parle-moi de toi : ta famille, ta job, ce que t'aimes faire, pis ta semaine typique! » Réponds-lui, puis pose-lui trois questions.",
+          "promptEn": "Your new Québécois pen pal writes: « Hi! Tell me about yourself: your family, your job, what you like doing, and your typical week! » Reply, then ask them three questions.",
+          "minWords": 70,
+          "maxWords": 140,
+          "targetStructures": [
+            "possessives",
+            "-er verbs",
+            "je suis + job",
+            "aimer / adorer / détester + infinitive or le/la/les",
+            "negation",
+            "days and times",
+            "three questions (intonation, est-ce que, or -tu)"
+          ],
+          "expectedPhrases": [
+            "salut | allô | bonjour",
+            "mon | ma | mes",
+            "je travaille | je suis | j'étudie",
+            "j'aime | j'adore",
+            "pas",
+            "le lundi | le mardi | le mercredi | le jeudi | le vendredi | le samedi | le dimanche | la fin de semaine",
+            "?"
+          ],
+          "modelAnswer": "Salut Mathieu! On est trois dans ma famille : moi, ma blonde Émilie pis notre chat. Mes parents restent à Calgary. Je suis gestionnaire de projets, je travaille dans une banque à Toronto. J'aime ma job, mais je travaille beaucoup! Le matin, je déjeune à sept heures pis je commence à huit heures et demie. Le vendredi, je suis en télétravail. La fin de semaine, j'adore marcher pis cuisiner. Je regarde jamais la télé-réalité, j'haïs ça! Pis toi, qu'est-ce que tu fais dans la vie? T'as-tu des frères ou des sœurs? Est-ce que tu aimes le hockey?",
+          "rubricRef": "writing-a1"
+        },
+        {
+          "id": "2.6-a7",
+          "type": "speaking",
+          "skill": "parler",
+          "title": "Parler : un premier café",
+          "instructions": "Role-play a first coffee with someone you met online. Answer naturally and ask questions back.",
+          "mode": "roleplay",
+          "maxSeconds": 25,
+          "turns": [
+            {
+              "speaker": "partner",
+              "fr": "Pis, parle-moi de toi! Qu'est-ce que tu fais dans la vie?"
+            },
+            {
+              "speaker": "learner",
+              "task": "Say your job and where you work, then ask what they do.",
+              "expectedPhrases": [
+                "je suis | je travaille | j'étudie",
+                "toi | dans la vie"
+              ]
+            },
+            {
+              "speaker": "partner",
+              "fr": "Moi, je suis cuisinière dans un resto. T'as-tu de la famille ici?"
+            },
+            {
+              "speaker": "learner",
+              "task": "Talk about your family: who, and where they live.",
+              "expectedPhrases": [
+                "mon | ma | mes",
+                "reste | restent | habite | habitent"
+              ]
+            },
+            {
+              "speaker": "partner",
+              "fr": "Cool! Pis la fin de semaine, qu'est-ce que t'aimes faire?"
+            },
+            {
+              "speaker": "learner",
+              "task": "Say two things you like doing and one you never do.",
+              "expectedPhrases": [
+                "j'aime | j'adore",
+                "jamais"
+              ]
+            },
+            {
+              "speaker": "partner",
+              "fr": "Ah oui? Moi aussi! Ça te tente-tu de se revoir la semaine prochaine?"
+            },
+            {
+              "speaker": "learner",
+              "task": "Accept and suggest a day and time.",
+              "expectedPhrases": [
+                "ça me tente | oui",
+                "lundi | mardi | mercredi | jeudi | vendredi | samedi | dimanche",
+                "heure"
+              ]
+            }
+          ],
+          "modelAnswer": "Je suis gestionnaire de projets, je travaille dans une banque. Pis toi, qu'est-ce que tu fais dans la vie? / Oui, ma sœur reste à Montréal, mais mes parents restent à Calgary. / J'aime marcher pis cuisiner. Je magasine jamais! / Oui, ça me tente! Jeudi à six heures et demie?",
+          "selfCheck": [
+            "I said my job and asked about theirs",
+            "I used possessives for my family",
+            "I used a frequency word (jamais, souvent, des fois)",
+            "I accepted with a day and a time",
+            "I kept talking without long pauses"
+          ],
+          "rubricRef": "speaking-a1"
+        },
+        {
+          "id": "2.6-a8",
+          "type": "speaking",
+          "skill": "parler",
+          "title": "Parler : ma vie en une minute",
+          "instructions": "Talk for about a minute about your life: family, work, likes and your week. Try once with notes, then without.",
+          "mode": "describe",
+          "maxSeconds": 80,
+          "prompt": "Parle-moi de ta vie : ta famille, ta job, ce que tu aimes et ce que tu n'aimes pas, et ta semaine.",
+          "expectedPhrases": [
+            "mon | ma | mes",
+            "je travaille | je suis | j'étudie",
+            "j'aime | j'adore",
+            "pas",
+            "le lundi | le mardi | le mercredi | le jeudi | le vendredi | le samedi | le dimanche | la fin de semaine"
+          ],
+          "selfCheck": [
+            "I spoke for at least 45 seconds",
+            "I covered family, work, likes and my week",
+            "I used at least one negative",
+            "I tried it once without notes"
+          ],
+          "rubricRef": "speaking-a1"
+        }
+      ]
+    }
+  ],
+  "gateTest": {
+    "id": "L02-gate",
+    "title": "Test du niveau 2",
+    "instructions": "This test checks whether you're ready for Level 3. Each section covers one skill. To pass you need 80% overall and at least 70% in every section. Audio can be played twice. No notes. Questions come from a pool, so a retake will be different.",
+    "passRule": {
+      "overallPercent": 80,
+      "sectionMinPercent": 70
+    },
+    "sections": [
+      {
+        "skill": "lire",
+        "title": "Lecture",
+        "reviewLessons": [
+          "2.1",
+          "2.3",
+          "2.5"
+        ],
+        "activities": [
+          {
+            "id": "G2-lire-1",
+            "type": "quiz",
+            "skill": "lire",
+            "title": "Une invitation",
+            "instructions": "Read the email, then answer.",
+            "draw": 5,
+            "stimulus": {
+              "kind": "text",
+              "title": "Courriel de Nicole",
+              "transcript": "always",
+              "text": "Bonjour à tous!\n\nC'est la fête de mon chum Gilles samedi prochain. On organise un souper surprise chez nous, à 18 h 30. Gilles adore la cuisine mexicaine, fait que c'est le thème! Ses parents viennent de Chicoutimi, pis sa sœur Manon est là aussi avec ses enfants.\n\nAttention : Gilles ne sait rien! Il travaille jusqu'à 17 h le samedi, donc arrivez avant 18 h 15.\n\nPas de cadeaux, s'il vous plaît, mais si ça vous tente, apportez un dessert.\n\nÀ samedi!\nNicole",
+              "translationEn": "Hello everyone! It's my partner Gilles's birthday next Saturday. We're organising a surprise supper at our place, at 6:30 p.m. Gilles loves Mexican food, so that's the theme! His parents are coming from Chicoutimi, and his sister Manon will be there with her kids. Careful: Gilles knows nothing! He works until 5 p.m. on Saturdays, so arrive before 6:15. No gifts please, but if you feel like it, bring a dessert. See you Saturday! Nicole"
+            },
+            "items": [
+              {
+                "id": "q1",
+                "kind": "multiple_choice",
+                "prompt": "Who is Gilles?",
+                "options": [
+                  "Nicole's partner",
+                  "Nicole's brother",
+                  "Nicole's son",
+                  "Nicole's coworker"
+                ],
+                "answer": 0
+              },
+              {
+                "id": "q2",
+                "kind": "multiple_choice",
+                "prompt": "What meal is it?",
+                "options": [
+                  "Supper",
+                  "Lunch",
+                  "Breakfast",
+                  "Brunch"
+                ],
+                "answer": 0
+              },
+              {
+                "id": "q3",
+                "kind": "multiple_choice",
+                "prompt": "Guests should arrive before…",
+                "options": [
+                  "6:15 p.m.",
+                  "5:00 p.m.",
+                  "6:30 p.m.",
+                  "7:15 p.m."
+                ],
+                "answer": 0
+              },
+              {
+                "id": "q4",
+                "kind": "true_false",
+                "prompt": "Gilles knows about the party.",
+                "answer": false
+              },
+              {
+                "id": "q5",
+                "kind": "multiple_choice",
+                "prompt": "In « Ses parents » and « ses enfants », whose are they?",
+                "options": [
+                  "Gilles's parents; Manon's kids",
+                  "Nicole's parents; Nicole's kids",
+                  "Manon's parents; Gilles's kids",
+                  "Everyone's"
+                ],
+                "answer": 0
+              },
+              {
+                "id": "q6",
+                "kind": "multiple_choice",
+                "prompt": "What should guests bring?",
+                "options": [
+                  "A dessert, if they feel like it",
+                  "A gift",
+                  "Mexican food",
+                  "Nothing at all"
+                ],
+                "answer": 0
+              }
+            ]
+          },
+          {
+            "id": "G2-lire-2",
+            "type": "quiz",
+            "skill": "lire",
+            "title": "Textos",
+            "instructions": "Read the text messages, then answer.",
+            "draw": 4,
+            "stimulus": {
+              "kind": "dialogue",
+              "title": "Textos",
+              "transcript": "always",
+              "lines": [
+                {
+                  "speaker": "Sam",
+                  "fr": "Ça te tente-tu d'aller dîner au resto demain?"
+                },
+                {
+                  "speaker": "Jo",
+                  "fr": "Demain je peux pas, je travaille de 9 h à 17 h pis j'ai pas de pause 😩"
+                },
+                {
+                  "speaker": "Sam",
+                  "fr": "Ouch. Pis à soir? On soupe ensemble?"
+                },
+                {
+                  "speaker": "Jo",
+                  "fr": "Oui! Mais pas de sushis, j'aime pas ça pantoute 😂"
+                },
+                {
+                  "speaker": "Sam",
+                  "fr": "Haha moi non plus! Pizza à 19 h?"
+                }
+              ]
+            },
+            "items": [
+              {
+                "id": "q1",
+                "kind": "multiple_choice",
+                "prompt": "What does Sam suggest first?",
+                "options": [
+                  "Lunch at a restaurant tomorrow",
+                  "Breakfast tomorrow",
+                  "Supper tomorrow",
+                  "Coffee tonight"
+                ],
+                "answer": 0
+              },
+              {
+                "id": "q2",
+                "kind": "multiple_choice",
+                "prompt": "Why can't Jo go tomorrow?",
+                "options": [
+                  "Jo works all day with no break",
+                  "Jo is sick",
+                  "Jo doesn't like restaurants",
+                  "Jo is busy at night"
+                ],
+                "answer": 0
+              },
+              {
+                "id": "q3",
+                "kind": "multiple_choice",
+                "prompt": "When will they eat together?",
+                "options": [
+                  "Tonight at 7",
+                  "Tomorrow at noon",
+                  "Tomorrow at 5",
+                  "Tonight at 9"
+                ],
+                "answer": 0
+              },
+              {
+                "id": "q4",
+                "kind": "multiple_choice",
+                "prompt": "Sam's « moi non plus » means:",
+                "options": [
+                  "Sam doesn't like sushi either",
+                  "Sam doesn't like pizza",
+                  "Sam can't come",
+                  "Sam likes sushi"
+                ],
+                "answer": 0
+              },
+              {
+                "id": "q5",
+                "kind": "multiple_choice",
+                "prompt": "« pantoute » means:",
+                "options": [
+                  "at all",
+                  "a lot",
+                  "anymore",
+                  "anyway"
+                ],
+                "answer": 0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "skill": "ecouter",
+        "title": "Écoute",
+        "reviewLessons": [
+          "2.2",
+          "2.4",
+          "2.5",
+          "2.6"
+        ],
+        "activities": [
+          {
+            "id": "G2-ecouter-1",
+            "type": "quiz",
+            "skill": "ecouter",
+            "title": "Au téléphone",
+            "instructions": "Listen to a phone call between two friends. You can play it twice.",
+            "draw": 5,
+            "stimulus": {
+              "kind": "audio",
+              "title": "Un appel",
+              "transcript": "after-submit",
+              "maxPlays": 2,
+              "tts": {
+                "lang": "fr-CA",
+                "rate": 1.0
+              },
+              "lines": [
+                {
+                  "speaker": "Line",
+                  "voice": "female",
+                  "fr": "Allô? Martin? C'est Line! Ça fait longtemps!"
+                },
+                {
+                  "speaker": "Martin",
+                  "voice": "male",
+                  "fr": "Line! Ben oui! Pis, quoi de neuf?"
+                },
+                {
+                  "speaker": "Line",
+                  "voice": "female",
+                  "fr": "Ben, je travaille plus à la banque. Je suis enseignante maintenant, au primaire."
+                },
+                {
+                  "speaker": "Martin",
+                  "voice": "male",
+                  "fr": "Wow! Pis t'aimes ça?"
+                },
+                {
+                  "speaker": "Line",
+                  "voice": "female",
+                  "fr": "J'adore ça! Mais je suis fatiguée le soir. Pis toi, ta blonde pis toi, vous restez encore à Longueuil?"
+                },
+                {
+                  "speaker": "Martin",
+                  "voice": "male",
+                  "fr": "Non, on reste à Québec maintenant. A travaille au Château Frontenac."
+                }
+              ]
+            },
+            "items": [
+              {
+                "id": "q1",
+                "kind": "multiple_choice",
+                "prompt": "What is Line's job now?",
+                "options": [
+                  "Primary school teacher",
+                  "Bank employee",
+                  "Nurse",
+                  "Hotel employee"
+                ],
+                "answer": 0
+              },
+              {
+                "id": "q2",
+                "kind": "true_false",
+                "prompt": "Line still works at the bank.",
+                "answer": false
+              },
+              {
+                "id": "q3",
+                "kind": "multiple_choice",
+                "prompt": "How does Line feel about her job?",
+                "options": [
+                  "She loves it but is tired in the evening",
+                  "She hates it",
+                  "She's bored",
+                  "She wants to go back to the bank"
+                ],
+                "answer": 0
+              },
+              {
+                "id": "q4",
+                "kind": "multiple_choice",
+                "prompt": "Where do Martin and his girlfriend live now?",
+                "options": [
+                  "Québec City",
+                  "Longueuil",
+                  "Montréal",
+                  "Gatineau"
+                ],
+                "answer": 0
+              },
+              {
+                "id": "q5",
+                "kind": "multiple_choice",
+                "prompt": "Who works at the Château Frontenac?",
+                "options": [
+                  "Martin's girlfriend",
+                  "Martin",
+                  "Line",
+                  "Line's partner"
+                ],
+                "answer": 0
+              },
+              {
+                "id": "q6",
+                "kind": "multiple_choice",
+                "prompt": "« Ça fait longtemps! » means:",
+                "options": [
+                  "Long time no see!",
+                  "It's late!",
+                  "That takes long!",
+                  "See you soon!"
+                ],
+                "answer": 0
+              }
+            ]
+          },
+          {
+            "id": "G2-ecouter-2",
+            "type": "quiz",
+            "skill": "ecouter",
+            "title": "Dictée",
+            "instructions": "Type each sentence you hear. Each plays twice at most.",
+            "draw": 4,
+            "items": [
+              {
+                "id": "d1",
+                "kind": "dictation",
+                "prompt": "Sentence:",
+                "audioText": "Mon chum travaille le samedi.",
+                "acceptedAnswers": [
+                  "mon chum travaille le samedi"
+                ]
+              },
+              {
+                "id": "d2",
+                "kind": "dictation",
+                "prompt": "Sentence:",
+                "audioText": "On soupe à six heures.",
+                "acceptedAnswers": [
+                  "on soupe à six heures",
+                  "on soupe à 6 heures"
+                ]
+              },
+              {
+                "id": "d3",
+                "kind": "dictation",
+                "prompt": "Sentence:",
+                "audioText": "J'aime pas magasiner.",
+                "acceptedAnswers": [
+                  "j'aime pas magasiner",
+                  "je n'aime pas magasiner"
+                ]
+              },
+              {
+                "id": "d4",
+                "kind": "dictation",
+                "prompt": "Sentence:",
+                "audioText": "Ma sœur a deux enfants.",
+                "acceptedAnswers": [
+                  "ma sœur a deux enfants",
+                  "ma soeur a deux enfants",
+                  "ma sœur a 2 enfants"
+                ]
+              },
+              {
+                "id": "d5",
+                "kind": "dictation",
+                "prompt": "Sentence:",
+                "audioText": "Il est sept heures et demie.",
+                "acceptedAnswers": [
+                  "il est sept heures et demie",
+                  "il est 7 heures et demie",
+                  "il est 7 h 30",
+                  "7:30"
+                ]
+              },
+              {
+                "id": "d6",
+                "kind": "dictation",
+                "prompt": "Sentence:",
+                "audioText": "Ça me tente pas à soir.",
+                "acceptedAnswers": [
+                  "ça me tente pas à soir",
+                  "ca me tente pas a soir"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "skill": "ecrire",
+        "title": "Écriture",
+        "reviewLessons": [
+          "2.1",
+          "2.2",
+          "2.4"
+        ],
+        "activities": [
+          {
+            "id": "G2-ecrire-1",
+            "type": "quiz",
+            "skill": "ecrire",
+            "title": "Grammaire et vocabulaire",
+            "instructions": "Fill in the blanks. Accents count, but a missing accent only costs half a point.",
+            "draw": 10,
+            "items": [
+              {
+                "id": "g1",
+                "kind": "fill_blank",
+                "prompt": "Nous ___ à Laval. (habiter)",
+                "acceptedAnswers": [
+                  [
+                    "habitons"
+                  ]
+                ],
+                "tags": [
+                  "grammar:er-verbs"
+                ]
+              },
+              {
+                "id": "g2",
+                "kind": "fill_blank",
+                "prompt": "Elles ___ beaucoup. (travailler)",
+                "acceptedAnswers": [
+                  [
+                    "travaillent"
+                  ]
+                ],
+                "tags": [
+                  "grammar:er-verbs"
+                ]
+              },
+              {
+                "id": "g3",
+                "kind": "fill_blank",
+                "prompt": "Vous ___ le français? (étudier)",
+                "acceptedAnswers": [
+                  [
+                    "étudiez"
+                  ]
+                ],
+                "tags": [
+                  "grammar:er-verbs"
+                ]
+              },
+              {
+                "id": "g4",
+                "kind": "fill_blank",
+                "prompt": "Je ___ le thé. (préférer)",
+                "acceptedAnswers": [
+                  [
+                    "préfère"
+                  ]
+                ],
+                "strictAccents": true,
+                "tags": [
+                  "grammar:er-verbs"
+                ]
+              },
+              {
+                "id": "g5",
+                "kind": "fill_blank",
+                "prompt": "___ parents restent à Gatineau. (my)",
+                "acceptedAnswers": [
+                  [
+                    "mes"
+                  ]
+                ],
+                "tags": [
+                  "grammar:possessives"
+                ]
+              },
+              {
+                "id": "g6",
+                "kind": "fill_blank",
+                "prompt": "Julie aime ___ frère. (her)",
+                "acceptedAnswers": [
+                  [
+                    "son"
+                  ]
+                ],
+                "tags": [
+                  "grammar:possessives"
+                ]
+              },
+              {
+                "id": "g7",
+                "kind": "fill_blank",
+                "prompt": "C'est ___ amie Chloé. (my)",
+                "acceptedAnswers": [
+                  [
+                    "mon"
+                  ]
+                ],
+                "tags": [
+                  "grammar:possessives"
+                ]
+              },
+              {
+                "id": "g8",
+                "kind": "short_answer",
+                "prompt": "Negative, written style: « J'ai une auto. »",
+                "acceptedAnswers": [
+                  "je n'ai pas d'auto",
+                  "je n'ai pas de voiture"
+                ],
+                "tags": [
+                  "grammar:negation",
+                  "grammar:pas-de"
+                ]
+              },
+              {
+                "id": "g9",
+                "kind": "short_answer",
+                "prompt": "Negative, written style (never): « Il cuisine. »",
+                "acceptedAnswers": [
+                  "il ne cuisine jamais"
+                ],
+                "tags": [
+                  "grammar:negation"
+                ]
+              },
+              {
+                "id": "g10",
+                "kind": "fill_blank",
+                "prompt": "Elle déteste ___ hiver.",
+                "acceptedAnswers": [
+                  [
+                    "l'"
+                  ]
+                ],
+                "tags": [
+                  "grammar:articles-likes"
+                ]
+              },
+              {
+                "id": "g11",
+                "kind": "short_answer",
+                "prompt": "Write 6:45 the Québec way: « Il est … »",
+                "acceptedAnswers": [
+                  "il est sept heures moins quart",
+                  "sept heures moins quart",
+                  "il est sept heures moins le quart",
+                  "sept heures moins le quart"
+                ],
+                "tags": [
+                  "time"
+                ]
+              },
+              {
+                "id": "g12",
+                "kind": "short_answer",
+                "prompt": "In Québec, what's the noon meal called? (with le)",
+                "acceptedAnswers": [
+                  "le dîner"
+                ],
+                "tags": [
+                  "qc:meals"
+                ]
+              },
+              {
+                "id": "g13",
+                "kind": "fill_blank",
+                "prompt": "Elle est ___. (job: nurse, no article)",
+                "acceptedAnswers": [
+                  [
+                    "infirmière"
+                  ]
+                ],
+                "tags": [
+                  "grammar:jobs"
+                ]
+              },
+              {
+                "id": "g14",
+                "kind": "short_answer",
+                "prompt": "Write the question with est-ce que: 'Do you have a dog?' (tu)",
+                "acceptedAnswers": [
+                  "est-ce que tu as un chien",
+                  "est ce que tu as un chien"
+                ],
+                "tags": [
+                  "grammar:questions"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "G2-ecrire-2",
+            "type": "writing",
+            "skill": "ecrire",
+            "title": "Écriture : réponds à Nicole",
+            "instructions": "Write a reply. This is graded with the writing rubric.",
+            "prompt": "Réponds au courriel de Nicole (voir la lecture). Dis si tu viens ou non, avec qui (ton chum, ta blonde, tes enfants…), à quelle heure tu arrives, ce que tu apportes, et une chose que Gilles et toi aimez (ou n'aimez pas). Termine avec une question.",
+            "promptEn": "Reply to Nicole's email (see the reading). Say whether you're coming, with whom, what time you'll arrive, what you're bringing, and something you and Gilles like (or don't like). End with a question.",
+            "minWords": 50,
+            "maxWords": 110,
+            "targetStructures": [
+              "possessives",
+              "-er verbs",
+              "time (à six heures…)",
+              "aimer / adorer / détester",
+              "negation",
+              "a question"
+            ],
+            "expectedPhrases": [
+              "bonjour | allô | salut",
+              "mon | ma | mes",
+              "heure",
+              "apporte",
+              "aime | adore | déteste",
+              "?"
+            ],
+            "modelAnswer": "Bonjour Nicole!\n\nMerci pour l'invitation! Oui, je viens avec ma blonde Émilie. On arrive à six heures moins quart. J'apporte un gâteau au chocolat : Gilles et moi, on adore le chocolat! Par contre, Émilie n'aime pas la cuisine épicée. Est-ce qu'il y a un plat pas trop épicé?\n\nÀ samedi!\nJordan",
+            "rubricRef": "writing-a1"
+          }
+        ]
+      },
+      {
+        "skill": "parler",
+        "title": "Expression orale",
+        "reviewLessons": [
+          "2.3",
+          "2.5",
+          "2.6"
+        ],
+        "activities": [
+          {
+            "id": "G2-parler-1",
+            "type": "speaking",
+            "skill": "parler",
+            "title": "Conversation avec un collègue",
+            "instructions": "A new coworker chats with you at lunch. 25 seconds per answer. No notes.",
+            "mode": "roleplay",
+            "maxSeconds": 25,
+            "turns": [
+              {
+                "speaker": "partner",
+                "fr": "Allô! T'es nouveau ici? Qu'est-ce que tu fais, exactement?"
+              },
+              {
+                "speaker": "learner",
+                "task": "Say your job and how long you work (full-time, days, hours).",
+                "expectedPhrases": [
+                  "je suis | je travaille",
+                  "temps plein | temps partiel | heure | lundi | vendredi"
+                ]
+              },
+              {
+                "speaker": "partner",
+                "fr": "Pis t'as de la famille?"
+              },
+              {
+                "speaker": "learner",
+                "task": "Describe your family with possessives.",
+                "expectedPhrases": [
+                  "mon | ma | mes"
+                ]
+              },
+              {
+                "speaker": "partner",
+                "fr": "Qu'est-ce que t'aimes faire la fin de semaine?"
+              },
+              {
+                "speaker": "learner",
+                "task": "Say two likes and one dislike.",
+                "expectedPhrases": [
+                  "j'aime | j'adore",
+                  "je déteste | j'aime pas | j'haïs"
+                ]
+              },
+              {
+                "speaker": "partner",
+                "fr": "Ça te tente-tu de dîner avec l'équipe demain?"
+              },
+              {
+                "speaker": "learner",
+                "task": "Accept or refuse politely, and ask what time.",
+                "expectedPhrases": [
+                  "ça me tente | oui | non",
+                  "quelle heure"
+                ]
+              }
+            ],
+            "modelAnswer": "Oui! Je suis gestionnaire de projets. Je travaille à temps plein, du lundi au vendredi. / Oui, ma blonde pis notre chat. Mes parents restent à Calgary. / J'adore marcher pis cuisiner, mais j'aime pas magasiner. / Oui, ça me tente! À quelle heure?",
+            "selfCheck": [
+              "I described my job with days or hours",
+              "I used possessives for my family",
+              "I gave two likes and a dislike",
+              "I accepted or refused and asked the time",
+              "I dropped « ne » in negatives, like natural speech"
+            ],
+            "rubricRef": "speaking-a1"
+          },
+          {
+            "id": "G2-parler-2",
+            "type": "speaking",
+            "skill": "parler",
+            "title": "Ma semaine",
+            "instructions": "Describe your typical week for about a minute, without notes.",
+            "mode": "describe",
+            "maxSeconds": 80,
+            "prompt": "Décris ta semaine typique : le travail, les repas, les activités, et ce que tu fais la fin de semaine.",
+            "expectedPhrases": [
+              "le lundi | le mardi | le mercredi | le jeudi | le vendredi | la fin de semaine",
+              "heure",
+              "déjeune | dîne | soupe | déjeuner | dîner | souper",
+              "j'aime | j'adore",
+              "pas"
+            ],
+            "selfCheck": [
+              "I spoke for at least 45 seconds",
+              "I used days and times",
+              "I used déjeuner / dîner / souper the Québec way",
+              "I said what I like and something I don't do",
+              "I didn't read from notes"
+            ],
+            "rubricRef": "speaking-a1"
+          }
+        ]
+      }
+    ]
+  }
+}

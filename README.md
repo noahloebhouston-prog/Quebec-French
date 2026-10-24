@@ -1,5 +1,7 @@
 # Québécois Conversational French: Self-Paced Curriculum
 
+**Use it:** https://noahloebhouston-prog.github.io/Quebec-French/ (once GitHub Pages is on, see below)
+
 A numbered, self-paced path from zero to confident conversation in Québec French. There are no deadlines. You move forward when you pass a level's **gate test**, not when a calendar says so.
 
 Files in this folder:
@@ -11,7 +13,10 @@ Files in this folder:
 | `placement/placement-test.json` | Placement test that finds your starting level and weak skills |
 | `adaptive-rules.json` | Rules that adjust the plan to your results as you go |
 | `levels/level-01.json` | Level 1, fully built: lessons, activities, gate test |
+| `levels/level-02.json` | Level 2, fully built: family, work, likes, negation, days and time, conversation |
 | `WIDGET-NOTES.md` | How the widget should render, grade and track each activity type |
+| `index.html`, `app/` | The web app itself: no build step, no server, it reads the JSON files above |
+| `levels/index.json` | The list of levels the app shows; a new level goes live when its `file` is filled in |
 
 Later levels are added as `levels/level-02.json`, `levels/level-03.json`, and so on, all in the same shape.
 
@@ -79,3 +84,22 @@ After Level 12 the course continues as an open-ended **Conversation Lab**: theme
 | 1.5 | Comment ça va? | Ask and answer how someone is, Québec spoken forms (*chu*, *t'es*) |
 | 1.6 | Une première conversation | Put it all together in a full first-meeting conversation |
 | Gate | Test du niveau 1 | Reading, writing, listening, speaking sections; 80% overall, 70% each |
+
+---
+
+## The web app
+
+`index.html` and `app/` are a complete static app: placement test, lessons, auto-graded quizzes, writing with rubric grading, speaking with your microphone, flashcards with spaced repetition, gate tests, and the adaptive rules from `adaptive-rules.json`.
+
+- **Progress** is saved in your browser. Use *Réglages → Export* to back it up or move it to another device.
+- **Listening** uses your device's French voices. For Québec French, install a *French (Canada)* voice (iPhone: Settings → Accessibility → Spoken Content → Voices; Windows/Android: language settings).
+- **Speaking** records you and, in Chrome or Safari, transcribes what you said to check for the key phrases. Elsewhere it falls back to the self-check list.
+- **Writing** can be graded by Claude: the app builds a grading prompt you copy into a Claude chat, then you paste the reply back and the scores fill in. Or rate yourself with the rubric.
+
+### Turning on GitHub Pages (one time)
+
+Repo **Settings → Pages → Build and deployment**: Source *Deploy from a branch*, Branch *main*, folder */ (root)*, **Save**. After a minute the app is live at the link at the top of this file.
+
+### Running it locally
+
+From this folder: `python3 -m http.server`, then open http://localhost:8000. (Opening `index.html` directly from disk won't work, because browsers block loading the JSON files that way.)
